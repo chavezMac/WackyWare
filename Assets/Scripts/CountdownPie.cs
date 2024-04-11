@@ -5,12 +5,18 @@ public class PieTimer : MonoBehaviour
 {
     public Image pieImage;
     private float maxTime = 10f;
-    private float currentTime;
+    public float currentTime;
     private bool timeUp = false;
+    public MainGameController gameController;
 
     void Start()
     {
-        currentTime = maxTime;
+        // StartTimer();
+    }
+    
+    public void StartTimer()
+    {
+        currentTime = MainGameController.timeRemaining;
     }
 
     void Update()
