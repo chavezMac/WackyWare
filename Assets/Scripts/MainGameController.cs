@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +9,7 @@ public class MainGameController: MonoBehaviour
     public static float timeRemaining; //time left for the current minigame 
     public PieTimer timer;
     public int minigamesCompletedSuccessfully = 0;
-    public int minigamesFails;
+    public int minigamesFailed = 0;
     void Start()
     {
         currentMinigame = miniGameList[0];
@@ -24,7 +23,6 @@ public class MainGameController: MonoBehaviour
 
     private void StartNextMinigame()
     {
-        currentMinigameIndex++;//increment the minigame counter
         if (currentMinigameIndex >= miniGameList.Length)
         {
             Debug.Log("You beat all the games in the collection! Congrats!");
@@ -37,12 +35,21 @@ public class MainGameController: MonoBehaviour
         SceneManager.LoadScene(currentMinigame, LoadSceneMode.Additive);
         timeRemaining = 10f;//We can change this later
         timer.StartTimer();
+        currentMinigameIndex++;//increment the minigame counter
     }
 
     public void MinigameDone(bool win)
     {
-        Debug.Log("MainGameController received the broadcast that the level was completed.");
-        SceneManager.UnloadSceneAsync("Example Minigame");
+        Debug.Log("MainGameController received the broadcast that the level " + currentMinigame + " was completed.");
+        if (win)
+        {
+            minigamesCompletedSuccessfully++;
+        }
+        else
+        {
+            minigamesFailed++;
+        }
+        SceneManager.UnloadSceneAsync(currentMinigame);
         StartNextMinigame();
     }
 }

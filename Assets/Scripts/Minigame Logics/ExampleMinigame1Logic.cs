@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ExampleMinigame1Logic : MonoBehaviour
 {
+    //This minigame simply has the win trigger in the onClick event of the button
     void Update()
     {
+        //Check if time has run out, and if so, we fail the minigame
         if (MainGameController.timeRemaining <= 0)
         {
             MinigameBroadcaster.MinigameFailed();

@@ -11,7 +11,7 @@ public class PieTimer : MonoBehaviour
 
     void Start()
     {
-        // StartTimer();
+        
     }
     
     public void StartTimer()

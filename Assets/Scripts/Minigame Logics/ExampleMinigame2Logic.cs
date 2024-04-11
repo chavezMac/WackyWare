@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ExampleMinigame2Logic : MonoBehaviour
@@ -18,6 +16,7 @@ public class ExampleMinigame2Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Check if time has run out, and if so, we fail the minigame
         if (MainGameController.timeRemaining <= 0)
         {
             MinigameBroadcaster.MinigameFailed();
@@ -26,6 +25,7 @@ public class ExampleMinigame2Logic : MonoBehaviour
 
     public void DecreaseCount(GameObject button)
     {
+        //Decrease the numbers of buttons, and if we got them all, we win the minigame, and tell the broadcaster
         buttonsLeft--;
         if (buttonsLeft <= 0)
         {

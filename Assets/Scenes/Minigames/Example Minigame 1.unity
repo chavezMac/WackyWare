@@ -241,7 +241,7 @@ MonoBehaviour:
 
 
     Clicking this button triggers the MinigameComplete()
-    method of MinigameBroadcaster, an prefab that should be in each minigame scene.
+    method of MinigameBroadcaster, a prefab that should be in each minigame scene.
     MinigameBroadcaster then signals the main game logic that the minigame was completed
     successfully.'
 --- !u!222 &663746242
