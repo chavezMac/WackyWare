@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameLogicScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Example Minigame.unity
+    path: Assets/Scenes/Minigames/Example Minigame.unity
     guid: 625cd47e91f2c554e976533f94f97838
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Example Minigame 2.unity
+    guid: ed81b0a183299e6479973523e4cd34bd
   m_configObjects: {}

@@ -9,6 +9,8 @@ public class MainGameController: MonoBehaviour
     public string[] miniGameList; //list of minigames by their scene name
     public static float timeRemaining; //time left for the current minigame 
     public PieTimer timer;
+    public int minigamesCompletedSuccessfully = 0;
+    public int minigamesFails;
     void Start()
     {
         currentMinigame = miniGameList[0];
@@ -37,7 +39,7 @@ public class MainGameController: MonoBehaviour
         timer.StartTimer();
     }
 
-    public void LevelCompleted()
+    public void MinigameDone(bool win)
     {
         Debug.Log("MainGameController received the broadcast that the level was completed.");
         SceneManager.UnloadSceneAsync("Example Minigame");

@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &398508220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398508222}
+  - component: {fileID: 398508221}
+  m_Layer: 0
+  m_Name: Minigame Logic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &398508221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398508220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014bbbd962bfe9b4991d1d2f6341d3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &398508222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398508220}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 759.8, y: 293.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663746239
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +237,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: '<b>Click me!</b>
+
+
+    Clicking this button triggers the MinigameComplete()
+    method of MinigameBroadcaster, an prefab that should be in each minigame scene.
+    MinigameBroadcaster then signals the main game logic that the minigame was completed
+    successfully.'
 --- !u!222 &663746242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -543,8 +593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -97}
+  m_SizeDelta: {x: 316.3091, y: 147.9742}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069161618
 MonoBehaviour:
@@ -592,7 +642,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7330799607445605919}
         m_TargetAssemblyTypeName: MinigameBroadcaster, Assembly-CSharp
-        m_MethodName: LevelCompleted
+        m_MethodName: MinigameCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -740,3 +790,4 @@ SceneRoots:
   - {fileID: 2060680338}
   - {fileID: 1419459401}
   - {fileID: 900615245}
+  - {fileID: 398508222}
