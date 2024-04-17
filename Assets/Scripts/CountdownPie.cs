@@ -17,6 +17,7 @@ public class PieTimer : MonoBehaviour
     public void StartTimer()
     {
         currentTime = MainGameController.timeRemaining;
+        timeUp = false;
     }
 
     void Update()
