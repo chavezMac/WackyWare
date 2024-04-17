@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/Example Minigame 2.unity
     guid: ed81b0a183299e6479973523e4cd34bd
+  - enabled: 1
+    path: Assets/Syed Minigame/Fishing Minigame.unity
+    guid: 09e4b336df4114b4f9a440e5f5000004
   m_configObjects: {}
