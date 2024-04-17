@@ -1763,7 +1763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5a30d3e315d4b50a7382701dee73e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 378107964}
+  finishLine: {fileID: 446789294}
 --- !u!4 &1711167129
 Transform:
   m_ObjectHideFlags: 0

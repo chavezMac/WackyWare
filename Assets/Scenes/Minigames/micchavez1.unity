@@ -1713,6 +1713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9cbb881069b43e7b83ade5b88f3e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1000
 --- !u!1001 &1400033768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2137,7 +2138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1678490029527291611, guid: aa37fd678b1aa403cb791844edd7a619, type: 3}
       propertyPath: m_Mass
-      value: 1.83
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -1678490029527291611, guid: aa37fd678b1aa403cb791844edd7a619, type: 3}
       propertyPath: m_UseGravity

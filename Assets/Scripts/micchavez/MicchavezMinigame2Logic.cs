@@ -23,9 +23,9 @@ public class MicchavezMinigame2Logic : MonoBehaviour
             MinigameBroadcaster.MinigameFailed();
         }
 
-        if (player.transform.position.z >= finishLine.transform.position.z)
-        {
-            MinigameBroadcaster.MinigameCompleted();
-        }
+        // if (player.transform.position.z >= finishLine.transform.position.z)
+        // {
+        //     MinigameBroadcaster.MinigameCompleted();
+        // }
     }
 }
