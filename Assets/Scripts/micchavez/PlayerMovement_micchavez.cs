@@ -22,9 +22,9 @@ public class PlayerMovement_micchavez : MonoBehaviour
 
     
     private void FixedUpdate() {
-        movementX = Input.GetAxis("Horizontal");
-        movementZ = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(movementX, 0, movementZ);
+        movementX = Input.GetAxis("Vertical");
+        movementZ = Input.GetAxis("Horizontal");
+        Vector3 movement = new Vector3(movementX, 0, -movementZ);
         rb.AddForce(movement * speed);
     }
 
