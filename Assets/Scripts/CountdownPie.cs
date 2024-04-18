@@ -8,15 +8,15 @@ public class PieTimer : MonoBehaviour
     public float currentTime;
     private bool timeUp = false;
     public MainGameController gameController;
-
-    void Start()
+    private void Start()
     {
-        
+        gameController = FindObjectOfType<MainGameController>();
     }
     
     public void StartTimer()
     {
-        currentTime = MainGameController.timeRemaining;
+        maxTime = MainGameController.timeRemaining;
+        currentTime = maxTime;
         timeUp = false;
     }
 
@@ -27,7 +27,7 @@ public class PieTimer : MonoBehaviour
             return;
         }
         
-        currentTime -= Time.deltaTime;
+        currentTime = MainGameController.timeRemaining;
 
         if (currentTime <= 0)
         {
@@ -35,6 +35,7 @@ public class PieTimer : MonoBehaviour
             // Handle timer expiration
             Debug.Log("Time up!");
             timeUp = true;
+            // gameController.MinigameDone(false);
         }
 
         float fillAmount = currentTime / maxTime;

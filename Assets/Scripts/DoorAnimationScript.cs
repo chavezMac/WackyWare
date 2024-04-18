@@ -6,7 +6,7 @@ public class DoorAnimationController : MonoBehaviour
 
     void Start()
     {
-        Play();
+        // Play();
     }
 
     public void Play()
@@ -19,6 +19,7 @@ public class DoorAnimationController : MonoBehaviour
     public void PauseAnimationAtMiddle()
     {
         doorAnimator.speed = 0; // Set animation speed to 0 to pause
+        // Debug.Log("Pausing door anim");
     }
 
     // Function to resume the door animation
