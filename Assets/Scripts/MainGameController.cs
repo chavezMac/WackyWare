@@ -23,6 +23,8 @@ public class MainGameController: MonoBehaviour
 
     public GameObject WinIcon;
     public GameObject FailIcon;
+    public ClapperBoard clapper;
+    public string[] teamNames;
     void Start()
     {
         transition.init();
@@ -59,6 +61,10 @@ public class MainGameController: MonoBehaviour
         {
             transition.Play();
         }
+        clapper.UpdateClapperText(currentMinigameIndex,
+            teamNames[Random.Range(0, 5)],
+            teamNames[Random.Range(0, 5)],
+            teamNames[Random.Range(0, 5)]);
         //Wait for a moment and unload the scene after the animation completes
         yield return new WaitForSeconds(.25f);
         if (!isFirstMinigame)
