@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 381383827}
   - component: {fileID: 381383826}
   - component: {fileID: 381383825}
+  - component: {fileID: 381383828}
   m_Layer: 5
   m_Name: CountdownPie
   m_TagString: Untagged
@@ -332,7 +333,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 270509534}
   - {fileID: 617058190}
@@ -340,9 +341,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -30, y: 40}
+  m_AnchoredPosition: {x: -110, y: 120}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381383825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +360,12 @@ MonoBehaviour:
   currentTime: 0
   gameController: {fileID: 1743697402}
   ClockHand: {fileID: 617058189}
+  colors:
+  - {r: 0, g: 0.73333335, b: 1, a: 1}
+  - {r: 0.41440365, g: 0.96809596, b: 0.98490566, a: 1}
+  - {r: 0.96981126, g: 0.9250414, b: 0.29826263, a: 1}
+  - {r: 0.98490566, g: 0.4444428, b: 0.2062727, a: 1}
+  - {r: 1, g: 0.2396226, b: 0.2396226, a: 1}
 --- !u!114 &381383826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,6 +404,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381383823}
   m_CullTransparentMesh: 1
+--- !u!95 &381383828
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381383823}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 033a50abefa7273458ade2a0f9d61960, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &450688697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2142840432732543796, guid: c5a29a5c4c563e64e92727fec6408f87, type: 3}
