@@ -2,11 +2,16 @@ using UnityEngine;
 
 public class JumpMovement : MonoBehaviour
 {
+    public CameraZoneSwitch cameraZoneSwitch;
     public float speed;
     public float rotationSpeed;
+    public float jumpSpeed;
+    public float jumpGrace;
 
     private CharacterController characterController;
-
+    private float ySpeed;
+    private float? lastGroundedTime;
+    private float? jumpPressedTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +25,38 @@ public class JumpMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+
+      
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
         movementDirection.Normalize();
 
-        characterController.SimpleMove(movementDirection * magnitude);
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+
+        if(characterController.isGrounded)
+        {
+            lastGroundedTime = Time.time;
+        }
+
+        if(Input.GetButtonDown("Jump"))
+        {
+            jumpPressedTime = Time.time;
+        }
+
+        if(Time.time - lastGroundedTime < jumpGrace)
+        {
+            ySpeed = -0.5f;
+            if(Time.time - jumpPressedTime < jumpGrace)
+            {
+                ySpeed = jumpSpeed;
+                jumpPressedTime = null;
+                lastGroundedTime = null;
+            }
+        }
+
+        Vector3 velocity = movementDirection * magnitude;
+        velocity.y = ySpeed;
+
+        characterController.Move(velocity * Time.deltaTime);
 
         if(movementDirection != Vector3.zero)
         {

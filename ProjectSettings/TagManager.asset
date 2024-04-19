@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Example2Button
   - PickUp
+  - CameraZone
   layers:
   - Default
   - TransparentFX
