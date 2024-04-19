@@ -19,6 +19,7 @@ public class MainGameController: MonoBehaviour
     private AudioSource sfx;
     public AudioClip winSound;
     public AudioClip loseSound;
+    public AudioClip ticktockSound;
 
     public GameObject WinIcon;
     public GameObject FailIcon;
@@ -35,7 +36,14 @@ public class MainGameController: MonoBehaviour
         if (!timerPaused)
         {
             timeRemaining -= Time.deltaTime;
+            if (timeRemaining < ticktockSound.length && !sfx.isPlaying)
+            {
+                sfx.clip = ticktockSound;
+                sfx.Play();
+            }
         }
+
+
     }
 
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)

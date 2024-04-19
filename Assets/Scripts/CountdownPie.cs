@@ -6,8 +6,9 @@ public class PieTimer : MonoBehaviour
     public Image pieImage;
     private float maxTime = 10f;
     public float currentTime;
-    private bool timeUp = false;
+    private bool timeUp = true;
     public MainGameController gameController;
+    public GameObject ClockHand;
     private void Start()
     {
         gameController = FindObjectOfType<MainGameController>();
@@ -40,5 +41,7 @@ public class PieTimer : MonoBehaviour
 
         float fillAmount = currentTime / maxTime;
         pieImage.fillAmount = fillAmount;
+        Quaternion rotation = Quaternion.Euler(0f, 0f, (1 - fillAmount) * 360f);
+        ClockHand.transform.rotation = rotation;
     }
 }
