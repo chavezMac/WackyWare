@@ -42,8 +42,6 @@ public class MainGameController: MonoBehaviour
                 sfx.Play();
             }
         }
-
-
     }
 
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)

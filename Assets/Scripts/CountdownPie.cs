@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class PieTimer : MonoBehaviour
 {
     public Image pieImage;
-    private float maxTime = 10f;
+    private float maxTime;
     public float currentTime;
     private bool timeUp = true;
     public MainGameController gameController;
