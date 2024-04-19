@@ -8,7 +8,7 @@ public class ClapperBoard : MonoBehaviour
     public Text take;
     public Text director;
     public Text sound;
-    public Text camera;
+    public Text cameracred;
     public Text date;
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class ClapperBoard : MonoBehaviour
         take.text = Random.Range(1, 15).ToString();
         director.text = directorName;
         sound.text = soundName;
-        camera.text = cameraName;
+        cameracred.text = cameraName;
         date.text = System.DateTime.Today.ToLongDateString();
     }
 }

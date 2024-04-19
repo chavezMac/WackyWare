@@ -66,6 +66,10 @@ public class MainGameController: MonoBehaviour
         {
             transition.Play();
         }
+        else
+        {
+            // transition.ResumeAnimation();
+        }
         clapper.UpdateClapperText(currentMinigameIndex,
             teamNames[Random.Range(0, 5)],
             teamNames[Random.Range(0, 5)],
