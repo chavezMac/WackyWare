@@ -74,9 +74,9 @@ public class MainGameController: MonoBehaviour
         }
         //Apply random names to the clapper board
         clapper.UpdateClapperText(currentMinigameIndex,
-            teamNames[Random.Range(0, 5)],
-            teamNames[Random.Range(0, 5)],
-            teamNames[Random.Range(0, 5)]);
+            teamNames[Random.Range(0, 6)].ToUpper(),
+            teamNames[Random.Range(0, 6)].ToUpper(),
+            teamNames[Random.Range(0, 6)].ToUpper());
         //Wait for a moment and unload the scene after the animation completes
         yield return new WaitForSeconds(.45f);
         if (!isFirstMinigame)

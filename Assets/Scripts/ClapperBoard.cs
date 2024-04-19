@@ -25,6 +25,6 @@ public class ClapperBoard : MonoBehaviour
         director.text = directorName;
         sound.text = soundName;
         cameracred.text = cameraName;
-        date.text = System.DateTime.Today.ToLongDateString();
+        date.text = System.DateTime.Today.ToLongDateString().ToUpper();
     }
 }
