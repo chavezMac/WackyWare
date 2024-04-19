@@ -12,7 +12,7 @@ public class MainGameController: MonoBehaviour
     public float minigameTimeLimit = 10f;
     public bool timerPaused = true;
     public PieTimer timer;
-    public DoorAnimationController door;
+    public TransitionAnimationController transition;
     public int minigamesCompletedSuccessfully = 0;
     public int minigamesFailed = 0;
 
@@ -25,7 +25,7 @@ public class MainGameController: MonoBehaviour
     public GameObject FailIcon;
     void Start()
     {
-        door.PauseAnimationAtMiddle();
+        transition.init();
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
         StartNextMinigame(true);
@@ -54,12 +54,12 @@ public class MainGameController: MonoBehaviour
             yield break;
         }
         
-        //Play door closing animation
+        //Play transition animation
         if (!isFirstMinigame)
         {
-            door.ResumeAnimation();
+            transition.Play();
         }
-        //Wait for a moment and unload the scene after the doors close
+        //Wait for a moment and unload the scene after the animation completes
         yield return new WaitForSeconds(.25f);
         if (!isFirstMinigame)
         {
@@ -72,7 +72,7 @@ public class MainGameController: MonoBehaviour
         {
             yield return new WaitForSeconds(1.75f);
         }
-        door.Play();
+        transition.ResumeAnimation();
         WinIcon.SetActive(false);
         FailIcon.SetActive(false);
         // We can load level scenes additively so we have multiple scenes loaded at once.
