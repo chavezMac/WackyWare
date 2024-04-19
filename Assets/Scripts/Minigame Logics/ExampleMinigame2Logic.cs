@@ -21,6 +21,10 @@ public class ExampleMinigame2Logic : MonoBehaviour
         {
             MinigameBroadcaster.MinigameCompleted();
         }
+        if (debug && Input.GetKeyDown(KeyCode.R))//DEBUG TESTING LOSE CONDITION
+        {
+            MinigameBroadcaster.MinigameFailed();
+        }
         //Check if time has run out, and if so, we fail the minigame
         if (MainGameController.timeRemaining <= 0)
         {

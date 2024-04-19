@@ -21,8 +21,8 @@ public class MainGameController: MonoBehaviour
     public AudioClip loseSound;
     public AudioClip ticktockSound;
 
-    public GameObject WinIcon;
-    public GameObject FailIcon;
+    public Animator WinIcon;
+    public Animator FailIcon;
     public ClapperBoard clapper;
     public string[] teamNames;
     void Start()
@@ -31,6 +31,8 @@ public class MainGameController: MonoBehaviour
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
         StartNextMinigame(true);
+        WinIcon.speed = 0;
+        FailIcon.speed = 0;
     }
 
     private void Update()
@@ -70,6 +72,7 @@ public class MainGameController: MonoBehaviour
         {
             // transition.ResumeAnimation();
         }
+        //Apply random names to the clapper board
         clapper.UpdateClapperText(currentMinigameIndex,
             teamNames[Random.Range(0, 5)],
             teamNames[Random.Range(0, 5)],
@@ -88,8 +91,6 @@ public class MainGameController: MonoBehaviour
             yield return new WaitForSeconds(1.55f);
         }
         transition.ResumeAnimation();
-        WinIcon.SetActive(false);
-        FailIcon.SetActive(false);
         // We can load level scenes additively so we have multiple scenes loaded at once.
         // One scene (GameLogicScene) for the UI and outer game logic,
         // and another for the minigame and its logic.
@@ -108,19 +109,22 @@ public class MainGameController: MonoBehaviour
     public void MinigameDone(bool win)
     {
         Debug.Log("MainGameController received the broadcast that the level " + currentMinigame + " was completed.");
+        
         if (win)
         {
             minigamesCompletedSuccessfully++;
             sfx.clip = winSound;
             sfx.Play();
-            WinIcon.SetActive(true);
+            WinIcon.Play(0);
+            WinIcon.speed = 1;
         }
         else
         {
             minigamesFailed++;
             sfx.clip = loseSound;
             sfx.Play();
-            FailIcon.SetActive(true);
+            FailIcon.Play(0);
+            FailIcon.speed = 1;
         }
         StartNextMinigame(false);
     }
