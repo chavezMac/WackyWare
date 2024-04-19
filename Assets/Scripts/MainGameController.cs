@@ -46,6 +46,11 @@ public class MainGameController: MonoBehaviour
         }
     }
 
+    public void UnloadMinigame()
+    {
+        SceneManager.UnloadSceneAsync(currentMinigame);
+    }
+
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)
     {
         timerPaused = true;
@@ -66,17 +71,17 @@ public class MainGameController: MonoBehaviour
             teamNames[Random.Range(0, 5)],
             teamNames[Random.Range(0, 5)]);
         //Wait for a moment and unload the scene after the animation completes
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(.45f);
         if (!isFirstMinigame)
         {
-            SceneManager.UnloadSceneAsync(currentMinigame);
+            UnloadMinigame();
         }
         currentMinigame = miniGameList[currentMinigameIndex];
         
         // Pause to show animations.
         if (!isFirstMinigame)
         {
-            yield return new WaitForSeconds(1.75f);
+            yield return new WaitForSeconds(1.55f);
         }
         transition.ResumeAnimation();
         WinIcon.SetActive(false);

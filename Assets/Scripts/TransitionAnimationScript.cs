@@ -26,6 +26,7 @@ public class TransitionAnimationController : MonoBehaviour
     public void PauseAnimationAtMiddle()
     {
         transitionAnimator.speed = 0;
+        // MainGameController.UnloadMinigame();
     }
 
     // Function to resume the door animation
