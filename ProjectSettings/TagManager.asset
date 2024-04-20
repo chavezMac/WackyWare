@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
+  - PickUp
+  - CameraZone
   layers:
   - Default
   - TransparentFX

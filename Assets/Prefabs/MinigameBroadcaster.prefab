@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8280394841258219994}
-  - component: {fileID: -138262789864655838}
+  - component: {fileID: -3595016027955057284}
   m_Layer: 0
   m_Name: MinigameBroadcaster
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8619470403699996426}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-138262789864655838
+--- !u!114 &-3595016027955057284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
