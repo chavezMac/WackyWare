@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 4048643909484756076}
   m_Layer: 0
   m_Name: Empty.030_187
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1281,7 +1281,7 @@ GameObject:
   - component: {fileID: 8103581433194628712}
   m_Layer: 0
   m_Name: Empty.026_168
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2005,6 +2005,7 @@ GameObject:
   - component: {fileID: 4597027050899460518}
   - component: {fileID: 375130822804264767}
   - component: {fileID: 971316416208931658}
+  - component: {fileID: 4190611911594130627}
   m_Layer: 0
   m_Name: Object_48
   m_TagString: Untagged
@@ -2077,6 +2078,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4190611911594130627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226360231862625371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.001991, y: 105.00005, z: 15.002807}
+  m_Center: {x: -7.501033, y: 45.00003, z: 0.0013885497}
 --- !u!1 &230470080902200230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,7 +3273,7 @@ GameObject:
   - component: {fileID: 6102926753236636367}
   m_Layer: 0
   m_Name: Empty.019_128
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3316,7 +3338,7 @@ GameObject:
   - component: {fileID: 1313797246776939522}
   m_Layer: 0
   m_Name: Empty.054_324
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4407,7 +4429,7 @@ GameObject:
   - component: {fileID: 8881293797654675754}
   m_Layer: 0
   m_Name: Empty.083_446
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4643,7 +4665,7 @@ GameObject:
   - component: {fileID: 7630746582192742308}
   m_Layer: 0
   m_Name: Empty.061_361
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4857,7 +4879,7 @@ GameObject:
   - component: {fileID: 451272296536060124}
   m_Layer: 0
   m_Name: Empty.044_264
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5782,7 +5804,7 @@ GameObject:
   - component: {fileID: 6271545328765832275}
   m_Layer: 0
   m_Name: Empty.027_170
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5814,7 +5836,7 @@ GameObject:
   - component: {fileID: 1477661250730943736}
   m_Layer: 0
   m_Name: Empty.023_154
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6338,7 +6360,7 @@ GameObject:
   - component: {fileID: 2642104174173100166}
   m_Layer: 0
   m_Name: Empty.014_102
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10110,7 +10132,7 @@ GameObject:
   - component: {fileID: 7219472037150271108}
   m_Layer: 0
   m_Name: Empty.071_405
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10146,7 +10168,7 @@ GameObject:
   - component: {fileID: 5379642308014111847}
   m_Layer: 0
   m_Name: Empty.073_419
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11269,7 +11291,7 @@ GameObject:
   - component: {fileID: 3146948166976058622}
   m_Layer: 0
   m_Name: Empty.041_243
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11378,7 +11400,7 @@ GameObject:
   - component: {fileID: 2103807262941202651}
   m_Layer: 0
   m_Name: Empty.038_224
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16247,7 +16269,7 @@ GameObject:
   - component: {fileID: 7732661668656285890}
   m_Layer: 0
   m_Name: Empty.051_301
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17603,11 +17625,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1294720507372253465}
   - {fileID: 2337704730096006550}
-  - {fileID: 5968153914078317759}
   - {fileID: 6672812059456563730}
   - {fileID: 969356612388384954}
+  - {fileID: 1343346491224490380}
+  - {fileID: 5833990121447319338}
+  - {fileID: 1294720507372253465}
+  - {fileID: 5968153914078317759}
   - {fileID: 2156240568682442046}
   - {fileID: 146689712468184613}
   - {fileID: 8194342142708025562}
@@ -17683,8 +17707,6 @@ Transform:
   - {fileID: 2362966220438144418}
   - {fileID: 8881293797654675754}
   - {fileID: 971850831609702777}
-  - {fileID: 1343346491224490380}
-  - {fileID: 5833990121447319338}
   - {fileID: 7487959683889117968}
   - {fileID: 8672841356654046374}
   - {fileID: 548451339304099562}
@@ -17877,7 +17899,7 @@ GameObject:
   - component: {fileID: 2557663991318455928}
   m_Layer: 0
   m_Name: Empty.009_60
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20106,7 +20128,7 @@ GameObject:
   - component: {fileID: 724714931390297023}
   m_Layer: 0
   m_Name: Empty.076_433
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20534,9 +20556,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 969356612388384954}
+  - component: {fileID: 7015963634349656664}
+  - component: {fileID: 7243826649036704747}
   m_Layer: 0
-  m_Name: Empty.004_26
-  m_TagString: Untagged
+  m_Name: Building2
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20558,6 +20582,40 @@ Transform:
   - {fileID: 6105623628205606432}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7015963634349656664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2576714164778970076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+--- !u!114 &7243826649036704747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2576714164778970076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
 --- !u!1 &2580629615354722772
 GameObject:
   m_ObjectHideFlags: 0
@@ -22225,7 +22283,7 @@ GameObject:
   - component: {fileID: 3564794085313651677}
   m_Layer: 0
   m_Name: Empty.053_316
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23836,7 +23894,7 @@ GameObject:
   - component: {fileID: 5821480692504013297}
   m_Layer: 0
   m_Name: Empty.055_336
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23961,7 +24019,7 @@ GameObject:
   - component: {fileID: 2313465259971242100}
   m_Layer: 0
   m_Name: Empty.028_172
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25790,7 +25848,7 @@ GameObject:
   - component: {fileID: 3709312258279404818}
   m_Layer: 0
   m_Name: Empty.087_495
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26909,7 +26967,7 @@ GameObject:
   - component: {fileID: 8929946854100837578}
   m_Layer: 0
   m_Name: Empty.031_194
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29281,7 +29339,7 @@ GameObject:
   - component: {fileID: 1294720507372253465}
   m_Layer: 0
   m_Name: Empty_7
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30866,7 +30924,7 @@ GameObject:
   - component: {fileID: 7092757409583614872}
   m_Layer: 0
   m_Name: Empty.037_218
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30997,7 +31055,7 @@ GameObject:
   - component: {fileID: 7487959683889117968}
   m_Layer: 0
   m_Name: Empty.081_469
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31871,7 +31929,7 @@ GameObject:
   - component: {fileID: 911246578984386542}
   m_Layer: 0
   m_Name: Empty.035_212
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32941,7 +32999,7 @@ GameObject:
   - component: {fileID: 2415230413218429729}
   m_Layer: 0
   m_Name: Empty.021_150
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33693,7 +33751,7 @@ GameObject:
   - component: {fileID: 9157975042851533942}
   m_Layer: 0
   m_Name: Empty.058_344
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36134,7 +36192,7 @@ GameObject:
   - component: {fileID: 7277951034576465320}
   m_Layer: 0
   m_Name: Empty.066_383
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36594,7 +36652,7 @@ GameObject:
   - component: {fileID: 7361351232477294503}
   m_Layer: 0
   m_Name: Empty.078_436
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36742,7 +36800,7 @@ GameObject:
   - component: {fileID: 6048622933229747293}
   m_Layer: 0
   m_Name: Empty.039_226
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36972,7 +37030,7 @@ GameObject:
   - component: {fileID: 5571989492450868078}
   m_Layer: 0
   m_Name: Empty.022_152
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39075,7 +39133,7 @@ GameObject:
   - component: {fileID: 8815541905606247678}
   m_Layer: 0
   m_Name: Empty.060_356
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41030,7 +41088,7 @@ GameObject:
   - component: {fileID: 7592260331475677764}
   m_Layer: 0
   m_Name: Empty.049_290
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41651,7 +41709,7 @@ GameObject:
   - component: {fileID: 3273457710000748576}
   m_Layer: 0
   m_Name: Empty.032_199
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44938,7 +44996,7 @@ GameObject:
   - component: {fileID: 2362966220438144418}
   m_Layer: 0
   m_Name: Empty.079_439
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45477,7 +45535,7 @@ GameObject:
   - component: {fileID: 971850831609702777}
   m_Layer: 0
   m_Name: Empty.056_450
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46495,7 +46553,7 @@ GameObject:
   - component: {fileID: 4917521460515160600}
   m_Layer: 0
   m_Name: Empty.016_116
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47830,7 +47888,7 @@ GameObject:
   - component: {fileID: 1856623663037064917}
   m_Layer: 0
   m_Name: Empty.072_412
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48378,7 +48436,7 @@ GameObject:
   - component: {fileID: 1373478816463349109}
   m_Layer: 0
   m_Name: Empty.011_90
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50611,7 +50669,7 @@ GameObject:
   - component: {fileID: 7046300254953949941}
   m_Layer: 0
   m_Name: Empty.024_156
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52451,7 +52509,7 @@ GameObject:
   - component: {fileID: 5755921488367238092}
   m_Layer: 0
   m_Name: Empty.057_342
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52750,7 +52808,7 @@ GameObject:
   - component: {fileID: 3293170712741992499}
   m_Layer: 0
   m_Name: Empty.018_125
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52982,7 +53040,7 @@ GameObject:
   - component: {fileID: 787534201200292463}
   m_Layer: 0
   m_Name: Empty.075_429
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53100,7 +53158,7 @@ GameObject:
   - component: {fileID: 548451339304099562}
   m_Layer: 0
   m_Name: Empty.084_485
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53662,7 +53720,7 @@ GameObject:
   - component: {fileID: 917785179597115214}
   m_Layer: 0
   m_Name: Empty.043_257
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53782,7 +53840,7 @@ GameObject:
   - component: {fileID: 601238498728123518}
   m_Layer: 0
   m_Name: Empty.015_114
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54253,7 +54311,7 @@ GameObject:
   - component: {fileID: 3287111369626833722}
   m_Layer: 0
   m_Name: Empty.050_297
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54290,7 +54348,7 @@ GameObject:
   - component: {fileID: 8620499976482323666}
   m_Layer: 0
   m_Name: Empty.069_397
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54384,9 +54442,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2337704730096006550}
+  - component: {fileID: 8640501338743695009}
+  - component: {fileID: 8270988089572667444}
   m_Layer: 0
-  m_Name: Empty.001_13
-  m_TagString: Untagged
+  m_Name: Building3
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54411,6 +54471,40 @@ Transform:
   - {fileID: 2267628248841935478}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8640501338743695009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6968560459892032239}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.66582507, y: 2.6746693, z: 1.4139805}
+  m_Center: {x: -0.070951566, y: 0.19315499, z: 0.0739935}
+--- !u!114 &8270988089572667444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6968560459892032239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
 --- !u!1 &6973582437276951752
 GameObject:
   m_ObjectHideFlags: 0
@@ -54537,7 +54631,7 @@ GameObject:
   - component: {fileID: 6163132901912791561}
   m_Layer: 0
   m_Name: Empty.020_131
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54602,7 +54696,7 @@ GameObject:
   - component: {fileID: 3296947512703566760}
   m_Layer: 0
   m_Name: Empty.046_277
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55132,7 +55226,7 @@ GameObject:
   - component: {fileID: 6266360801515536972}
   m_Layer: 0
   m_Name: Empty.063_377
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55372,7 +55466,7 @@ GameObject:
   - component: {fileID: 157598308314573822}
   m_Layer: 0
   m_Name: Empty.033_204
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56065,7 +56159,7 @@ GameObject:
   - component: {fileID: 146689712468184613}
   m_Layer: 0
   m_Name: Empty.006_37
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56099,7 +56193,7 @@ GameObject:
   - component: {fileID: 8933634906653583963}
   m_Layer: 0
   m_Name: Empty.025_164
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56696,9 +56790,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5833990121447319338}
+  - component: {fileID: 5415915457532921307}
+  - component: {fileID: 7537992747982362007}
   m_Layer: 0
-  m_Name: Empty.080_462
-  m_TagString: Untagged
+  m_Name: Building5
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56723,6 +56819,40 @@ Transform:
   - {fileID: 3817283167166032373}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5415915457532921307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241128495662027477}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.56065834, y: 1.7596064, z: 2.2317963}
+  m_Center: {x: 0.018477151, y: 0.26073027, z: 0.036953546}
+--- !u!114 &7537992747982362007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241128495662027477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
 --- !u!1 &7244060416743114263
 GameObject:
   m_ObjectHideFlags: 0
@@ -56849,7 +56979,7 @@ GameObject:
   - component: {fileID: 8856159041236604335}
   m_Layer: 0
   m_Name: Empty.010_88
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57169,7 +57299,7 @@ GameObject:
   - component: {fileID: 172973759442046921}
   m_Layer: 0
   m_Name: Empty.042_250
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57270,7 +57400,7 @@ GameObject:
   - component: {fileID: 6236201903098533839}
   m_Layer: 0
   m_Name: Empty.012_92
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57417,7 +57547,7 @@ GameObject:
   - component: {fileID: 4649730513274698433}
   m_Layer: 0
   m_Name: Empty.013_98
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57766,7 +57896,7 @@ GameObject:
   - component: {fileID: 8727112129886722943}
   m_Layer: 0
   m_Name: Empty.059_354
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57805,7 +57935,7 @@ GameObject:
   - component: {fileID: 2405137546710480886}
   m_Layer: 0
   m_Name: Empty.008_52
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58297,7 +58427,7 @@ GameObject:
   - component: {fileID: 2010398349427114068}
   m_Layer: 0
   m_Name: Empty.040_228
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58329,7 +58459,7 @@ GameObject:
   - component: {fileID: 5240676583298368861}
   m_Layer: 0
   m_Name: Empty.045_271
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58909,7 +59039,7 @@ GameObject:
   - component: {fileID: 3434225011657126129}
   m_Layer: 0
   m_Name: Empty.029_180
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58946,7 +59076,7 @@ GameObject:
   - component: {fileID: 2768068483516986655}
   m_Layer: 0
   m_Name: Empty.085_488
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61087,7 +61217,7 @@ GameObject:
   - component: {fileID: 4557143362865100024}
   m_Layer: 0
   m_Name: Empty.086_493
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61237,7 +61367,7 @@ GameObject:
   - component: {fileID: 3112564246024876362}
   m_Layer: 0
   m_Name: Empty.047_284
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61587,7 +61717,7 @@ GameObject:
   - component: {fileID: 3950642389046042275}
   m_Layer: 0
   m_Name: Empty.062_365
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62132,7 +62262,7 @@ GameObject:
   - component: {fileID: 4473226407378327805}
   m_Layer: 0
   m_Name: Empty.068_395
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62365,7 +62495,7 @@ GameObject:
   - component: {fileID: 5968153914078317759}
   m_Layer: 0
   m_Name: Empty.002_20
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62976,9 +63106,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1343346491224490380}
+  - component: {fileID: 409695582253536036}
+  - component: {fileID: 8587674896740418544}
   m_Layer: 0
-  m_Name: Empty.077_456
-  m_TagString: Untagged
+  m_Name: Building4
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63003,6 +63135,40 @@ Transform:
   - {fileID: 5004965025202663788}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &409695582253536036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058468671801027168}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.56065834, y: 1.7596064, z: 2.2317963}
+  m_Center: {x: 0.018477151, y: 0.26073027, z: 0.036953546}
+--- !u!114 &8587674896740418544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058468671801027168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
 --- !u!1 &8063605706783453268
 GameObject:
   m_ObjectHideFlags: 0
@@ -64873,7 +65039,7 @@ GameObject:
   - component: {fileID: 6259937384715819685}
   m_Layer: 0
   m_Name: Empty.052_314
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65342,9 +65508,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8194342142708025562}
+  - component: {fileID: 8332596515434873325}
   m_Layer: 0
   m_Name: Empty.007_50
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65376,6 +65543,27 @@ Transform:
   - {fileID: 6997439095434795824}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8332596515434873325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348383130685415801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2877296, y: 2.5440724, z: 1.2905031}
+  m_Center: {x: -0.015931997, y: -0.77202815, z: 0.00660107}
 --- !u!1 &8351045085337324266
 GameObject:
   m_ObjectHideFlags: 0
@@ -65797,7 +65985,7 @@ GameObject:
   - component: {fileID: 3867314079963609081}
   m_Layer: 0
   m_Name: Empty.048_287
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68432,7 +68620,7 @@ GameObject:
   - component: {fileID: 1981333778992387605}
   m_Layer: 0
   m_Name: Empty.067_391
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69887,7 +70075,7 @@ GameObject:
   - component: {fileID: 5279889495659519127}
   m_Layer: 0
   m_Name: Empty.070_399
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70002,7 +70190,7 @@ GameObject:
   - component: {fileID: 7347270167051271198}
   m_Layer: 0
   m_Name: Empty.074_424
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70497,7 +70685,7 @@ GameObject:
   - component: {fileID: 6780930784448101104}
   m_Layer: 0
   m_Name: Empty.065_381
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71070,9 +71258,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6672812059456563730}
+  - component: {fileID: 3634865802239833137}
+  - component: {fileID: 7340757223751872978}
+  - component: {fileID: 8019697912907127014}
   m_Layer: 0
-  m_Name: Empty.003_23
-  m_TagString: Untagged
+  m_Name: Building1
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71094,6 +71285,61 @@ Transform:
   - {fileID: 6953772679407719265}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3634865802239833137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923502150272512628}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+--- !u!114 &7340757223751872978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923502150272512628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+--- !u!95 &8019697912907127014
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923502150272512628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4313be6d8dea0c40953e33b4d37aee7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8928247295327434527
 GameObject:
   m_ObjectHideFlags: 0
@@ -71265,7 +71511,7 @@ GameObject:
   - component: {fileID: 1153859626436639522}
   m_Layer: 0
   m_Name: Empty.088_497
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71591,7 +71837,7 @@ GameObject:
   - component: {fileID: 2156240568682442046}
   m_Layer: 0
   m_Name: Empty.005_33
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72203,7 +72449,7 @@ GameObject:
   - component: {fileID: 3405141773749084539}
   m_Layer: 0
   m_Name: Empty.036_215
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72677,7 +72923,7 @@ GameObject:
   - component: {fileID: 2897806179950172773}
   m_Layer: 0
   m_Name: Empty.034_208
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72960,7 +73206,7 @@ GameObject:
   - component: {fileID: 8672841356654046374}
   m_Layer: 0
   m_Name: Empty.082_477
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72998,7 +73244,7 @@ GameObject:
   - component: {fileID: 258604715894259162}
   m_Layer: 0
   m_Name: Empty.064_379
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73177,7 +73423,7 @@ GameObject:
   - component: {fileID: 228769689572015169}
   m_Layer: 0
   m_Name: Empty.017_121
-  m_TagString: Untagged
+  m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
