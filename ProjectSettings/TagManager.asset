@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
+  - WodzillaDestructible
   layers:
   - Default
   - TransparentFX
