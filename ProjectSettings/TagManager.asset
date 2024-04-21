@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Example2Button
   - WodzillaDestructible
+  - WodzillaTail
   layers:
   - Default
   - TransparentFX
