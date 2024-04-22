@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class WodzillaBuilding : MonoBehaviour
@@ -13,6 +14,8 @@ public class WodzillaBuilding : MonoBehaviour
     public bool isCrumbling = false;
     public float crumbleDuration = 3f;
     public float sinkSpeed = 35f;
+
+    public GameObject dustSystem;
 
     private void Start()
     {
@@ -32,11 +35,17 @@ public class WodzillaBuilding : MonoBehaviour
             //play wobble animation
             StartCoroutine(WobbleCoroutine());
         }
+
+        float x = transform.position.x;
+        float z = transform.position.z;
+        GameObject dust = Instantiate(dustSystem, new Vector3(x,0f,z), quaternion.identity);
+        Destroy(dust,10f);
     }
 
     IEnumerator WobbleCoroutine()
     {
-        while (!isCrumbling)
+        float timer = 0f;
+        while (!isCrumbling && timer < crumbleDuration)
         {
             float offsetX = Mathf.PerlinNoise(Time.time * wobbleSpeed, 0f) * wobbleAmount;
             float offsetY = Mathf.PerlinNoise(0f, Time.time * wobbleSpeed) * wobbleAmount;
@@ -45,6 +54,7 @@ public class WodzillaBuilding : MonoBehaviour
             Vector3 offset = new Vector3(offsetX, offsetY, offsetZ);
 
             transform.position = initialPosition + offset;
+            timer += Time.deltaTime;
 
             yield return null; // Wait for the next frame
         }
@@ -68,7 +78,6 @@ public class WodzillaBuilding : MonoBehaviour
     IEnumerator CrumbleAnimation()
     {
         float timer = 0f;
-        Vector3 targetPosition = initialPosition - Vector3.up * 1500f; // Adjust the sink depth as needed
 
         while (timer < crumbleDuration)
         {
