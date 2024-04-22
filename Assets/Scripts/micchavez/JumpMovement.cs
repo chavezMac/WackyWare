@@ -8,6 +8,8 @@ public class JumpMovement : MonoBehaviour
     public float jumpSpeed;
     public float jumpGrace;
 
+    private int count = 0;
+
     private CharacterController characterController;
     private float ySpeed;
     private float? lastGroundedTime;
@@ -63,5 +65,17 @@ public class JumpMovement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }        
+    }
+
+     void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("PickUp")) {
+            // other.gameObject.SetActive(false);
+            count = count + 1;
+        }
+
+        if(other.gameObject.CompareTag("Bullet")) {
+            //Reset the players position
+            transform.position = new Vector3(-2f, 0f, -2.7f);
+        }
     }
 }

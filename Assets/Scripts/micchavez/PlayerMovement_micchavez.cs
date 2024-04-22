@@ -4,34 +4,86 @@ using UnityEngine;
 
 public class PlayerMovement_micchavez : MonoBehaviour
 {
-    public float speed = 100f;
+    public CameraZoneSwitch cameraZoneSwitch;
+    public Transform cameraTransform; // Reference to the camera transform
+    public float speed;
+    public float rotationSpeed;
+    public float jumpSpeed;
+    public float jumpGrace;
 
-    private Rigidbody rb;
+    private int count = 0;
 
-    private int count;
+    private CharacterController characterController;
+    private float ySpeed;
+    private float? lastGroundedTime;
+    private float? jumpPressedTime;
 
-    private float movementX;
-    private float movementZ;
-
-    // Start is called before the first frame update
-    void Start() {
-        rb = GetComponent<Rigidbody>();
-        count = 0;
-        
+    public AudioSource audioSource;
+    
+    void Start()
+    {
+        characterController = GetComponent<CharacterController>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    
-    private void FixedUpdate() {
-        movementX = Input.GetAxis("Vertical");
-        movementZ = Input.GetAxis("Horizontal");
-        Vector3 movement = new Vector3(movementX, 0, -movementZ);
-        rb.AddForce(movement * speed);
+    void Update()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        // Get the forward and right vectors of the camera
+        Vector3 cameraForward = cameraTransform.forward;
+        Vector3 cameraRight = cameraTransform.right;
+
+        // Project movement direction onto the camera plane
+        Vector3 movementDirection = (cameraForward * verticalInput + cameraRight * horizontalInput).normalized;
+
+        float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
+
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+
+        if(characterController.isGrounded)
+        {
+            lastGroundedTime = Time.time;
+        }
+
+        if(Input.GetButtonDown("Jump"))
+        {
+            jumpPressedTime = Time.time;
+        }
+
+        if(Time.time - lastGroundedTime < jumpGrace)
+        {
+            ySpeed = -0.5f;
+            if(Time.time - jumpPressedTime < jumpGrace)
+            {
+                ySpeed = jumpSpeed;
+                jumpPressedTime = null;
+                lastGroundedTime = null;
+            }
+        }
+
+        Vector3 velocity = movementDirection * magnitude;
+        velocity.y = ySpeed;
+
+        characterController.Move(velocity * Time.deltaTime);
+
+        if(movementDirection != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }        
     }
 
     void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("PickUp")) {
-            other.gameObject.SetActive(false);
-            count = count + 1;
+            //change the color of the object
+            other.GetComponent<Renderer>().material.color = Color.red;
+            audioSource.Play();
+            //change the tag of the object
+            other.gameObject.tag = "PickedUp";
         }
+
+        
     }
 }

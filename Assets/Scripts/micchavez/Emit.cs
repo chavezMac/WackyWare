@@ -16,10 +16,10 @@ public class Emit : MonoBehaviour
    // Trigger the particle system when the player enters the trigger zone
     private void OnTriggerEnter(Collider other)
     {
-         if (other.CompareTag("Player"))
-         {
-                particleSystem.Play();
-                audioSource.Play();
-         }
+        if (other.CompareTag("Player"))
+        {
+            particleSystem.Play();
+            audioSource.Play();
+        }
     }
 }
