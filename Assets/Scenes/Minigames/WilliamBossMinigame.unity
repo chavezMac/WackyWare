@@ -520,6 +520,10 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 7243826649036704747, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: dustSystem
+      value: 
+      objectReference: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+    - target: {fileID: 7243826649036704747, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: wobbleSpeed
       value: 15
       objectReference: {fileID: 0}
@@ -536,6 +540,10 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 7340757223751872978, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: dustSystem
+      value: 
+      objectReference: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+    - target: {fileID: 7340757223751872978, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: wobbleSpeed
       value: 15
       objectReference: {fileID: 0}
@@ -551,6 +559,10 @@ PrefabInstance:
       propertyPath: sinkSpeed
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 7537992747982362007, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: dustSystem
+      value: 
+      objectReference: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
     - target: {fileID: 7537992747982362007, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: wobbleSpeed
       value: 15
@@ -572,6 +584,10 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8270988089572667444, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: dustSystem
+      value: 
+      objectReference: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+    - target: {fileID: 8270988089572667444, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: wobbleSpeed
       value: 15
       objectReference: {fileID: 0}
@@ -587,6 +603,10 @@ PrefabInstance:
       propertyPath: sinkSpeed
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 8587674896740418544, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: dustSystem
+      value: 
+      objectReference: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
     - target: {fileID: 8587674896740418544, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: wobbleSpeed
       value: 15

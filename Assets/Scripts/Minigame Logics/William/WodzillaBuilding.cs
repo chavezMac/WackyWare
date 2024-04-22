@@ -39,6 +39,7 @@ public class WodzillaBuilding : MonoBehaviour
         float x = transform.position.x;
         float z = transform.position.z;
         GameObject dust = Instantiate(dustSystem, new Vector3(x,0f,z), quaternion.identity);
+        dust.GetComponent<WodzillaBuildingDust>().building = this.gameObject;
         Destroy(dust,10f);
     }
 
