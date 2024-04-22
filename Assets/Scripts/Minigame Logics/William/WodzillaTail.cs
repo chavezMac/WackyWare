@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WodzillaTail : MonoBehaviour
 {
-    public bool isActive = true;
+    public bool isActive = false;
 
     private void Start()
     {

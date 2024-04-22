@@ -1433,6 +1433,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: turnSpeed
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_Name
       value: Godzilla_Minus_One_2023
@@ -1595,7 +1599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2319947e5f850ce47b6d046b6e508d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 1
+  isActive: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
