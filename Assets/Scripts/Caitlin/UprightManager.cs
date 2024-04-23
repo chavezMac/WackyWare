@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class UprightManager : MonoBehaviour
 {
-   // Singleton instance
     public static UprightManager instance;
 
     // Counter to track the number of upright objects
@@ -12,7 +11,7 @@ public class UprightManager : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure only one instance of UprightManager exists
+        //Check for only one UprightManager
         if (instance == null)
         {
             instance = this;
