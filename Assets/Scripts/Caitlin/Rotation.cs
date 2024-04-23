@@ -5,55 +5,72 @@ using UnityEngine.EventSystems;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private Quaternion targetRotation;
-    private bool isSelected = false;
-    private Vector3 lastMousePosition;
+   // Speed at which the cube rotates
+    public float rotationSpeed = 90f;
 
+    // Flag to indicate if the object is upright
+    private bool isUpright = false;
+
+    // Start is called before the first frame update
     void Start()
     {
-        // Generate a random rotation around the Z-axis
-        float randomZRotation = Random.Range(0f, 360f);
-        targetRotation = Quaternion.Euler(0, 0, randomZRotation);
-        transform.rotation = targetRotation;
+        // Set a random rotation for the cube that is a multiple of 90 degrees
+        int randomRotation = Random.Range(1, 4) * 90;
+        transform.rotation = Quaternion.Euler(0f, 0f, randomRotation);
+
+        // Check if the cube is initially upright
+        if (transform.localEulerAngles.z == 0f)
+        {
+            UprightManager.instance.uprightCount++;
+            isUpright = true;
+            // Freeze the rotation if the cube is initially upright
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+        }
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        // Check if the left mouse button is clicked
+        if (Input.GetMouseButtonDown(0) && !isUpright)
         {
-            RaycastHit hit;
+            // Cast a ray from the mouse position into the scene
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
+            // Check if the ray hits this cube
+            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
             {
-                if (hit.collider.gameObject == gameObject)
+                // Rotate the cube by 90 degrees around its local z-axis
+                transform.Rotate(Vector3.forward, rotationSpeed);
+
+                // Set the z-angle to exactly 0 to ensure accuracy
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0f);
+
+                // Check if the cube is upright after rotation
+                if (transform.localEulerAngles.z == 0f)
                 {
-                    isSelected = true;
-                    lastMousePosition = Input.mousePosition;
+                    // Increment the upright count
+                    UprightManager.instance.uprightCount++;
+                    isUpright = true;
+                    // Freeze the rotation if the cube is upright
+                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+                }
+                else
+                {
+                    // Unfreeze the rotation if the cube is not upright
+                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                 }
             }
         }
 
-        if (Input.GetMouseButtonUp(0))
+        // Check if all three objects are upright
+        if (UprightManager.instance.uprightCount == 3)
         {
-            isSelected = false;
-        }
-
-        // Check if the user has interacted with this object
-        if (Input.GetMouseButton(0))
-        {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-
-            // Rotate the object
-            transform.Rotate(Vector3.back, mouseX * 5f, Space.World);
-            transform.Rotate(Vector3.right, mouseY * 5f, Space.World);
-        }
-
-        // Check if the object is in correct position
-        if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
-        {
-            Debug.Log("Object is in correct position!");
+            Debug.Log("All objects are upright!");
+            // You can perform any action here when all objects are upright
+            FindObjectOfType<MainGameController>().MinigameDone(true);
         }
     }
+
 }
