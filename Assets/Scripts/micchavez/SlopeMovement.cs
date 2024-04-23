@@ -74,4 +74,12 @@ public class SlopeMovement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }        
     }
+
+    void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("PickUp")) {
+            //Set tag to another tag
+            other.GetComponent<Renderer>().material.color = Color.red;
+            other.gameObject.tag = "PickedUp";
+        }
+    }
 }
