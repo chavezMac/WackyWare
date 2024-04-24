@@ -7,6 +7,7 @@ TagManager:
   - Example2Button
   - Balloon
   - Border
+  - ShipTail
   layers:
   - Default
   - TransparentFX

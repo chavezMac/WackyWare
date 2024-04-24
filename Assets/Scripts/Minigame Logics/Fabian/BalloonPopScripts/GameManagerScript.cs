@@ -32,11 +32,11 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         //Check if time has run out, and if so, we fail the minigame
-       if (MainGameController.timeRemaining <= 0 || balloonEscaped == true)
-       {
+       //if (MainGameController.timeRemaining <= 0 || balloonEscaped == true)
+      // {
             
-            MinigameBroadcaster.MinigameFailed();
-        }
+            //MinigameBroadcaster.MinigameFailed();
+       // }
             if (Input.GetMouseButtonDown(0))
             {
                 Vector3 rayPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -56,9 +56,11 @@ public class GameManagerScript : MonoBehaviour
         }
         public void popBalloon(GameObject balloon)
         {
-            balloonsPopped--;
+           // balloonsPopped--;
             Debug.Log(balloonsPopped);
             balloon.GetComponent<Animator>().SetTrigger("gotHit");
+            Debug.Log(balloon.GetComponent<ParticleSystem>().isPlaying);
+            balloon.GetComponent<AudioSource>().Play();
             if (balloonsPopped <= 0)
             { 
                 // MinigameBroadcaster.MinigameCompleted();

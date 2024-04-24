@@ -29,14 +29,14 @@ public class BalloonMovement : MonoBehaviour
         {
             Destroy(gameObject); // Destroy the balloon
             Debug.Log("LOST");
-            MinigameBroadcaster.MinigameFailed();
+            //MinigameBroadcaster.MinigameFailed();
             //GameManger.balloonEscaped = true;
-            //onBalloonDied?.Invoke(); // Invoke the event if subscribed
+         
         }
     }
    void animationCompleteDestroy()
    {
-        
+       GetComponent<ParticleSystem>().Play();
        onBalloonDied.Invoke();
        Destroy(gameObject);
        
