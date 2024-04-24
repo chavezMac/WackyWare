@@ -418,8 +418,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4048643909484756076}
+  - component: {fileID: 1425976534562938566}
+  - component: {fileID: 4040769891055023900}
   m_Layer: 0
-  m_Name: Empty.030_187
+  m_Name: B33
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,6 +448,46 @@ Transform:
   - {fileID: 4856953695207914624}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1425976534562938566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70214525150999080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4040769891055023900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70214525150999080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2160736, y: 2.7416656, z: 0.43576908}
+  m_Center: {x: -0.013935247, y: -0.48300093, z: -0.013448171}
 --- !u!1 &80910226196726193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,8 +1321,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8103581433194628712}
+  - component: {fileID: 2418735957390841438}
+  - component: {fileID: 3695649033058439064}
   m_Layer: 0
-  m_Name: Empty.026_168
+  m_Name: B29
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,6 +1348,46 @@ Transform:
   - {fileID: 5553332692510055}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2418735957390841438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125546795092274647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3695649033058439064
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125546795092274647}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2748065, y: 2.5701048, z: 1.2973397}
+  m_Center: {x: -0.028572503, y: -0.71054316, z: 0.008923955}
 --- !u!1 &125708345363394527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,8 +3355,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6102926753236636367}
+  - component: {fileID: 5755436341983974943}
+  - component: {fileID: 4252491368905659038}
   m_Layer: 0
-  m_Name: Empty.019_128
+  m_Name: B22s
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3295,6 +3381,46 @@ Transform:
   - {fileID: 384472292402285430}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5755436341983974943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440416309775191675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4252491368905659038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440416309775191675}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6760257, y: 3.1817558, z: 1.5357665}
+  m_Center: {x: -0.019032342, y: 1.3723004, z: 0.14693081}
 --- !u!1 &447303045059423038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,6 +3462,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1313797246776939522}
+  - component: {fileID: 5710558302157539225}
+  - component: {fileID: 6002965571884207595}
   m_Layer: 0
   m_Name: Empty.054_324
   m_TagString: WodzillaDestructible
@@ -3364,6 +3492,46 @@ Transform:
   - {fileID: 3360109100678268088}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5710558302157539225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447733290793179974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &6002965571884207595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447733290793179974}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &463293210970565949
 GameObject:
   m_ObjectHideFlags: 0
@@ -4427,6 +4595,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8881293797654675754}
+  - component: {fileID: 2514531909266669313}
+  - component: {fileID: 8257179424862590339}
   m_Layer: 0
   m_Name: Empty.083_446
   m_TagString: WodzillaDestructible
@@ -4455,6 +4625,46 @@ Transform:
   - {fileID: 7052981281988963567}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2514531909266669313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553765100023953378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8257179424862590339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553765100023953378}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &555401852656034443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4663,6 +4873,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7630746582192742308}
+  - component: {fileID: 2591246529460558811}
+  - component: {fileID: 4916434631185784813}
   m_Layer: 0
   m_Name: Empty.061_361
   m_TagString: WodzillaDestructible
@@ -4689,6 +4901,46 @@ Transform:
   - {fileID: 6426719974644982034}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2591246529460558811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596587914900329764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4916434631185784813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596587914900329764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &598574522271766148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4877,6 +5129,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451272296536060124}
+  - component: {fileID: 4689028855924881951}
+  - component: {fileID: 138735167228396053}
   m_Layer: 0
   m_Name: Empty.044_264
   m_TagString: WodzillaDestructible
@@ -4905,6 +5159,46 @@ Transform:
   - {fileID: 1452751021091490011}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4689028855924881951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612802572938495669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &138735167228396053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612802572938495669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &613987954560704208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,8 +6096,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6271545328765832275}
+  - component: {fileID: 7079455786917232690}
+  - component: {fileID: 246427342384110701}
   m_Layer: 0
-  m_Name: Empty.027_170
+  m_Name: B30
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5825,6 +6121,46 @@ Transform:
   - {fileID: 8438369629150199068}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7079455786917232690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749938412653202040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &246427342384110701
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749938412653202040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7188076, y: 2.5089545, z: 2.6839273}
+  m_Center: {x: -0.03517273, y: -0.75390667, z: -0.016597051}
 --- !u!1 &752558045008032249
 GameObject:
   m_ObjectHideFlags: 0
@@ -5834,8 +6170,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477661250730943736}
+  - component: {fileID: 6885955818606677116}
+  - component: {fileID: 5959438716535924355}
   m_Layer: 0
-  m_Name: Empty.023_154
+  m_Name: B26
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5857,6 +6195,46 @@ Transform:
   - {fileID: 364526651711861235}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6885955818606677116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752558045008032249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5959438716535924355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752558045008032249}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5768017, y: 2.1166806, z: 1.771929}
+  m_Center: {x: 0.04913654, y: 0.031528007, z: 0.11612283}
 --- !u!1 &756846333648771863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6358,8 +6736,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2642104174173100166}
+  - component: {fileID: 6747927494922654474}
+  - component: {fileID: 3722826258955363253}
   m_Layer: 0
-  m_Name: Empty.014_102
+  m_Name: B17d
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6382,6 +6762,46 @@ Transform:
   - {fileID: 9028025861230390866}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6747927494922654474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844083338574733070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3722826258955363253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844083338574733070}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4033747, y: 4.355983, z: 3.2229836}
+  m_Center: {x: 0.0091057215, y: -0.31464973, z: 0.0947291}
 --- !u!1 &848789396615994852
 GameObject:
   m_ObjectHideFlags: 0
@@ -10130,6 +10550,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7219472037150271108}
+  - component: {fileID: 2372805798502400743}
+  - component: {fileID: 2444227707302935644}
   m_Layer: 0
   m_Name: Empty.071_405
   m_TagString: WodzillaDestructible
@@ -10157,6 +10579,46 @@ Transform:
   - {fileID: 4769384963615395467}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2372805798502400743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308429842276747982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2444227707302935644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308429842276747982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &1314514879493565286
 GameObject:
   m_ObjectHideFlags: 0
@@ -10166,6 +10628,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5379642308014111847}
+  - component: {fileID: 397173897083064291}
+  - component: {fileID: 1519326835068515030}
   m_Layer: 0
   m_Name: Empty.073_419
   m_TagString: WodzillaDestructible
@@ -10194,6 +10658,46 @@ Transform:
   - {fileID: 4969946383447974198}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397173897083064291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314514879493565286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1519326835068515030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314514879493565286}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &1315170663105544955
 GameObject:
   m_ObjectHideFlags: 0
@@ -11289,6 +11793,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3146948166976058622}
+  - component: {fileID: 6150064597320333031}
+  - component: {fileID: 8745533815382102449}
   m_Layer: 0
   m_Name: Empty.041_243
   m_TagString: WodzillaDestructible
@@ -11325,6 +11831,46 @@ Transform:
   - {fileID: 6878062557733255531}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6150064597320333031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408255768382945708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8745533815382102449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408255768382945708}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &1415241775821150245
 GameObject:
   m_ObjectHideFlags: 0
@@ -11398,8 +11944,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103807262941202651}
+  - component: {fileID: 5584398397185164254}
+  - component: {fileID: 4611546392139493788}
   m_Layer: 0
-  m_Name: Empty.038_224
+  m_Name: B41
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11425,6 +11973,46 @@ Transform:
   - {fileID: 6415664797851134424}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5584398397185164254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428246994852469879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4611546392139493788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428246994852469879}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3344426, y: 1.8061969, z: 1.3427802}
+  m_Center: {x: 0.10207493, y: -0.44855443, z: -0.026620546}
 --- !u!1 &1432077171213807872
 GameObject:
   m_ObjectHideFlags: 0
@@ -16267,6 +16855,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7732661668656285890}
+  - component: {fileID: 805981466944227630}
+  - component: {fileID: 219260050348760005}
   m_Layer: 0
   m_Name: Empty.051_301
   m_TagString: WodzillaDestructible
@@ -16292,6 +16882,46 @@ Transform:
   - {fileID: 108071537282316306}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805981466944227630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127316774551794020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &219260050348760005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127316774551794020}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &2131391987497904589
 GameObject:
   m_ObjectHideFlags: 0
@@ -17625,9 +18255,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2337704730096006550}
   - {fileID: 6672812059456563730}
   - {fileID: 969356612388384954}
+  - {fileID: 2337704730096006550}
   - {fileID: 1343346491224490380}
   - {fileID: 5833990121447319338}
   - {fileID: 1294720507372253465}
@@ -17897,8 +18527,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2557663991318455928}
+  - component: {fileID: 8177136113952486005}
+  - component: {fileID: 7144135689093577443}
   m_Layer: 0
-  m_Name: Empty.009_60
+  m_Name: Building12
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17925,6 +18557,46 @@ Transform:
   - {fileID: 791714333578686054}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8177136113952486005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2301535600017115112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7144135689093577443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2301535600017115112}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592475, y: 2.8186686, z: 1.1447701}
+  m_Center: {x: 0.014477946, y: -0.7884823, z: 0.07238519}
 --- !u!1 &2307972324405370536
 GameObject:
   m_ObjectHideFlags: 0
@@ -20126,6 +20798,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 724714931390297023}
+  - component: {fileID: 6496532764614873641}
+  - component: {fileID: 2984277009262384992}
   m_Layer: 0
   m_Name: Empty.076_433
   m_TagString: WodzillaDestructible
@@ -20151,6 +20825,46 @@ Transform:
   - {fileID: 6215053574763029586}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6496532764614873641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523795635847726704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2984277009262384992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523795635847726704}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &2525428371213564126
 GameObject:
   m_ObjectHideFlags: 0
@@ -20616,6 +21330,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
 --- !u!1 &2580629615354722772
 GameObject:
   m_ObjectHideFlags: 0
@@ -22281,6 +23001,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3564794085313651677}
+  - component: {fileID: 1510717922372650363}
+  - component: {fileID: 3280923291770842846}
   m_Layer: 0
   m_Name: Empty.053_316
   m_TagString: WodzillaDestructible
@@ -22304,6 +23026,46 @@ Transform:
   - {fileID: 19149241175233980}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1510717922372650363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2830419506948630771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3280923291770842846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2830419506948630771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &2842965550644213485
 GameObject:
   m_ObjectHideFlags: 0
@@ -23892,6 +24654,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5821480692504013297}
+  - component: {fileID: 3510390393218846534}
+  - component: {fileID: 223153262497262230}
   m_Layer: 0
   m_Name: Empty.055_336
   m_TagString: WodzillaDestructible
@@ -23925,6 +24689,46 @@ Transform:
   - {fileID: 8119065777713092677}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3510390393218846534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036821106707561947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &223153262497262230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036821106707561947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &3037034431791612408
 GameObject:
   m_ObjectHideFlags: 0
@@ -24017,8 +24821,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2313465259971242100}
+  - component: {fileID: 4606412936768809388}
+  - component: {fileID: 4800914997008517891}
   m_Layer: 0
-  m_Name: Empty.028_172
+  m_Name: B31
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24040,6 +24846,46 @@ Transform:
   - {fileID: 8976734053797530273}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4606412936768809388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3039069397923162401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4800914997008517891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3039069397923162401}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7061922, y: 2.4010243, z: 2.6853628}
+  m_Center: {x: -0.042136546, y: -0.7097499, z: -0.012160061}
 --- !u!1 &3046584012130361857
 GameObject:
   m_ObjectHideFlags: 0
@@ -25846,6 +26692,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3709312258279404818}
+  - component: {fileID: 4482929411088991100}
+  - component: {fileID: 8386765872088593876}
   m_Layer: 0
   m_Name: Empty.087_495
   m_TagString: WodzillaDestructible
@@ -25869,6 +26717,46 @@ Transform:
   - {fileID: 8451121612340725642}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4482929411088991100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224831009252260247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8386765872088593876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224831009252260247}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &3229344642790822560
 GameObject:
   m_ObjectHideFlags: 0
@@ -26965,8 +27853,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8929946854100837578}
+  - component: {fileID: 5833728257233115260}
+  - component: {fileID: 7520228874322540519}
   m_Layer: 0
-  m_Name: Empty.031_194
+  m_Name: B34
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26993,6 +27883,46 @@ Transform:
   - {fileID: 5551704476134123856}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5833728257233115260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403226103677571989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7520228874322540519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403226103677571989}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2160736, y: 2.7416656, z: 0.43576908}
+  m_Center: {x: -0.013935247, y: -0.48300093, z: -0.013448171}
 --- !u!1 &3407781804634869550
 GameObject:
   m_ObjectHideFlags: 0
@@ -29337,8 +30267,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294720507372253465}
+  - component: {fileID: 7016717965999465523}
+  - component: {fileID: 2655675785393815882}
   m_Layer: 0
-  m_Name: Empty_7
+  m_Name: Building6
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29365,6 +30297,46 @@ Transform:
   - {fileID: 2589518777968292728}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7016717965999465523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3773104923573555361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2655675785393815882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3773104923573555361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.999989, y: 5.962259, z: 0.6857388}
+  m_Center: {x: -0.14309798, y: 0.8587716, z: 0.041772544}
 --- !u!1 &3774265569348965857
 GameObject:
   m_ObjectHideFlags: 0
@@ -30922,8 +31894,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7092757409583614872}
+  - component: {fileID: 2977952520853880717}
+  - component: {fileID: 5153088806658610365}
   m_Layer: 0
-  m_Name: Empty.037_218
+  m_Name: B40
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30946,6 +31920,46 @@ Transform:
   - {fileID: 4207692764812295155}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2977952520853880717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968665565259119045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5153088806658610365
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968665565259119045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &4004365529267485784
 GameObject:
   m_ObjectHideFlags: 0
@@ -31053,6 +32067,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7487959683889117968}
+  - component: {fileID: 3845444371163607957}
+  - component: {fileID: 4484942807878060209}
   m_Layer: 0
   m_Name: Empty.081_469
   m_TagString: WodzillaDestructible
@@ -31081,6 +32097,46 @@ Transform:
   - {fileID: 8439569776086983085}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3845444371163607957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4011529824382453777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4484942807878060209
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4011529824382453777}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &4014315278030411660
 GameObject:
   m_ObjectHideFlags: 0
@@ -31927,8 +32983,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 911246578984386542}
+  - component: {fileID: 154869928239899191}
+  - component: {fileID: 3621356217709873109}
   m_Layer: 0
-  m_Name: Empty.035_212
+  m_Name: B38
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31952,6 +33010,46 @@ Transform:
   - {fileID: 7802280269167030712}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154869928239899191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137289131458134741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3621356217709873109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137289131458134741}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.72845954, y: 2.6496198, z: 1.3749117}
+  m_Center: {x: -0.07321993, y: 0.23807073, z: 0.06867317}
 --- !u!1 &4139386181965020801
 GameObject:
   m_ObjectHideFlags: 0
@@ -32997,8 +34095,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2415230413218429729}
+  - component: {fileID: 1965412685965264373}
+  - component: {fileID: 2714164662629535208}
   m_Layer: 0
-  m_Name: Empty.021_150
+  m_Name: B24
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33037,6 +34137,46 @@ Transform:
   - {fileID: 5344718499475551302}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965412685965264373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263756233975587976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2714164662629535208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263756233975587976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5699777, y: 1.6337221, z: 2.2066514}
+  m_Center: {x: 0.03587278, y: 0.34072843, z: 0.071682595}
 --- !u!1 &4271810807639390201
 GameObject:
   m_ObjectHideFlags: 0
@@ -33749,6 +34889,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9157975042851533942}
+  - component: {fileID: 909573322765312052}
+  - component: {fileID: 4953571518509123542}
   m_Layer: 0
   m_Name: Empty.058_344
   m_TagString: WodzillaDestructible
@@ -33772,6 +34914,46 @@ Transform:
   - {fileID: 2902018494970721864}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909573322765312052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372379858727582549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4953571518509123542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372379858727582549}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &4377709802879143281
 GameObject:
   m_ObjectHideFlags: 0
@@ -36190,6 +37372,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7277951034576465320}
+  - component: {fileID: 397017070054050217}
+  - component: {fileID: 1722973841852430938}
   m_Layer: 0
   m_Name: Empty.066_383
   m_TagString: WodzillaDestructible
@@ -36213,6 +37397,46 @@ Transform:
   - {fileID: 972600458390278748}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397017070054050217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678154587303527464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1722973841852430938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678154587303527464}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &4689395683491526105
 GameObject:
   m_ObjectHideFlags: 0
@@ -36650,6 +37874,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7361351232477294503}
+  - component: {fileID: 5970268657598822447}
+  - component: {fileID: 1659497131753085475}
   m_Layer: 0
   m_Name: Empty.078_436
   m_TagString: WodzillaDestructible
@@ -36674,6 +37900,46 @@ Transform:
   - {fileID: 8708799857507868292}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5970268657598822447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4746896051537807641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1659497131753085475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4746896051537807641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &4754006478925567526
 GameObject:
   m_ObjectHideFlags: 0
@@ -36798,8 +38064,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6048622933229747293}
+  - component: {fileID: 801596596228871202}
+  - component: {fileID: 7277175669563429097}
   m_Layer: 0
-  m_Name: Empty.039_226
+  m_Name: B42
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36821,6 +38089,46 @@ Transform:
   - {fileID: 9143549078463881380}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &801596596228871202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755904822498791643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7277175669563429097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755904822498791643}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2160736, y: 1.2215179, z: 1.2557037}
+  m_Center: {x: -0.013935225, y: 0.023695221, z: 0.03609009}
 --- !u!1 &4758656120252037181
 GameObject:
   m_ObjectHideFlags: 0
@@ -37028,8 +38336,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5571989492450868078}
+  - component: {fileID: 277829932196103109}
+  - component: {fileID: 6815749354261651044}
   m_Layer: 0
-  m_Name: Empty.022_152
+  m_Name: B25
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37051,6 +38361,46 @@ Transform:
   - {fileID: 3264370442108695571}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &277829932196103109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782823577828865541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &6815749354261651044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782823577828865541}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5768017, y: 2.1166806, z: 1.771929}
+  m_Center: {x: 0.04913654, y: 0.031528007, z: 0.11612283}
 --- !u!1 &4797293873479582966
 GameObject:
   m_ObjectHideFlags: 0
@@ -39131,6 +40481,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8815541905606247678}
+  - component: {fileID: 6319393070829010118}
+  - component: {fileID: 7264760663296946734}
   m_Layer: 0
   m_Name: Empty.060_356
   m_TagString: WodzillaDestructible
@@ -39154,6 +40506,46 @@ Transform:
   - {fileID: 3495866751517539923}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6319393070829010118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060127046804836185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7264760663296946734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060127046804836185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &5076633085573400591
 GameObject:
   m_ObjectHideFlags: 0
@@ -41086,6 +42478,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7592260331475677764}
+  - component: {fileID: 8717180060059121129}
+  - component: {fileID: 1336960481110246165}
   m_Layer: 0
   m_Name: Empty.049_290
   m_TagString: WodzillaDestructible
@@ -41110,6 +42504,46 @@ Transform:
   - {fileID: 2575925909717074294}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8717180060059121129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359192944474330717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1336960481110246165
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359192944474330717}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &5361255871382940448
 GameObject:
   m_ObjectHideFlags: 0
@@ -41707,8 +43141,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3273457710000748576}
+  - component: {fileID: 5417942166894317247}
+  - component: {fileID: 2198099250862007812}
   m_Layer: 0
-  m_Name: Empty.032_199
+  m_Name: B35
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41733,6 +43169,46 @@ Transform:
   - {fileID: 735667673224631571}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5417942166894317247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427040271220168052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2198099250862007812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427040271220168052}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9609255, y: 2.2698019, z: 2.0030503}
+  m_Center: {x: -0.0528178, y: -0.1551954, z: 0.028150173}
 --- !u!1 &5430430158319332750
 GameObject:
   m_ObjectHideFlags: 0
@@ -44994,6 +46470,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2362966220438144418}
+  - component: {fileID: 5580683340274834803}
+  - component: {fileID: 2935347734380849494}
   m_Layer: 0
   m_Name: Empty.079_439
   m_TagString: WodzillaDestructible
@@ -45018,6 +46496,46 @@ Transform:
   - {fileID: 4997846040496960405}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5580683340274834803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834071386590215990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2935347734380849494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834071386590215990}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &5848464407168167255
 GameObject:
   m_ObjectHideFlags: 0
@@ -45533,6 +47051,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 971850831609702777}
+  - component: {fileID: 3827354386233463644}
+  - component: {fileID: 754277371783478596}
   m_Layer: 0
   m_Name: Empty.056_450
   m_TagString: WodzillaDestructible
@@ -45558,6 +47078,46 @@ Transform:
   - {fileID: 1625183130235585479}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3827354386233463644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907011358751413614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &754277371783478596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907011358751413614}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &5911096676486296708
 GameObject:
   m_ObjectHideFlags: 0
@@ -46551,8 +48111,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4917521460515160600}
+  - component: {fileID: 3064559115837991582}
+  - component: {fileID: 1868121368711406783}
   m_Layer: 0
-  m_Name: Empty.016_116
+  m_Name: B19
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46574,6 +48136,46 @@ Transform:
   - {fileID: 2595096399858493943}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3064559115837991582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032472174137308716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1868121368711406783
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032472174137308716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5859054, y: 2.111622, z: 1.783669}
+  m_Center: {x: 0.03819145, y: 0.13257147, z: 0.13680461}
 --- !u!1 &6049420012024249790
 GameObject:
   m_ObjectHideFlags: 0
@@ -47886,6 +49488,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1856623663037064917}
+  - component: {fileID: 1750158372181857055}
+  - component: {fileID: 3932340447307098162}
   m_Layer: 0
   m_Name: Empty.072_412
   m_TagString: WodzillaDestructible
@@ -47914,6 +49518,46 @@ Transform:
   - {fileID: 598850444722736230}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750158372181857055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6216977267435440499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3932340447307098162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6216977267435440499}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6217766451655775898
 GameObject:
   m_ObjectHideFlags: 0
@@ -48434,8 +50078,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1373478816463349109}
+  - component: {fileID: 7948582065621760672}
+  - component: {fileID: 4832525531405296958}
   m_Layer: 0
-  m_Name: Empty.011_90
+  m_Name: Building14
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48457,6 +50103,46 @@ Transform:
   - {fileID: 4656879877065782079}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7948582065621760672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314302719751173447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4832525531405296958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314302719751173447}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 1.3121464, z: 1.230204}
+  m_Center: {x: 0.014477934, y: 0.022929538, z: 0.02966827}
 --- !u!1 &6316003104210319159
 GameObject:
   m_ObjectHideFlags: 0
@@ -50667,8 +52353,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7046300254953949941}
+  - component: {fileID: 3491336460914663139}
+  - component: {fileID: 4796832347778829715}
   m_Layer: 0
-  m_Name: Empty.024_156
+  m_Name: B27
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50690,6 +52378,46 @@ Transform:
   - {fileID: 4773330317960326642}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3491336460914663139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6511518404826358592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4796832347778829715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6511518404826358592}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.8027092, y: 2.1166806, z: 0.5729585}
+  m_Center: {x: 0.0347195, y: 0.031528007, z: 0.13038343}
 --- !u!1 &6511700014976584350
 GameObject:
   m_ObjectHideFlags: 0
@@ -52507,6 +54235,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5755921488367238092}
+  - component: {fileID: 764452265550958924}
+  - component: {fileID: 1800984230097229564}
   m_Layer: 0
   m_Name: Empty.057_342
   m_TagString: WodzillaDestructible
@@ -52534,6 +54264,46 @@ Transform:
   - {fileID: 5034091735435765786}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &764452265550958924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725862362548917517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1800984230097229564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725862362548917517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6734111361435222380
 GameObject:
   m_ObjectHideFlags: 0
@@ -52806,8 +54576,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3293170712741992499}
+  - component: {fileID: 7297170188019611187}
+  - component: {fileID: 1863255690868435829}
   m_Layer: 0
-  m_Name: Empty.018_125
+  m_Name: B21
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52831,6 +54603,46 @@ Transform:
   - {fileID: 1753639935088466796}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7297170188019611187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774428822102524807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1863255690868435829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774428822102524807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3623852, y: 2.0309956, z: 1.0338397}
+  m_Center: {x: 0.05207296, y: -0.16201611, z: 0.016919764}
 --- !u!1 &6784886516601281974
 GameObject:
   m_ObjectHideFlags: 0
@@ -53038,6 +54850,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 787534201200292463}
+  - component: {fileID: 200773727025234825}
+  - component: {fileID: 468161611017736218}
   m_Layer: 0
   m_Name: Empty.075_429
   m_TagString: WodzillaDestructible
@@ -53064,6 +54878,46 @@ Transform:
   - {fileID: 2872011429388527383}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &200773727025234825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808980964340199448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &468161611017736218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808980964340199448}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6814597745179478156
 GameObject:
   m_ObjectHideFlags: 0
@@ -53156,6 +55010,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 548451339304099562}
+  - component: {fileID: 9194209175468934965}
+  - component: {fileID: 86833441887873113}
   m_Layer: 0
   m_Name: Empty.084_485
   m_TagString: WodzillaDestructible
@@ -53185,6 +55041,46 @@ Transform:
   - {fileID: 5509522620135399369}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9194209175468934965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6817049353173450728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &86833441887873113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6817049353173450728}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6828108405876060508
 GameObject:
   m_ObjectHideFlags: 0
@@ -53718,6 +55614,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 917785179597115214}
+  - component: {fileID: 7088046109988897280}
+  - component: {fileID: 1844853111645302650}
   m_Layer: 0
   m_Name: Empty.043_257
   m_TagString: WodzillaDestructible
@@ -53746,6 +55644,46 @@ Transform:
   - {fileID: 4948354829044895292}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7088046109988897280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869582005798610144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1844853111645302650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869582005798610144}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6878363661054198539
 GameObject:
   m_ObjectHideFlags: 0
@@ -53838,8 +55776,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 601238498728123518}
+  - component: {fileID: 5933395768621039768}
+  - component: {fileID: 6524816996338661354}
   m_Layer: 0
-  m_Name: Empty.015_114
+  m_Name: B18d
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53869,6 +55809,46 @@ Transform:
   - {fileID: 7192014479062414512}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5933395768621039768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879742962527554697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &6524816996338661354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879742962527554697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.387336, y: 4.38873, z: 3.2428985}
+  m_Center: {x: -0.00020509616, y: -0.3325199, z: 0.13739151}
 --- !u!1 &6890766339665867241
 GameObject:
   m_ObjectHideFlags: 0
@@ -54309,6 +56289,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3287111369626833722}
+  - component: {fileID: 7154958733532706839}
+  - component: {fileID: 8489974583997810772}
   m_Layer: 0
   m_Name: Empty.050_297
   m_TagString: WodzillaDestructible
@@ -54337,6 +56319,46 @@ Transform:
   - {fileID: 8746542967538376527}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7154958733532706839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947903165933315282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8489974583997810772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947903165933315282}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6956818508046857340
 GameObject:
   m_ObjectHideFlags: 0
@@ -54346,6 +56368,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8620499976482323666}
+  - component: {fileID: 8382014520019085543}
+  - component: {fileID: 7664804083167594743}
   m_Layer: 0
   m_Name: Empty.069_397
   m_TagString: WodzillaDestructible
@@ -54369,6 +56393,46 @@ Transform:
   - {fileID: 815754388122550943}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8382014520019085543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956818508046857340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7664804083167594743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956818508046857340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &6957596480417587162
 GameObject:
   m_ObjectHideFlags: 0
@@ -54505,6 +56569,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
 --- !u!1 &6973582437276951752
 GameObject:
   m_ObjectHideFlags: 0
@@ -54629,8 +56699,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6163132901912791561}
+  - component: {fileID: 4638540297955674821}
+  - component: {fileID: 5439931117440316702}
   m_Layer: 0
-  m_Name: Empty.020_131
+  m_Name: B23s
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54653,6 +56725,46 @@ Transform:
   - {fileID: 7552539537836054825}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4638540297955674821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007403049022806206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5439931117440316702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007403049022806206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4609518, y: 3.66676, z: 0.74265987}
+  m_Center: {x: -0.022967162, y: 1.5402026, z: -0.018815817}
 --- !u!1 &7017252457724511938
 GameObject:
   m_ObjectHideFlags: 0
@@ -54694,6 +56806,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3296947512703566760}
+  - component: {fileID: 2487232584948965142}
+  - component: {fileID: 3169412961775315787}
   m_Layer: 0
   m_Name: Empty.046_277
   m_TagString: WodzillaDestructible
@@ -54721,6 +56835,46 @@ Transform:
   - {fileID: 4187193343085762772}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2487232584948965142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017486142719507518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3169412961775315787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017486142719507518}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7017804509993971388
 GameObject:
   m_ObjectHideFlags: 0
@@ -55224,6 +57378,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6266360801515536972}
+  - component: {fileID: 3218358928475538729}
+  - component: {fileID: 4016512531981179763}
   m_Layer: 0
   m_Name: Empty.063_377
   m_TagString: WodzillaDestructible
@@ -55257,6 +57413,46 @@ Transform:
   - {fileID: 3818255732215004522}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3218358928475538729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7042416061635480979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4016512531981179763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7042416061635480979}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7051282848180531347
 GameObject:
   m_ObjectHideFlags: 0
@@ -55464,8 +57660,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157598308314573822}
+  - component: {fileID: 276685217469204867}
+  - component: {fileID: 7327503313398581358}
   m_Layer: 0
-  m_Name: Empty.033_204
+  m_Name: B36
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55490,6 +57688,46 @@ Transform:
   - {fileID: 8714532628434303571}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &276685217469204867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100145300893687744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7327503313398581358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100145300893687744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9779949, y: 6.1122456, z: 0.70289606}
+  m_Center: {x: -0.13769536, y: 0.85878795, z: 0.047200374}
 --- !u!1 &7102056738540334763
 GameObject:
   m_ObjectHideFlags: 0
@@ -56157,8 +58395,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 146689712468184613}
+  - component: {fileID: 786456712421550022}
+  - component: {fileID: 1066836689832066480}
   m_Layer: 0
-  m_Name: Empty.006_37
+  m_Name: Building9
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56182,6 +58422,46 @@ Transform:
   - {fileID: 1896891021620522906}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786456712421550022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158515865292296328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1066836689832066480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158515865292296328}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1356636, y: 1.709631, z: 1.1034572}
+  m_Center: {x: 0.026270136, y: -0.0068802596, z: 0.0018839223}
 --- !u!1 &7163007904594059100
 GameObject:
   m_ObjectHideFlags: 0
@@ -56191,8 +58471,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8933634906653583963}
+  - component: {fileID: 5313195104533414315}
+  - component: {fileID: 8925495374604937798}
   m_Layer: 0
-  m_Name: Empty.025_164
+  m_Name: B28
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56219,6 +58501,46 @@ Transform:
   - {fileID: 4765075700668267195}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5313195104533414315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7163007904594059100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8925495374604937798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7163007904594059100}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5768017, y: 2.1166806, z: 1.771929}
+  m_Center: {x: 0.04913654, y: 0.031528007, z: 0.11612283}
 --- !u!1 &7170974928047545478
 GameObject:
   m_ObjectHideFlags: 0
@@ -56853,6 +59175,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
 --- !u!1 &7244060416743114263
 GameObject:
   m_ObjectHideFlags: 0
@@ -56977,8 +59305,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8856159041236604335}
+  - component: {fileID: 2450146738966794381}
+  - component: {fileID: 402199974897671612}
   m_Layer: 0
-  m_Name: Empty.010_88
+  m_Name: Building13
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57026,6 +59356,46 @@ Transform:
   - {fileID: 6806344098282397179}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2450146738966794381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262300598466376274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &402199974897671612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262300598466376274}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.63781357, y: 2.3980446, z: 1.4021363}
+  m_Center: {x: 0.015829789, y: 0.03276011, z: 0.044764247}
 --- !u!1 &7265153243565782071
 GameObject:
   m_ObjectHideFlags: 0
@@ -57297,6 +59667,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 172973759442046921}
+  - component: {fileID: 3643207505565448443}
+  - component: {fileID: 1810129527897808331}
   m_Layer: 0
   m_Name: Empty.042_250
   m_TagString: WodzillaDestructible
@@ -57325,6 +59697,46 @@ Transform:
   - {fileID: 6763780674899311636}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3643207505565448443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314632732717217789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1810129527897808331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314632732717217789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7318625820176347291
 GameObject:
   m_ObjectHideFlags: 0
@@ -57398,8 +59810,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6236201903098533839}
+  - component: {fileID: 6778152238846382139}
+  - component: {fileID: 5902113487859858638}
   m_Layer: 0
-  m_Name: Empty.012_92
+  m_Name: B15
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57421,6 +59835,46 @@ Transform:
   - {fileID: 3804689620891755444}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6778152238846382139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7322478705499965619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5902113487859858638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7322478705499965619}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9749545, y: 1.7055584, z: 1.016623}
+  m_Center: {x: 0.106624484, y: -0.0639483, z: -0.020166043}
 --- !u!1 &7329953032503339298
 GameObject:
   m_ObjectHideFlags: 0
@@ -57545,8 +59999,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4649730513274698433}
+  - component: {fileID: 1974333630696226252}
+  - component: {fileID: 871582397692440058}
   m_Layer: 0
-  m_Name: Empty.013_98
+  m_Name: B16
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57572,6 +60028,46 @@ Transform:
   - {fileID: 519695283158749858}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974333630696226252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339654182996369719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &871582397692440058
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339654182996369719}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3489199, y: 1.8173723, z: 1.3281754}
+  m_Center: {x: 0.10931416, y: -0.5121477, z: -0.019317972}
 --- !u!1 &7347462782241287229
 GameObject:
   m_ObjectHideFlags: 0
@@ -57894,6 +60390,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8727112129886722943}
+  - component: {fileID: 7340056810431860993}
+  - component: {fileID: 6999716994948212267}
   m_Layer: 0
   m_Name: Empty.059_354
   m_TagString: WodzillaDestructible
@@ -57924,6 +60422,46 @@ Transform:
   - {fileID: 2808136697298935025}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7340056810431860993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354509225006397149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &6999716994948212267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354509225006397149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7357876283851997668
 GameObject:
   m_ObjectHideFlags: 0
@@ -57933,8 +60471,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2405137546710480886}
+  - component: {fileID: 2243551186409295967}
+  - component: {fileID: 4358856565796128881}
   m_Layer: 0
-  m_Name: Empty.008_52
+  m_Name: Building11
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57956,6 +60496,46 @@ Transform:
   - {fileID: 139646094718158573}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2243551186409295967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357876283851997668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4358856565796128881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357876283851997668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7096094, y: 2.6582775, z: 2.6819582}
+  m_Center: {x: -0.045701634, y: -0.9532357, z: -0.0017643112}
 --- !u!1 &7363533473909988753
 GameObject:
   m_ObjectHideFlags: 0
@@ -58425,8 +61005,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2010398349427114068}
+  - component: {fileID: 4614165707604480495}
+  - component: {fileID: 7153390167211853329}
   m_Layer: 0
-  m_Name: Empty.040_228
+  m_Name: B43
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58448,6 +61030,46 @@ Transform:
   - {fileID: 8230592091554476501}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4614165707604480495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7416811662334379811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7153390167211853329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7416811662334379811}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2160736, y: 1.2591711, z: 1.257385}
+  m_Center: {x: -0.013935231, y: 0.071865894, z: 0.01422022}
 --- !u!1 &7435581919115206555
 GameObject:
   m_ObjectHideFlags: 0
@@ -58457,6 +61079,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5240676583298368861}
+  - component: {fileID: 3334789080062271861}
+  - component: {fileID: 14500431512286419}
   m_Layer: 0
   m_Name: Empty.045_271
   m_TagString: WodzillaDestructible
@@ -58485,6 +61109,46 @@ Transform:
   - {fileID: 7847542606933387917}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3334789080062271861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7435581919115206555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &14500431512286419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7435581919115206555}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7439082964703741561
 GameObject:
   m_ObjectHideFlags: 0
@@ -59037,8 +61701,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3434225011657126129}
+  - component: {fileID: 1784856259696250613}
+  - component: {fileID: 4168295801795472720}
   m_Layer: 0
-  m_Name: Empty.029_180
+  m_Name: B32d
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59065,6 +61731,46 @@ Transform:
   - {fileID: 8536570608144963604}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784856259696250613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7486403248744492266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4168295801795472720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7486403248744492266}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3732942, y: 4.251119, z: 3.2989056}
+  m_Center: {x: -0.021116493, y: -0.3292079, z: 0.13662289}
 --- !u!1 &7492146319729222608
 GameObject:
   m_ObjectHideFlags: 0
@@ -59074,6 +61780,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2768068483516986655}
+  - component: {fileID: 2242855014366426459}
+  - component: {fileID: 7425216002089693850}
   m_Layer: 0
   m_Name: Empty.085_488
   m_TagString: WodzillaDestructible
@@ -59098,6 +61806,46 @@ Transform:
   - {fileID: 5513615021654732730}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2242855014366426459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492146319729222608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7425216002089693850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492146319729222608}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7498133809714753434
 GameObject:
   m_ObjectHideFlags: 0
@@ -61215,6 +63963,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4557143362865100024}
+  - component: {fileID: 2486899825724770941}
+  - component: {fileID: 3168560762566656831}
   m_Layer: 0
   m_Name: Empty.086_493
   m_TagString: WodzillaDestructible
@@ -61241,6 +63991,46 @@ Transform:
   - {fileID: 6248095380109381054}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2486899825724770941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7752872684867697518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &3168560762566656831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7752872684867697518}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7771206367745682216
 GameObject:
   m_ObjectHideFlags: 0
@@ -61365,6 +64155,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3112564246024876362}
+  - component: {fileID: 4150804730025049511}
+  - component: {fileID: 8731882622209135777}
   m_Layer: 0
   m_Name: Empty.047_284
   m_TagString: WodzillaDestructible
@@ -61393,6 +64185,46 @@ Transform:
   - {fileID: 7445403063756850779}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4150804730025049511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797405476141495763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8731882622209135777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797405476141495763}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7800677473398598015
 GameObject:
   m_ObjectHideFlags: 0
@@ -61715,6 +64547,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3950642389046042275}
+  - component: {fileID: 1293458605365244555}
+  - component: {fileID: 4689026377795470443}
   m_Layer: 0
   m_Name: Empty.062_365
   m_TagString: WodzillaDestructible
@@ -61740,6 +64574,46 @@ Transform:
   - {fileID: 832819384083608211}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1293458605365244555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7852754838795853359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4689026377795470443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7852754838795853359}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7856998072395970876
 GameObject:
   m_ObjectHideFlags: 0
@@ -62260,6 +65134,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4473226407378327805}
+  - component: {fileID: 1428912464431238210}
+  - component: {fileID: 2958120042675028048}
   m_Layer: 0
   m_Name: Empty.068_395
   m_TagString: WodzillaDestructible
@@ -62285,6 +65161,46 @@ Transform:
   - {fileID: 3895403595195093175}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1428912464431238210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926169496111750497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2958120042675028048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926169496111750497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &7933256778169348784
 GameObject:
   m_ObjectHideFlags: 0
@@ -62493,8 +65409,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5968153914078317759}
+  - component: {fileID: 3088306474461910129}
+  - component: {fileID: 2407529142789164815}
   m_Layer: 0
-  m_Name: Empty.002_20
+  m_Name: Building7
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62521,6 +65439,46 @@ Transform:
   - {fileID: 1714823507050804940}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3088306474461910129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990455755327725339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2407529142789164815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990455755327725339}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4417014, y: 2.0581403, z: 0.89554435}
+  m_Center: {x: -0.027059611, y: 0.068164386, z: -0.05222705}
 --- !u!1 &7995036969801258978
 GameObject:
   m_ObjectHideFlags: 0
@@ -63169,6 +66127,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
 --- !u!1 &8063605706783453268
 GameObject:
   m_ObjectHideFlags: 0
@@ -65037,6 +68001,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6259937384715819685}
+  - component: {fileID: 549088156473285408}
+  - component: {fileID: 4637520893003215513}
   m_Layer: 0
   m_Name: Empty.052_314
   m_TagString: WodzillaDestructible
@@ -65071,6 +68037,46 @@ Transform:
   - {fileID: 2655854092245634374}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549088156473285408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275372070555281577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4637520893003215513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275372070555281577}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8280441547468172267
 GameObject:
   m_ObjectHideFlags: 0
@@ -65509,8 +68515,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8194342142708025562}
   - component: {fileID: 8332596515434873325}
+  - component: {fileID: 911423206339087582}
   m_Layer: 0
-  m_Name: Empty.007_50
+  m_Name: Building10
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65562,8 +68569,27 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2877296, y: 2.5440724, z: 1.2905031}
-  m_Center: {x: -0.015931997, y: -0.77202815, z: 0.00660107}
+  m_Size: {x: 1.1592475, y: 2.7916007, z: 1.1447701}
+  m_Center: {x: 0.014477946, y: -0.8328331, z: 0.07238519}
+--- !u!114 &911423206339087582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348383130685415801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
 --- !u!1 &8351045085337324266
 GameObject:
   m_ObjectHideFlags: 0
@@ -65983,6 +69009,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3867314079963609081}
+  - component: {fileID: 8666109773700727965}
+  - component: {fileID: 8555450692640298044}
   m_Layer: 0
   m_Name: Empty.048_287
   m_TagString: WodzillaDestructible
@@ -66007,6 +69035,46 @@ Transform:
   - {fileID: 6702310995737335516}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8666109773700727965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8394237304277777032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8555450692640298044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8394237304277777032}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8398124456946724775
 GameObject:
   m_ObjectHideFlags: 0
@@ -68618,6 +71686,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1981333778992387605}
+  - component: {fileID: 3418585547980395819}
+  - component: {fileID: 5446371586093804146}
   m_Layer: 0
   m_Name: Empty.067_391
   m_TagString: WodzillaDestructible
@@ -68646,6 +71716,46 @@ Transform:
   - {fileID: 380048894100058273}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3418585547980395819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645170731960543212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5446371586093804146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645170731960543212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8650095355137724643
 GameObject:
   m_ObjectHideFlags: 0
@@ -70073,6 +73183,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5279889495659519127}
+  - component: {fileID: 8657751710123568981}
+  - component: {fileID: 7616016197061726791}
   m_Layer: 0
   m_Name: Empty.070_399
   m_TagString: WodzillaDestructible
@@ -70096,6 +73208,46 @@ Transform:
   - {fileID: 8191909843321472671}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8657751710123568981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767968423868156157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &7616016197061726791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767968423868156157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8775455501970585969
 GameObject:
   m_ObjectHideFlags: 0
@@ -70188,6 +73340,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7347270167051271198}
+  - component: {fileID: 5715161377560849824}
+  - component: {fileID: 5231909217900690159}
   m_Layer: 0
   m_Name: Empty.074_424
   m_TagString: WodzillaDestructible
@@ -70214,6 +73368,46 @@ Transform:
   - {fileID: 8698076658625442624}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5715161377560849824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789504764814534994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5231909217900690159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789504764814534994}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8789983310129657322
 GameObject:
   m_ObjectHideFlags: 0
@@ -70683,6 +73877,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6780930784448101104}
+  - component: {fileID: 2756194425424455001}
+  - component: {fileID: 5049281140563231427}
   m_Layer: 0
   m_Name: Empty.065_381
   m_TagString: WodzillaDestructible
@@ -70706,6 +73902,46 @@ Transform:
   - {fileID: 8260937688701818385}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2756194425424455001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875857370282888397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5049281140563231427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875857370282888397}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8885887363863606469
 GameObject:
   m_ObjectHideFlags: 0
@@ -71260,7 +74496,6 @@ GameObject:
   - component: {fileID: 6672812059456563730}
   - component: {fileID: 3634865802239833137}
   - component: {fileID: 7340757223751872978}
-  - component: {fileID: 8019697912907127014}
   m_Layer: 0
   m_Name: Building1
   m_TagString: WodzillaDestructible
@@ -71319,27 +74554,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
---- !u!95 &8019697912907127014
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923502150272512628}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c4313be6d8dea0c40953e33b4d37aee7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
 --- !u!1 &8928247295327434527
 GameObject:
   m_ObjectHideFlags: 0
@@ -71509,6 +74729,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1153859626436639522}
+  - component: {fileID: 492493724326698859}
+  - component: {fileID: 4668144146160003139}
   m_Layer: 0
   m_Name: Empty.088_497
   m_TagString: WodzillaDestructible
@@ -71532,6 +74754,46 @@ Transform:
   - {fileID: 8773520910279563385}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492493724326698859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965313271670883277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4668144146160003139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965313271670883277}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &8967635758383276469
 GameObject:
   m_ObjectHideFlags: 0
@@ -71835,8 +75097,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2156240568682442046}
+  - component: {fileID: 6758722959733876558}
+  - component: {fileID: 2065458299865391791}
   m_Layer: 0
-  m_Name: Empty.005_33
+  m_Name: Building8
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71863,6 +75127,46 @@ Transform:
   - {fileID: 1657767756656166461}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6758722959733876558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021335896535525876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &2065458299865391791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021335896535525876}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2365385, y: 2.6557195, z: 0.39758396}
+  m_Center: {x: -0.024166945, y: -0.49023858, z: -0.014991658}
 --- !u!1 &9034413618308967661
 GameObject:
   m_ObjectHideFlags: 0
@@ -72447,8 +75751,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3405141773749084539}
+  - component: {fileID: 7301308504435684123}
+  - component: {fileID: 8245172995037848155}
   m_Layer: 0
-  m_Name: Empty.036_215
+  m_Name: B39
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72471,6 +75777,46 @@ Transform:
   - {fileID: 7268740373965438660}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7301308504435684123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083580314133098438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &8245172995037848155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083580314133098438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &9092139148697888468
 GameObject:
   m_ObjectHideFlags: 0
@@ -72921,8 +76267,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2897806179950172773}
+  - component: {fileID: 977124319389362972}
+  - component: {fileID: 4770473696659451977}
   m_Layer: 0
-  m_Name: Empty.034_208
+  m_Name: B37
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72946,6 +76294,46 @@ Transform:
   - {fileID: 7996826289877796010}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &977124319389362972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9150276221705780503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &4770473696659451977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9150276221705780503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.71415025, y: 2.6856275, z: 1.4093803}
+  m_Center: {x: -0.07858658, y: 0.18461998, z: 0.08923488}
 --- !u!1 &9155479706695998461
 GameObject:
   m_ObjectHideFlags: 0
@@ -73204,6 +76592,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8672841356654046374}
+  - component: {fileID: 5515975496120444099}
+  - component: {fileID: 151399277898728205}
   m_Layer: 0
   m_Name: Empty.082_477
   m_TagString: WodzillaDestructible
@@ -73233,6 +76623,46 @@ Transform:
   - {fileID: 7232728901620622785}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5515975496120444099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165286536225889499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &151399277898728205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165286536225889499}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &9172489307231906946
 GameObject:
   m_ObjectHideFlags: 0
@@ -73242,6 +76672,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 258604715894259162}
+  - component: {fileID: 6361563482486657568}
+  - component: {fileID: 5171331040111909473}
   m_Layer: 0
   m_Name: Empty.064_379
   m_TagString: WodzillaDestructible
@@ -73265,6 +76697,46 @@ Transform:
   - {fileID: 2915075636198471137}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6361563482486657568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172489307231906946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &5171331040111909473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172489307231906946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
+  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
 --- !u!1 &9175210973593726411
 GameObject:
   m_ObjectHideFlags: 0
@@ -73421,8 +76893,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 228769689572015169}
+  - component: {fileID: 2003472619119571482}
+  - component: {fileID: 1089839801256528040}
   m_Layer: 0
-  m_Name: Empty.017_121
+  m_Name: B20
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73447,6 +76921,46 @@ Transform:
   - {fileID: 4950486386135719294}
   m_Father: {fileID: 4501438326535715589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003472619119571482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196426039459044532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a66afd247f3134394097bd0be45bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  wobbleAmount: 3
+  wobbleSpeed: 15
+  isCrumbling: 0
+  crumbleDuration: 3
+  sinkSpeed: 35
+  dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+--- !u!65 &1089839801256528040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196426039459044532}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0046948, y: 1.8477291, z: 1.9807647}
+  m_Center: {x: -0.06279299, y: 0.048072144, z: 0.019666942}
 --- !u!1 &9207421981141796896
 GameObject:
   m_ObjectHideFlags: 0

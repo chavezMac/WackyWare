@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -507,6 +507,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6968560459892032239, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: m_Name
+      value: Building0
+      objectReference: {fileID: 0}
     - target: {fileID: 7015963634349656664, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -571,6 +575,10 @@ PrefabInstance:
       propertyPath: wobbleAmount
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7990455755327725339, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      propertyPath: m_Name
+      value: Building6
+      objectReference: {fileID: 0}
     - target: {fileID: 8019697912907127014, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -624,15 +632,15 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6968560459892032239, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 493511708}
     - targetCorrespondingSourceObject: {fileID: 8923502150272512628, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1866564499}
     - targetCorrespondingSourceObject: {fileID: 2576714164778970076, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       insertIndex: -1
       addedObject: {fileID: 493511719}
+    - targetCorrespondingSourceObject: {fileID: 6968560459892032239, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 493511708}
     - targetCorrespondingSourceObject: {fileID: 8058468671801027168, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1181923150}
