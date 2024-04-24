@@ -16,10 +16,12 @@ public class WodzillaBuilding : MonoBehaviour
     public float sinkSpeed = 35f;
 
     public GameObject dustSystem;
+    public BossMinigameLogic logic;
 
     private void Start()
     {
         initialPosition = transform.position;
+        logic.UpdateBuildingCount(1);
     }
 
     // Update is called once per frame
@@ -73,6 +75,7 @@ public class WodzillaBuilding : MonoBehaviour
 
     public void Destruct()
     {
+        logic.UpdateBuildingCount(-1);
         Destroy(gameObject);
     }
 
@@ -95,6 +98,6 @@ public class WodzillaBuilding : MonoBehaviour
             yield return null;
         }
 
-        Destroy(gameObject); // Destroy the building after crumble animation
+        Destruct();
     }
 }
