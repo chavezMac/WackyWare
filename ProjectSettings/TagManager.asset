@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MainSceneLayer
+    uniqueID: 3595351115
+    locked: 0
