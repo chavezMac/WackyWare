@@ -39,7 +39,7 @@ public class fishingBarScript : MonoBehaviour
             targetTime -= Time.deltaTime;
         }
 
-        if(targetTime <= 0.0f)
+        if(targetTime <= 0.0f || MainGameController.timeRemaining <= 0)
         {
             transform.localPosition = new Vector3(-0.03204f, -0.128f, 0);
             onFish = false;
