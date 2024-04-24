@@ -46,13 +46,22 @@ public class MainGameController: MonoBehaviour
 
     private void Update()
     {
+        sfx.volume = 1f;
+        float vol = 1f;
         if (!timerPaused)
         {
             timeRemaining -= Time.deltaTime;
+            // Play clock ticking sound if we're running out of time
             if (timeRemaining < ticktockSound.length && !sfx.isPlaying)
             {
                 sfx.clip = ticktockSound;
                 sfx.Play();
+            }
+            //Control volume of clock ticking
+            if (sfx.clip == ticktockSound && sfx.isPlaying)
+            {
+                vol = Mathf.Clamp(.1f + (ticktockSound.length - timeRemaining) / ticktockSound.length,0f,1f);
+                sfx.volume = vol;
             }
         }
     }

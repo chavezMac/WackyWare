@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -989,6 +989,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &1284694348
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284694342}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1431035963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,6 +1274,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1284694344}
+    - targetCorrespondingSourceObject: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1284694348}
   m_SourcePrefab: {fileID: 100100000, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
 --- !u!1001 &1772147369
 PrefabInstance:
@@ -1256,9 +1286,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -138262789864655838, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: overrideTimeLimit
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 251729343016510873, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_Name
       value: MinigameBroadcaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 251729343016510873, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8280394841258219994, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_LocalPosition.x
