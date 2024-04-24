@@ -49,7 +49,7 @@ public class MinigameBroadcaster : MonoBehaviour
         foreach (GameObject obj in allObjects)
         {
             // Check if the object is not the current object
-            if (obj != gameObject)
+            if (obj != gameObject && !obj.GetComponent<Camera>() && !obj.GetComponent<Light>())
             {
                 // Deactivate the object
                 obj.SetActive(false);

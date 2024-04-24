@@ -33,7 +33,7 @@ public class MainGameController: MonoBehaviour
     void Start()
     {
         _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
-        if (_minigameBroadcaster.demoMode)
+        if (_minigameBroadcaster!=null && _minigameBroadcaster.demoMode)
         {
             onlyMinigame = _minigameBroadcaster.currentScene.name;
             demomode = true;
@@ -107,7 +107,7 @@ public class MainGameController: MonoBehaviour
             UnloadMinigame();
         }
         currentMinigame = miniGameList[currentMinigameIndex];
-        if (onlyMinigame != null)
+        if (onlyMinigame != "")
         {
             currentMinigame = onlyMinigame;
         }
