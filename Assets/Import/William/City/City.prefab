@@ -3465,7 +3465,7 @@ GameObject:
   - component: {fileID: 5710558302157539225}
   - component: {fileID: 6002965571884207595}
   m_Layer: 0
-  m_Name: Empty.054_324
+  m_Name: B57
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3530,8 +3530,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 2.9853983, z: 1.1447701}
+  m_Center: {x: 0.014477952, y: -0.81876624, z: 0.07238518}
 --- !u!1 &463293210970565949
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,7 +4598,7 @@ GameObject:
   - component: {fileID: 2514531909266669313}
   - component: {fileID: 8257179424862590339}
   m_Layer: 0
-  m_Name: Empty.083_446
+  m_Name: B84
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4663,8 +4663,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.6233265, y: 2.5955849, z: 1.4049948}
+  m_Center: {x: -0.015489834, y: 0.026261346, z: 0.04196447}
 --- !u!1 &555401852656034443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4876,7 +4876,7 @@ GameObject:
   - component: {fileID: 2591246529460558811}
   - component: {fileID: 4916434631185784813}
   m_Layer: 0
-  m_Name: Empty.061_361
+  m_Name: B66
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4939,8 +4939,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.9017594, y: 2.257593, z: 1.9632155}
+  m_Center: {x: -0.062766105, y: -0.17123154, z: 0.032229375}
 --- !u!1 &598574522271766148
 GameObject:
   m_ObjectHideFlags: 0
@@ -5132,7 +5132,7 @@ GameObject:
   - component: {fileID: 4689028855924881951}
   - component: {fileID: 138735167228396053}
   m_Layer: 0
-  m_Name: Empty.044_264
+  m_Name: B47
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5197,8 +5197,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.56241804, y: 1.8771507, z: 2.1978903}
+  m_Center: {x: 0.04289873, y: 0.27252018, z: 0.03382417}
 --- !u!1 &613987954560704208
 GameObject:
   m_ObjectHideFlags: 0
@@ -10553,7 +10553,7 @@ GameObject:
   - component: {fileID: 2372805798502400743}
   - component: {fileID: 2444227707302935644}
   m_Layer: 0
-  m_Name: Empty.071_405
+  m_Name: B76d
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10617,8 +10617,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 4.0884185, z: 3.2337742}
+  m_Center: {x: 0.014477933, y: -0.36922207, z: 0.11213543}
 --- !u!1 &1314514879493565286
 GameObject:
   m_ObjectHideFlags: 0
@@ -10631,7 +10631,7 @@ GameObject:
   - component: {fileID: 397173897083064291}
   - component: {fileID: 1519326835068515030}
   m_Layer: 0
-  m_Name: Empty.073_419
+  m_Name: B78
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10696,8 +10696,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.2054573, y: 2.5952084, z: 0.45848778}
+  m_Center: {x: -0.008627012, y: -0.37940085, z: -0.012324931}
 --- !u!1 &1315170663105544955
 GameObject:
   m_ObjectHideFlags: 0
@@ -11796,7 +11796,7 @@ GameObject:
   - component: {fileID: 6150064597320333031}
   - component: {fileID: 8745533815382102449}
   m_Layer: 0
-  m_Name: Empty.041_243
+  m_Name: B44
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11869,8 +11869,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.661522, y: 2.2104194, z: 1.3097034}
+  m_Center: {x: -0.0023286133, y: 0.022618128, z: 0.026657673}
 --- !u!1 &1415241775821150245
 GameObject:
   m_ObjectHideFlags: 0
@@ -16858,7 +16858,7 @@ GameObject:
   - component: {fileID: 805981466944227630}
   - component: {fileID: 219260050348760005}
   m_Layer: 0
-  m_Name: Empty.051_301
+  m_Name: B54
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16920,8 +16920,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 2.0231972, z: 1.1127836}
+  m_Center: {x: 0.014477952, y: -0.08805715, z: 0.01990168}
 --- !u!1 &2131391987497904589
 GameObject:
   m_ObjectHideFlags: 0
@@ -18313,10 +18313,13 @@ Transform:
   - {fileID: 3564794085313651677}
   - {fileID: 1313797246776939522}
   - {fileID: 5821480692504013297}
+  - {fileID: 548451339304099562}
+  - {fileID: 8672841356654046374}
   - {fileID: 5755921488367238092}
   - {fileID: 9157975042851533942}
   - {fileID: 8727112129886722943}
   - {fileID: 8815541905606247678}
+  - {fileID: 3709312258279404818}
   - {fileID: 7630746582192742308}
   - {fileID: 3950642389046042275}
   - {fileID: 6266360801515536972}
@@ -18338,11 +18341,8 @@ Transform:
   - {fileID: 8881293797654675754}
   - {fileID: 971850831609702777}
   - {fileID: 7487959683889117968}
-  - {fileID: 8672841356654046374}
-  - {fileID: 548451339304099562}
   - {fileID: 2768068483516986655}
   - {fileID: 4557143362865100024}
-  - {fileID: 3709312258279404818}
   - {fileID: 1153859626436639522}
   - {fileID: 7489789657853535822}
   - {fileID: 6997641898353702009}
@@ -20801,7 +20801,7 @@ GameObject:
   - component: {fileID: 6496532764614873641}
   - component: {fileID: 2984277009262384992}
   m_Layer: 0
-  m_Name: Empty.076_433
+  m_Name: B81
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20863,8 +20863,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.73010105, y: 2.7615826, z: 1.3995976}
+  m_Center: {x: -0.07502846, y: 0.15923138, z: 0.07070706}
 --- !u!1 &2525428371213564126
 GameObject:
   m_ObjectHideFlags: 0
@@ -23004,7 +23004,7 @@ GameObject:
   - component: {fileID: 1510717922372650363}
   - component: {fileID: 3280923291770842846}
   m_Layer: 0
-  m_Name: Empty.053_316
+  m_Name: B56
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23064,8 +23064,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.7132499, y: 2.7054248, z: 2.6373756}
+  m_Center: {x: -0.031537, y: -0.8253787, z: -0.041243847}
 --- !u!1 &2842965550644213485
 GameObject:
   m_ObjectHideFlags: 0
@@ -24657,7 +24657,7 @@ GameObject:
   - component: {fileID: 3510390393218846534}
   - component: {fileID: 223153262497262230}
   m_Layer: 0
-  m_Name: Empty.055_336
+  m_Name: B58
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24727,8 +24727,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.63041985, y: 2.5617955, z: 1.3552111}
+  m_Center: {x: -0.0047504385, y: -0.2117233, z: 0.049672898}
 --- !u!1 &3037034431791612408
 GameObject:
   m_ObjectHideFlags: 0
@@ -26695,7 +26695,7 @@ GameObject:
   - component: {fileID: 4482929411088991100}
   - component: {fileID: 8386765872088593876}
   m_Layer: 0
-  m_Name: Empty.087_495
+  m_Name: B65
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26755,8 +26755,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.60869217, y: 2.084267, z: 1.7961097}
+  m_Center: {x: 0.023503225, y: 0.14365739, z: 0.13180324}
 --- !u!1 &3229344642790822560
 GameObject:
   m_ObjectHideFlags: 0
@@ -32070,7 +32070,7 @@ GameObject:
   - component: {fileID: 3845444371163607957}
   - component: {fileID: 4484942807878060209}
   m_Layer: 0
-  m_Name: Empty.081_469
+  m_Name: B86
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32135,8 +32135,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.3963927, y: 2.1984215, z: 0.87598395}
+  m_Center: {x: -0.06457093, y: 0.06427466, z: -0.062008046}
 --- !u!1 &4014315278030411660
 GameObject:
   m_ObjectHideFlags: 0
@@ -34892,7 +34892,7 @@ GameObject:
   - component: {fileID: 909573322765312052}
   - component: {fileID: 4953571518509123542}
   m_Layer: 0
-  m_Name: Empty.058_344
+  m_Name: B62d
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34952,8 +34952,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 4.0884185, z: 3.2337742}
+  m_Center: {x: 0.014477933, y: -0.36922207, z: 0.11213543}
 --- !u!1 &4377709802879143281
 GameObject:
   m_ObjectHideFlags: 0
@@ -37375,7 +37375,7 @@ GameObject:
   - component: {fileID: 397017070054050217}
   - component: {fileID: 1722973841852430938}
   m_Layer: 0
-  m_Name: Empty.066_383
+  m_Name: B71
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37435,8 +37435,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.7570169, y: 2.325918, z: 0.580774}
+  m_Center: {x: 0.01922695, y: -0.042958956, z: 0.123382494}
 --- !u!1 &4689395683491526105
 GameObject:
   m_ObjectHideFlags: 0
@@ -37877,7 +37877,7 @@ GameObject:
   - component: {fileID: 5970268657598822447}
   - component: {fileID: 1659497131753085475}
   m_Layer: 0
-  m_Name: Empty.078_436
+  m_Name: B82
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40484,7 +40484,7 @@ GameObject:
   - component: {fileID: 6319393070829010118}
   - component: {fileID: 7264760663296946734}
   m_Layer: 0
-  m_Name: Empty.060_356
+  m_Name: B64
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40544,8 +40544,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.60869217, y: 2.084267, z: 1.7961097}
+  m_Center: {x: 0.023503225, y: 0.14365739, z: 0.13180324}
 --- !u!1 &5076633085573400591
 GameObject:
   m_ObjectHideFlags: 0
@@ -42481,7 +42481,7 @@ GameObject:
   - component: {fileID: 8717180060059121129}
   - component: {fileID: 1336960481110246165}
   m_Layer: 0
-  m_Name: Empty.049_290
+  m_Name: B52
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46473,7 +46473,7 @@ GameObject:
   - component: {fileID: 5580683340274834803}
   - component: {fileID: 2935347734380849494}
   m_Layer: 0
-  m_Name: Empty.079_439
+  m_Name: B83
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47054,7 +47054,7 @@ GameObject:
   - component: {fileID: 3827354386233463644}
   - component: {fileID: 754277371783478596}
   m_Layer: 0
-  m_Name: Empty.056_450
+  m_Name: B85
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47116,8 +47116,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.7450084, y: 2.7994728, z: 1.4084195}
+  m_Center: {x: -0.08292064, y: 0.31384835, z: 0.08833979}
 --- !u!1 &5911096676486296708
 GameObject:
   m_ObjectHideFlags: 0
@@ -49491,7 +49491,7 @@ GameObject:
   - component: {fileID: 1750158372181857055}
   - component: {fileID: 3932340447307098162}
   m_Layer: 0
-  m_Name: Empty.072_412
+  m_Name: B77
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49556,8 +49556,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.2054573, y: 2.5952084, z: 0.45848778}
+  m_Center: {x: -0.008627012, y: -0.37940085, z: -0.012324931}
 --- !u!1 &6217766451655775898
 GameObject:
   m_ObjectHideFlags: 0
@@ -54238,7 +54238,7 @@ GameObject:
   - component: {fileID: 764452265550958924}
   - component: {fileID: 1800984230097229564}
   m_Layer: 0
-  m_Name: Empty.057_342
+  m_Name: B61
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54302,8 +54302,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.328636, y: 2.0236485, z: 1.3509696}
+  m_Center: {x: 0.09917286, y: -0.53092766, z: -0.030714625}
 --- !u!1 &6734111361435222380
 GameObject:
   m_ObjectHideFlags: 0
@@ -54853,7 +54853,7 @@ GameObject:
   - component: {fileID: 200773727025234825}
   - component: {fileID: 468161611017736218}
   m_Layer: 0
-  m_Name: Empty.075_429
+  m_Name: B80
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54916,8 +54916,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.9510171, y: 6.1938763, z: 0.72182924}
+  m_Center: {x: -0.11374388, y: 0.9226423, z: 0.0279535}
 --- !u!1 &6814597745179478156
 GameObject:
   m_ObjectHideFlags: 0
@@ -55013,7 +55013,7 @@ GameObject:
   - component: {fileID: 9194209175468934965}
   - component: {fileID: 86833441887873113}
   m_Layer: 0
-  m_Name: Empty.084_485
+  m_Name: B59
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55079,8 +55079,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.63041985, y: 2.5617955, z: 1.3552111}
+  m_Center: {x: -0.0047504385, y: -0.2117233, z: 0.049672898}
 --- !u!1 &6828108405876060508
 GameObject:
   m_ObjectHideFlags: 0
@@ -55617,7 +55617,7 @@ GameObject:
   - component: {fileID: 7088046109988897280}
   - component: {fileID: 1844853111645302650}
   m_Layer: 0
-  m_Name: Empty.043_257
+  m_Name: B46
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55682,8 +55682,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.56241804, y: 1.8771507, z: 2.1978903}
+  m_Center: {x: 0.04289873, y: 0.27252018, z: 0.03382417}
 --- !u!1 &6878363661054198539
 GameObject:
   m_ObjectHideFlags: 0
@@ -56292,7 +56292,7 @@ GameObject:
   - component: {fileID: 7154958733532706839}
   - component: {fileID: 8489974583997810772}
   m_Layer: 0
-  m_Name: Empty.050_297
+  m_Name: B53
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56357,8 +56357,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.2227163, y: 2.8054843, z: 0.4509403}
+  m_Center: {x: -0.01725666, y: -0.50310427, z: 0.003987761}
 --- !u!1 &6956818508046857340
 GameObject:
   m_ObjectHideFlags: 0
@@ -56371,7 +56371,7 @@ GameObject:
   - component: {fileID: 8382014520019085543}
   - component: {fileID: 7664804083167594743}
   m_Layer: 0
-  m_Name: Empty.069_397
+  m_Name: B74
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56431,8 +56431,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.61427116, y: 2.9407039, z: 2.666497}
+  m_Center: {x: -0.020265734, y: -0.9754695, z: -0.024163177}
 --- !u!1 &6957596480417587162
 GameObject:
   m_ObjectHideFlags: 0
@@ -56809,7 +56809,7 @@ GameObject:
   - component: {fileID: 2487232584948965142}
   - component: {fileID: 3169412961775315787}
   m_Layer: 0
-  m_Name: Empty.046_277
+  m_Name: B49
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56873,8 +56873,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.74968445, y: 2.8043406, z: 1.38667}
+  m_Center: {x: -0.07371075, y: 0.189041, z: 0.0840653}
 --- !u!1 &7017804509993971388
 GameObject:
   m_ObjectHideFlags: 0
@@ -57381,7 +57381,7 @@ GameObject:
   - component: {fileID: 3218358928475538729}
   - component: {fileID: 4016512531981179763}
   m_Layer: 0
-  m_Name: Empty.063_377
+  m_Name: B68
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57451,8 +57451,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.58586675, y: 1.8534149, z: 2.2408674}
+  m_Center: {x: 0.015080519, y: 0.2524093, z: 0.041342895}
 --- !u!1 &7051282848180531347
 GameObject:
   m_ObjectHideFlags: 0
@@ -59670,7 +59670,7 @@ GameObject:
   - component: {fileID: 3643207505565448443}
   - component: {fileID: 1810129527897808331}
   m_Layer: 0
-  m_Name: Empty.042_250
+  m_Name: B45
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59735,8 +59735,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.56241804, y: 1.8771507, z: 2.1978903}
+  m_Center: {x: 0.04289873, y: 0.27252018, z: 0.03382417}
 --- !u!1 &7318625820176347291
 GameObject:
   m_ObjectHideFlags: 0
@@ -60393,7 +60393,7 @@ GameObject:
   - component: {fileID: 7340056810431860993}
   - component: {fileID: 6999716994948212267}
   m_Layer: 0
-  m_Name: Empty.059_354
+  m_Name: B63d
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60460,8 +60460,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 4.0884185, z: 3.2337742}
+  m_Center: {x: 0.014477933, y: -0.36922207, z: 0.11213543}
 --- !u!1 &7357876283851997668
 GameObject:
   m_ObjectHideFlags: 0
@@ -61082,7 +61082,7 @@ GameObject:
   - component: {fileID: 3334789080062271861}
   - component: {fileID: 14500431512286419}
   m_Layer: 0
-  m_Name: Empty.045_271
+  m_Name: B48
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61147,8 +61147,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 2.0015986, y: 5.7778244, z: 0.72427803}
+  m_Center: {x: -0.12447491, y: 0.852406, z: 0.045516375}
 --- !u!1 &7439082964703741561
 GameObject:
   m_ObjectHideFlags: 0
@@ -61783,7 +61783,7 @@ GameObject:
   - component: {fileID: 2242855014366426459}
   - component: {fileID: 7425216002089693850}
   m_Layer: 0
-  m_Name: Empty.085_488
+  m_Name: B87s
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61844,8 +61844,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.794422, y: 2.8732, z: 1.539115}
+  m_Center: {x: 0.015304539, y: 1.2178079, z: 0.13571703}
 --- !u!1 &7498133809714753434
 GameObject:
   m_ObjectHideFlags: 0
@@ -63966,7 +63966,7 @@ GameObject:
   - component: {fileID: 2486899825724770941}
   - component: {fileID: 3168560762566656831}
   m_Layer: 0
-  m_Name: Empty.086_493
+  m_Name: B88s
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64029,8 +64029,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.7537465, y: 4.0625396, z: 1.5741829}
+  m_Center: {x: 0.044046976, y: 1.8532434, z: -0.069109075}
 --- !u!1 &7771206367745682216
 GameObject:
   m_ObjectHideFlags: 0
@@ -64158,7 +64158,7 @@ GameObject:
   - component: {fileID: 4150804730025049511}
   - component: {fileID: 8731882622209135777}
   m_Layer: 0
-  m_Name: Empty.047_284
+  m_Name: B50
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64223,8 +64223,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.4468924, y: 8.095343, z: 0.8595505}
+  m_Center: {x: -0.065581486, y: 0.31205475, z: -0.07022479}
 --- !u!1 &7800677473398598015
 GameObject:
   m_ObjectHideFlags: 0
@@ -64550,7 +64550,7 @@ GameObject:
   - component: {fileID: 1293458605365244555}
   - component: {fileID: 4689026377795470443}
   m_Layer: 0
-  m_Name: Empty.062_365
+  m_Name: B67
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64612,8 +64612,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.3058085, y: 2.3225524, z: 1.033654}
+  m_Center: {x: 0.087758265, y: -0.20014635, z: 0.016827201}
 --- !u!1 &7856998072395970876
 GameObject:
   m_ObjectHideFlags: 0
@@ -65137,7 +65137,7 @@ GameObject:
   - component: {fileID: 1428912464431238210}
   - component: {fileID: 2958120042675028048}
   m_Layer: 0
-  m_Name: Empty.068_395
+  m_Name: B73
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65199,8 +65199,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 3.132735, z: 1.1447701}
+  m_Center: {x: 0.014477928, y: -0.8764804, z: 0.07238518}
 --- !u!1 &7933256778169348784
 GameObject:
   m_ObjectHideFlags: 0
@@ -68004,7 +68004,7 @@ GameObject:
   - component: {fileID: 549088156473285408}
   - component: {fileID: 4637520893003215513}
   m_Layer: 0
-  m_Name: Empty.052_314
+  m_Name: B55
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68075,8 +68075,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.2408729, y: 2.7149596, z: 1.1447701}
+  m_Center: {x: -0.026334718, y: -1.1331259, z: 0.07238518}
 --- !u!1 &8280441547468172267
 GameObject:
   m_ObjectHideFlags: 0
@@ -69012,7 +69012,7 @@ GameObject:
   - component: {fileID: 8666109773700727965}
   - component: {fileID: 8555450692640298044}
   m_Layer: 0
-  m_Name: Empty.048_287
+  m_Name: B51
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71689,7 +71689,7 @@ GameObject:
   - component: {fileID: 3418585547980395819}
   - component: {fileID: 5446371586093804146}
   m_Layer: 0
-  m_Name: Empty.067_391
+  m_Name: B72
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71754,8 +71754,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.1592474, y: 3.132735, z: 1.1447701}
+  m_Center: {x: 0.014477928, y: -0.8764804, z: 0.07238518}
 --- !u!1 &8650095355137724643
 GameObject:
   m_ObjectHideFlags: 0
@@ -73186,7 +73186,7 @@ GameObject:
   - component: {fileID: 8657751710123568981}
   - component: {fileID: 7616016197061726791}
   m_Layer: 0
-  m_Name: Empty.070_399
+  m_Name: B75
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73246,8 +73246,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.61427116, y: 2.9407039, z: 2.666497}
+  m_Center: {x: -0.020265734, y: -0.9754695, z: -0.024163177}
 --- !u!1 &8775455501970585969
 GameObject:
   m_ObjectHideFlags: 0
@@ -73343,7 +73343,7 @@ GameObject:
   - component: {fileID: 5715161377560849824}
   - component: {fileID: 5231909217900690159}
   m_Layer: 0
-  m_Name: Empty.074_424
+  m_Name: B79
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73406,8 +73406,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.9641323, y: 2.1289296, z: 2.0048194}
+  m_Center: {x: -0.08308071, y: -0.11370831, z: 0.042066675}
 --- !u!1 &8789983310129657322
 GameObject:
   m_ObjectHideFlags: 0
@@ -73880,7 +73880,7 @@ GameObject:
   - component: {fileID: 2756194425424455001}
   - component: {fileID: 5049281140563231427}
   m_Layer: 0
-  m_Name: Empty.065_381
+  m_Name: B70
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73940,8 +73940,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.57201296, y: 2.325918, z: 1.7598424}
+  m_Center: {x: 0.030928778, y: -0.042959, z: 0.113865525}
 --- !u!1 &8885887363863606469
 GameObject:
   m_ObjectHideFlags: 0
@@ -74732,7 +74732,7 @@ GameObject:
   - component: {fileID: 492493724326698859}
   - component: {fileID: 4668144146160003139}
   m_Layer: 0
-  m_Name: Empty.088_497
+  m_Name: B89s
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74792,8 +74792,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 1.3171785, y: 2.1684048, z: 1.0536016}
+  m_Center: {x: 0.060763307, y: -0.35458654, z: 0.013195897}
 --- !u!1 &8967635758383276469
 GameObject:
   m_ObjectHideFlags: 0
@@ -76595,7 +76595,7 @@ GameObject:
   - component: {fileID: 5515975496120444099}
   - component: {fileID: 151399277898728205}
   m_Layer: 0
-  m_Name: Empty.082_477
+  m_Name: B60
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76661,8 +76661,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.63041985, y: 2.5617955, z: 1.3552111}
+  m_Center: {x: -0.0047504385, y: -0.2117233, z: 0.049672898}
 --- !u!1 &9172489307231906946
 GameObject:
   m_ObjectHideFlags: 0
@@ -76675,7 +76675,7 @@ GameObject:
   - component: {fileID: 6361563482486657568}
   - component: {fileID: 5171331040111909473}
   m_Layer: 0
-  m_Name: Empty.064_379
+  m_Name: B69
   m_TagString: WodzillaDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76735,8 +76735,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1592474, y: 8.095343, z: 1.1447701}
-  m_Center: {x: 0.014477926, y: 0.3120548, z: 0.07238517}
+  m_Size: {x: 0.57201296, y: 2.325918, z: 1.7598424}
+  m_Center: {x: 0.030928778, y: -0.042959, z: 0.113865525}
 --- !u!1 &9175210973593726411
 GameObject:
   m_ObjectHideFlags: 0
