@@ -5,14 +5,19 @@ using UnityEngine.UI;
 
 public class MainGameController: MonoBehaviour
 {
-    private string currentMinigame;
+    public string currentMinigame;
+    public string onlyMinigame;// Used if we are just demoing one minigame over and over
     public int currentMinigameIndex = -1;
     public string[] miniGameList; //list of minigames by their scene name
     public static float timeRemaining; //time left for the current minigame 
     public float minigameTimeLimit = 10f;
+    // [HideInInspector]
+    // public float tempMinigameTimeLimit;
     public bool timerPaused = true;
     public PieTimer timer;
     public TransitionAnimationController transition;
+    private MinigameBroadcaster _minigameBroadcaster;
+    private bool demomode = false;
     public int minigamesCompletedSuccessfully = 0;
     public int minigamesFailed = 0;
 
@@ -27,6 +32,12 @@ public class MainGameController: MonoBehaviour
     public string[] teamNames;
     void Start()
     {
+        _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
+        if (_minigameBroadcaster.demoMode)
+        {
+            onlyMinigame = _minigameBroadcaster.currentScene.name;
+            demomode = true;
+        }
         transition.init();
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
@@ -48,8 +59,20 @@ public class MainGameController: MonoBehaviour
         }
     }
 
+    public void DemoSingleMinigame(string sceneName)
+    {
+        //Play the current minigame repeatedly
+        for(int i = 0; i < miniGameList.Length;i++)
+        {
+            miniGameList[i] = sceneName;
+            onlyMinigame = sceneName;
+        }
+        // StartNextMinigame(true);
+    }
+
     public void UnloadMinigame()
     {
+        // Debug.Log("Unloading minigame");
         SceneManager.UnloadSceneAsync(currentMinigame);
     }
 
@@ -84,6 +107,10 @@ public class MainGameController: MonoBehaviour
             UnloadMinigame();
         }
         currentMinigame = miniGameList[currentMinigameIndex];
+        if (onlyMinigame != null)
+        {
+            currentMinigame = onlyMinigame;
+        }
         
         // Pause to show animations.
         if (!isFirstMinigame)
@@ -95,6 +122,7 @@ public class MainGameController: MonoBehaviour
         // One scene (GameLogicScene) for the UI and outer game logic,
         // and another for the minigame and its logic.
         SceneManager.LoadScene(currentMinigame, LoadSceneMode.Additive);
+        // Debug.Log("Loading scene: " + currentMinigame);
 
         timeRemaining = minigameTimeLimit;
         timerPaused = false;

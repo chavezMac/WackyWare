@@ -10,6 +10,11 @@ public class WodzillaController : MonoBehaviour
     public float moveSpeed = 10f; // Movement speed
     public float turnSpeed = 2f; // Turning speed
     public Animator anim;
+    
+    public GameObject laserPrefab;
+    public Transform leftEye;
+    public Transform rightEye;
+    public LayerMask layerMask;
 
     private void Start()
     {
@@ -35,10 +40,30 @@ public class WodzillaController : MonoBehaviour
             anim.Play("WodzillaSpin");
             tail.isActive = true;
         }
+        
+        if (Input.GetMouseButtonDown(0)) // Check for left mouse button click
+        {
+            ShootLaser(leftEye);
+            ShootLaser(rightEye);
+        }
     }
 
     public void EndTailAttack()
     {
         tail.isActive = false;
+    }
+    
+    void ShootLaser(Transform eye)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(eye.position, ray.direction, out hit, Mathf.Infinity, layerMask))
+        {
+            GameObject laser = Instantiate(laserPrefab, eye.position, Quaternion.identity);
+            LineRenderer lineRenderer = laser.GetComponent<LineRenderer>();
+            lineRenderer.SetPosition(0, eye.position);
+            lineRenderer.SetPosition(1, hit.point);
+        }
     }
 }
