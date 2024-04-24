@@ -19,14 +19,15 @@ public class PlanetSpawner : MonoBehaviour
     
 
     // Start is called before the first frame update
-    private void Start()
-    {
-        foreach (var kvp in PlanetsPrefabs)
-        {
-            solarSystemMap.Add(PlanetsPrefabs[i], PlanetsOrder[i]);
-            i++;
-        }
-    }
+     void Start()
+     {
+    //     foreach (var kvp in PlanetsPrefabs)
+    //     {
+    //         solarSystemMap.Add(PlanetsPrefabs[i], PlanetsOrder[i]);
+    //         i++;
+    //     }
+        
+     }
 
     // Update is called once per frame
     void Update()
