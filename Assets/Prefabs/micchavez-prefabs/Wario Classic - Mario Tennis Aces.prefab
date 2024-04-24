@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4666762704935292304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7958153918733771875, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f567f9c39f8bc4b2abaff408002064b4, type: 2}
+    - target: {fileID: -5501944870958288442, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: -1992193313400078731, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: 919132149155446097, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Name
+      value: Wario Classic - Mario Tennis Aces
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529223359823157181, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529223359823157181, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529223359823157181, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529223359823157181, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529223359823157181, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529223359823157181, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878031161375630329, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: 2984000356496540494, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: 3096834637281021872, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: 3945335983975569938, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: 7967915810425399089, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    - target: {fileID: 8479438898595265706, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82cae8a7a7f2c49a89386a1473181cea, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e388f607c215403b9e9fc96b80885eb, type: 3}
