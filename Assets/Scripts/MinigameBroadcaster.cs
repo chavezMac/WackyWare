@@ -8,7 +8,8 @@ public class MinigameBroadcaster : MonoBehaviour
     private static bool hookedIn = false;
     [HideInInspector] public Scene currentScene;
     [HideInInspector] public bool demoMode = true;
-    // public float overrideTimeLimit = -1f;
+    // Edit this if you want your minigame to start with more or less time in seconds.
+    public float overrideTimeLimit = -1f;
     void Start()
     {
         // Debug.Log("The scene name is " + sceneName);
@@ -17,7 +18,7 @@ public class MinigameBroadcaster : MonoBehaviour
         //Minigame is being played in sequence by the MainGameController
         if (gameController != null)
         {
-            // Debug.Log("game controller found: "+ gameController.ToString());
+            gameController.OverrideTimeLimit(overrideTimeLimit);
             hookedIn = true;
             demoMode = false;
         }
@@ -33,6 +34,7 @@ public class MinigameBroadcaster : MonoBehaviour
                 // This code block will be executed when the scene is fully loaded
                 gameController = FindObjectOfType<MainGameController>();
                 gameController.DemoSingleMinigame(currentScene.name);
+                gameController.OverrideTimeLimit(overrideTimeLimit);
                 // gameController.tempMinigameTimeLimit = overrideTimeLimit;
                 hookedIn = true;
                 SceneManager.UnloadSceneAsync(currentScene);

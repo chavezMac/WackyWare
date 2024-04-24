@@ -10,14 +10,12 @@ public class MainGameController: MonoBehaviour
     public int currentMinigameIndex = -1;
     public string[] miniGameList; //list of minigames by their scene name
     public static float timeRemaining; //time left for the current minigame 
-    public float minigameTimeLimit = 10f;
-    // [HideInInspector]
-    // public float tempMinigameTimeLimit;
+    public static float minigameTimeLimit = 10f;
     public bool timerPaused = true;
     public PieTimer timer;
     public TransitionAnimationController transition;
     private MinigameBroadcaster _minigameBroadcaster;
-    private bool demomode = false;
+    // private bool demomode = false;
     public int minigamesCompletedSuccessfully = 0;
     public int minigamesFailed = 0;
 
@@ -36,7 +34,7 @@ public class MainGameController: MonoBehaviour
         if (_minigameBroadcaster!=null && _minigameBroadcaster.demoMode)
         {
             onlyMinigame = _minigameBroadcaster.currentScene.name;
-            demomode = true;
+            // demomode = true;
         }
         transition.init();
         currentMinigame = miniGameList[0];
@@ -67,7 +65,6 @@ public class MainGameController: MonoBehaviour
             miniGameList[i] = sceneName;
             onlyMinigame = sceneName;
         }
-        // StartNextMinigame(true);
     }
 
     public void UnloadMinigame()
@@ -126,7 +123,7 @@ public class MainGameController: MonoBehaviour
 
         timeRemaining = minigameTimeLimit;
         timerPaused = false;
-        timer.StartTimer();
+        timer.StartTimer(minigameTimeLimit);
     }
 
     public void StartNextMinigame(bool isFirstMinigame)
@@ -155,5 +152,25 @@ public class MainGameController: MonoBehaviour
             FailIcon.speed = 1;
         }
         StartNextMinigame(false);
+    }
+
+    public void OverrideTimeLimit(float newTimeLimit)
+    {
+        if (newTimeLimit <= -1)
+        {
+            return; //use default time limit
+        }
+        if (newTimeLimit > 120f)
+        {
+            newTimeLimit = 120f;
+        }
+
+        if (newTimeLimit < 2f)
+        {
+            newTimeLimit = 2f;
+        }
+        timeRemaining = newTimeLimit;
+        timerPaused = false;
+        timer.StartTimer(newTimeLimit);
     }
 }

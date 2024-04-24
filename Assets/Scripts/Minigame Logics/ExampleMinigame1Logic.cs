@@ -22,4 +22,10 @@ public class ExampleMinigame1Logic : MonoBehaviour
             MinigameBroadcaster.MinigameFailed();
         }
     }
+
+    public void Win(GameObject button)
+    {
+        MinigameBroadcaster.MinigameCompleted();
+        Destroy(button);
+    }
 }
