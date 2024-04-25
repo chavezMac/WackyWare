@@ -150,13 +150,6 @@ public class MainGameController: MonoBehaviour
             yield return new WaitForSeconds(.45f);
         }
 
-        if (!timerOverloaded)
-        {
-            timeRemaining = minigameTimeLimit;
-            timer.StartTimer(minigameTimeLimit);
-        }
-        timerOverloaded = false;
-        
         yield return new WaitForSeconds(.1f);
         
         if (onlyMinigame != "")
@@ -184,6 +177,8 @@ public class MainGameController: MonoBehaviour
             asyncOperation.completed += (AsyncOperation async) =>
             {
                 transition.ResumeAnimation();
+                _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
+                OverrideTimeLimit(_minigameBroadcaster.overrideTimeLimit);
             };
         }
         else
@@ -231,9 +226,12 @@ public class MainGameController: MonoBehaviour
 
     public void OverrideTimeLimit(float newTimeLimit)
     {
-        if (newTimeLimit <= -1)
+        if (newTimeLimit <= -1)//use default time limit
         {
-            return; //use default time limit
+            timeRemaining = minigameTimeLimit;
+            timerPaused = false;
+            timer.StartTimer(minigameTimeLimit);
+            return; 
         }
         timerOverloaded = true;
         if (newTimeLimit > 120f)
