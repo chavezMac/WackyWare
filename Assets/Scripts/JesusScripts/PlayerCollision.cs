@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter(Collision collision)
     {
         // Log a message whenever a collision occurs
-        UnityEngine.Debug.Log("Collision Detected!");
+       UnityEngine.Debug.Log("Collision Detected!");
 
         // Check if the collision involves an object tagged as "Enemy"
         if (collision.gameObject.CompareTag("Enemy"))
@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour
             UnityEngine.Debug.Log("Player collided with an enemy!");
 
             // Destroy the enemy GameObject
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
