@@ -1469,6 +1469,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &1284694350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+  m_PrefabInstance: {fileID: 1709854851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284694342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7a6431d7697b14a96108b583f8bb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1284694352
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2082,9 +2093,21 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: impactSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: footstepSounds.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: impactSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: e8ea673d29ff7f743a11de49e182ac52, type: 3}
+    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: impactSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7970a16f1f90f0949a87456399040dfb, type: 3}
     - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: footstepSounds.Array.data[0]
       value: 
@@ -2364,6 +2387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2319947e5f850ce47b6d046b6e508d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wodzilla: {fileID: 1284694350}
   isActive: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class WodzillaTail : MonoBehaviour
 {
+    public WodzillaController wodzilla;
     public bool isActive = false;
 
     private void Start()
@@ -17,6 +18,7 @@ public class WodzillaTail : MonoBehaviour
             if (other != null)
             {
                 building.TakeDamage(50);
+                wodzilla.PlayRandomImpactSound();
             }
         }
     }

@@ -17,11 +17,13 @@ public class WodzillaBuilding : MonoBehaviour
 
     public GameObject dustSystem;
     public BossMinigameLogic logic;
+    private AudioSource sfx;
 
     private void Start()
     {
         initialPosition = transform.position;
         logic.UpdateBuildingCount(1);
+        sfx = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -70,6 +72,7 @@ public class WodzillaBuilding : MonoBehaviour
             isCrumbling = true;
             wobbleAmount *= 1.5f;
             StartCoroutine(CrumbleAnimation());
+            sfx.Play();
         }
     }
 
