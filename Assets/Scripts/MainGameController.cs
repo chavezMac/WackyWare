@@ -88,12 +88,12 @@ public class MainGameController: MonoBehaviour
         {
             return null;
         }
-        Debug.Log("Loading minigame scene: " + currentMinigame);
+        // Debug.Log("Loading minigame scene: " + currentMinigame);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(currentMinigame,LoadSceneMode.Additive);
         asyncLoad.completed += (AsyncOperation async) =>
         {
             ToggleMainSceneCamera(true);
-            Debug.Log("Loaded minigame scene: " + currentMinigame);
+            // Debug.Log("Loaded minigame scene: " + currentMinigame);
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("GameLogicScene"));
         };
         return asyncLoad;
@@ -101,7 +101,7 @@ public class MainGameController: MonoBehaviour
 
     public void BeginMinigame()
     {
-        Debug.Log("Activating minigame scene: " + currentMinigame);
+        // Debug.Log("Activating minigame scene: " + currentMinigame);
         ToggleMainSceneCamera(false);
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentMinigame));
     }
@@ -140,9 +140,10 @@ public class MainGameController: MonoBehaviour
         //Apply random names to the clapper board
         SetClapperNames();
         //Wait for a moment and unload the scene after the animation completes
-        yield return new WaitForSeconds(.45f);
+        
         if (!isFirstMinigame)
         {
+            yield return new WaitForSeconds(.45f);
             UnloadMinigame();
         }
         timeRemaining = minigameTimeLimit;
