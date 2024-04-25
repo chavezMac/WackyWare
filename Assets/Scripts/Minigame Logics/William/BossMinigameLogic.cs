@@ -6,6 +6,7 @@ public class BossMinigameLogic : MonoBehaviour
 {
     public int buildingsRemaining = 0;
     public bool debug = true;
+    public MinigameMusic music;
     
     // Start is called before the first frame update
     void Start()
@@ -19,11 +20,13 @@ public class BossMinigameLogic : MonoBehaviour
         if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)
         {
             MinigameBroadcaster.MinigameFailed();
+            music.FadeOutMusic();
         }
 
         if (debug && Input.GetKeyDown(KeyCode.E))//DEBUG WIN CONDITION
         {
             MinigameBroadcaster.MinigameCompleted();
+            music.FadeOutMusic();
         }
     }
 
@@ -33,6 +36,7 @@ public class BossMinigameLogic : MonoBehaviour
         if (buildingsRemaining <= 0)
         {
             MinigameBroadcaster.MinigameCompleted();
+            music.FadeOutMusic();
         }
     }
 }

@@ -14,7 +14,6 @@ public class MainGameController: MonoBehaviour
     public static bool timerPaused = true;
     public bool debug = true;
     private bool timerOverloaded = false;
-    public Camera mainSceneCamera;
     public PieTimer timer;
     public TransitionAnimationController transition;
     private MinigameBroadcaster _minigameBroadcaster;
@@ -33,7 +32,6 @@ public class MainGameController: MonoBehaviour
     public string[] teamNames;
     void Start()
     {
-        Debug.Log("mgc start");
         DontDestroyOnLoad(this);
         if(!timerOverloaded)
         {
@@ -60,11 +58,7 @@ public class MainGameController: MonoBehaviour
     {
         sfx.volume = 1f;
         float vol = 1f;
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            StartCoroutine(DebugLoadWodzilla());
-        }
-        
+
         if (!timerPaused)
         {
             timeRemaining -= Time.deltaTime;
@@ -83,15 +77,6 @@ public class MainGameController: MonoBehaviour
         }
     }
     
-    private IEnumerator DebugLoadWodzilla()
-    {
-        SceneManager.UnloadSceneAsync(currentMinigame);
-        yield return new WaitForSeconds(.2f);
-        currentMinigame = "ExampleMinigame1";
-        yield return new WaitForSeconds(.2f);
-        SceneManager.LoadSceneAsync(currentMinigame);
-    }
-
     public void DemoSingleMinigame(string sceneName)
     {
         //Play the current minigame repeatedly
@@ -143,14 +128,16 @@ public class MainGameController: MonoBehaviour
         }
         //Apply random names to the clapper board
         SetClapperNames();
-        //Wait for a moment and unload the scene after the animation completes
         
+        //Pause for a moment to let the Clapper Board slide in
         if (!isFirstMinigame)
         {
             yield return new WaitForSeconds(.45f);
         }
 
         yield return new WaitForSeconds(.1f);
+        
+        
         
         if (onlyMinigame != "")
         {
@@ -161,7 +148,7 @@ public class MainGameController: MonoBehaviour
             currentMinigame = miniGameList[currentMinigameIndex];
         }
         
-        // Pause to show animations.
+        // Pause to show the clapper board.
         if (!isFirstMinigame) // if there was a minigame before this one, pause for a moment.
         {
             yield return new WaitForSeconds(1.35f);
@@ -170,6 +157,7 @@ public class MainGameController: MonoBehaviour
         {
             yield return new WaitForSeconds(.05f);
         }
+        SetTimeLimit(-1);
         //After the pause, load the scene, and continue the animation after loading is done.
         AsyncOperation asyncOperation = LoadMinigame();
         if (asyncOperation != null)
@@ -178,7 +166,7 @@ public class MainGameController: MonoBehaviour
             {
                 transition.ResumeAnimation();
                 _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
-                OverrideTimeLimit(_minigameBroadcaster.overrideTimeLimit);
+                SetTimeLimit(_minigameBroadcaster.overrideTimeLimit);
             };
         }
         else
@@ -224,12 +212,11 @@ public class MainGameController: MonoBehaviour
         StartNextMinigame(false);
     }
 
-    public void OverrideTimeLimit(float newTimeLimit)
+    public void SetTimeLimit(float newTimeLimit)
     {
         if (newTimeLimit <= -1)//use default time limit
         {
             timeRemaining = minigameTimeLimit;
-            timerPaused = false;
             timer.StartTimer(minigameTimeLimit);
             return; 
         }
@@ -244,7 +231,6 @@ public class MainGameController: MonoBehaviour
             newTimeLimit = 2f;
         }
         timeRemaining = newTimeLimit;
-        timerPaused = false;
         timer.StartTimer(newTimeLimit);
     }
 }

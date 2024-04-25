@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class WodzillaController : MonoBehaviour
 {
@@ -16,11 +17,15 @@ public class WodzillaController : MonoBehaviour
     public Transform rightEye;
     public LayerMask layerMask;
 
+    public AudioSource roar;
+    public AudioSource laser;
+    public AudioSource stomp;
+    public AudioSource impact;
+    public AudioClip[] footstepSounds; // Array of footstep sound effects
+    
     private void Start()
     {
         anim = GetComponent<Animator>();
-        leftEye = transform;
-        rightEye = transform;
     }
 
     void Update()
@@ -67,5 +72,20 @@ public class WodzillaController : MonoBehaviour
             lineRenderer.SetPosition(0, eye.position);
             lineRenderer.SetPosition(1, hit.point);
         }
+    }
+    
+    public void PlayRandomFootstepSound()
+    {
+        if (footstepSounds.Length == 0)
+        {
+            Debug.LogWarning("Footstep sounds array is empty.");
+            return;
+        }
+
+        // Randomly select a footstep sound from the array
+        AudioClip randomFootstepSound = footstepSounds[Random.Range(0, footstepSounds.Length)];
+
+        // Play the selected footstep sound
+        stomp.PlayOneShot(randomFootstepSound);
     }
 }

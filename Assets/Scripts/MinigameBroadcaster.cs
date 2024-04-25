@@ -1,15 +1,17 @@
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MinigameBroadcaster : MonoBehaviour
 {
+    [HideInInspector] 
     public GameObject mainGameControllerPrefab;
     private static MainGameController gameController;
     private static bool gameFinished = false;
     private static bool hookedIn = false;
     [HideInInspector] public Scene currentScene;
     [HideInInspector] public bool demoMode = true;
+
     // Edit this if you want your minigame to start with more or less time in seconds.
     [Header("Specify time limit below, or leave at -1 for default time limit")]
     [Tooltip("Set to how long the minigame should last, or -1 to leave it at default time limit")]
@@ -21,7 +23,7 @@ public class MinigameBroadcaster : MonoBehaviour
         //Minigame is being played in sequence by the MainGameController
         if (gameController != null)
         {
-            gameController.OverrideTimeLimit(overrideTimeLimit);
+            gameController.SetTimeLimit(overrideTimeLimit);
             hookedIn = true;
             demoMode = false;
         }
@@ -32,7 +34,7 @@ public class MinigameBroadcaster : MonoBehaviour
             gameController = Instantiate(mainGameControllerPrefab).GetComponent<MainGameController>();
             currentScene = SceneManager.GetActiveScene();
             gameController.DemoSingleMinigame(currentScene.name);
-            gameController.OverrideTimeLimit(overrideTimeLimit);
+            gameController.SetTimeLimit(overrideTimeLimit);
             hookedIn = true;
         }
     }
@@ -60,6 +62,7 @@ public class MinigameBroadcaster : MonoBehaviour
                 gameController.MinigameDone(false);
             }
             gameFinished = true;
+            
         }
     }
 }

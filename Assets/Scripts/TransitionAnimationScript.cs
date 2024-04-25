@@ -9,7 +9,6 @@ public class TransitionAnimationController : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("start transanimscript");
         transitionAnimator = GetComponent<Animator>();
         sfx = GetComponent<AudioSource>();
         sfx.clip = clap;

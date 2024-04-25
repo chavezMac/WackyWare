@@ -33,7 +33,6 @@ public class ExampleMinigame1Logic : MonoBehaviour
     public void Win()
     {
         Destroy(button);
-        Debug.Log("win!");
         MinigameBroadcaster.MinigameCompleted();
     }
 }
