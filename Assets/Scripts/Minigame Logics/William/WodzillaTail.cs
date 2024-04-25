@@ -4,12 +4,8 @@ public class WodzillaTail : MonoBehaviour
 {
     public WodzillaController wodzilla;
     public bool isActive = false;
+    public int tailDamage = 50;
 
-    private void Start()
-    {
-        // Debug.Log("Tail start");
-    }
-    
     void OnTriggerEnter(Collider other)
     {
         if (isActive && other.CompareTag("WodzillaDestructible"))
@@ -17,7 +13,7 @@ public class WodzillaTail : MonoBehaviour
             WodzillaBuilding building = other.gameObject.GetComponent<WodzillaBuilding>();
             if (other != null)
             {
-                building.TakeDamage(50);
+                building.TakeDamage((float)tailDamage);
                 wodzilla.PlayRandomImpactSound();
             }
         }

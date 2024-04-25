@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class WodzillaBuilding : MonoBehaviour
 {
-    public int hp = 100;
+    public float hp = 100;
     public float wobbleAmount = 3f; // Adjust the intensity of the wobble
     public float wobbleSpeed = 15f; // Adjust the speed of the wobble
     private Vector3 initialPosition;
@@ -27,7 +27,7 @@ public class WodzillaBuilding : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         hp -= damage;
         if (hp <= 0)
@@ -42,9 +42,13 @@ public class WodzillaBuilding : MonoBehaviour
 
         float x = transform.position.x;
         float z = transform.position.z;
-        GameObject dust = Instantiate(dustSystem, new Vector3(x,0f,z), quaternion.identity);
-        dust.GetComponent<WodzillaBuildingDust>().building = this.gameObject;
-        Destroy(dust,10f);
+        
+        if (damage > 10f)
+        {
+            GameObject dust = Instantiate(dustSystem, new Vector3(x,0f,z), quaternion.identity);
+            dust.GetComponent<WodzillaBuildingDust>().building = this.gameObject;
+            Destroy(dust,6f);
+        }
     }
 
     IEnumerator WobbleCoroutine()

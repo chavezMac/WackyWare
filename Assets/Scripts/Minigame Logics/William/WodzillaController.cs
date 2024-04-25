@@ -17,9 +17,13 @@ public class WodzillaController : MonoBehaviour
     public Transform leftEye;
     public Transform rightEye;
     public LayerMask layerMask;
+    public LineRenderer lineRendererL;
+    public LineRenderer lineRendererR;
+    public GameObject LaserHitL;
+    public GameObject LaserHitR;
 
     public AudioSource roar;
-    public AudioSource laser;
+    public AudioSource lasersfx;
     public AudioSource stomp;
     public AudioSource impact;
     public AudioClip[] impactSounds; // Array of footstep sound effects
@@ -51,10 +55,16 @@ public class WodzillaController : MonoBehaviour
             tail.isActive = true;
         }
         
-        if (Input.GetMouseButtonDown(0)) // Check for left mouse button click
+        if (Input.GetMouseButton(0) && !tail.isActive) // Check for left mouse button click
         {
-            ShootLaser(leftEye);
-            ShootLaser(rightEye);
+            ShootLaser(leftEye,lineRendererL,LaserHitL);
+            ShootLaser(rightEye,lineRendererR,LaserHitR);
+        }
+        else
+        {
+            lineRendererL.gameObject.SetActive(false);
+            lineRendererR.gameObject.SetActive(false);
+            lasersfx.Stop();
         }
     }
 
@@ -69,19 +79,44 @@ public class WodzillaController : MonoBehaviour
         tail.isActive = false;
     }
     
-    void ShootLaser(Transform eye)
+    void ShootLaser(Transform eye, LineRenderer laser, GameObject laserHit)
     {
+        laser.gameObject.SetActive(true);
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
+        if (!lasersfx.isPlaying)
+        {
+            lasersfx.Play();
+        }
+
         if (Physics.Raycast(eye.position, ray.direction, out hit, Mathf.Infinity, layerMask))
         {
-            GameObject laser = Instantiate(laserPrefab, eye.position, Quaternion.identity);
-            LineRenderer lineRenderer = laser.GetComponent<LineRenderer>();
-            lineRenderer.SetPosition(0, eye.position);
-            lineRenderer.SetPosition(1, hit.point);
+            laser.SetPosition(0, eye.position);
+            laser.SetPosition(1, hit.point);
+
+            // Offset the hit effect position by 0.1 away from where it hit
+            Vector3 hitEffectPosition = hit.point + ray.direction * 0.1f;
+
+            // Set the position and rotation of the hit effect
+            laserHit.transform.position = hitEffectPosition;
+
+            // Calculate the rotation to make the hit effect face the laser's origin
+            Quaternion rotation = Quaternion.LookRotation((eye.position - hitEffectPosition).normalized);
+
+            // Apply the rotation to the hit effect
+            laserHit.transform.rotation = rotation;
+
+            // Check if the hit object has the "WodzillaDestructible" tag
+            if (hit.collider.CompareTag("WodzillaDestructible"))
+            {
+                // Trigger the TakeDamage function on the hit object
+                hit.collider.GetComponent<WodzillaBuilding>().TakeDamage(0.5f);
+            }
         }
+        // Debug.Log(hit + " at " + hit.point.ToString());
     }
+
     
     public void PlayRandomFootstepSound()
     {
