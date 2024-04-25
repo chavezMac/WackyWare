@@ -12,6 +12,7 @@ public class MainGameController: MonoBehaviour
     public static float timeRemaining; //time left for the current minigame 
     public static float minigameTimeLimit = 10f;
     public static bool timerPaused = true;
+    private bool timerOverloaded = false;
     public Camera mainSceneCamera;
     public PieTimer timer;
     public TransitionAnimationController transition;
@@ -31,7 +32,10 @@ public class MainGameController: MonoBehaviour
     public string[] teamNames;
     void Start()
     {
-        timeRemaining = minigameTimeLimit;
+        if(!timerOverloaded)
+        {
+            timeRemaining = minigameTimeLimit;
+        }
         _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
         if (_minigameBroadcaster!=null && _minigameBroadcaster.demoMode)
         {
@@ -146,8 +150,14 @@ public class MainGameController: MonoBehaviour
             yield return new WaitForSeconds(.45f);
             UnloadMinigame();
         }
-        timeRemaining = minigameTimeLimit;
-        timer.StartTimer(minigameTimeLimit);
+
+        if (!timerOverloaded)
+        {
+            timeRemaining = minigameTimeLimit;
+            timer.StartTimer(minigameTimeLimit);
+        }
+        timerOverloaded = false;
+        
         yield return new WaitForSeconds(.1f);
         
         if (onlyMinigame != "")
@@ -228,6 +238,7 @@ public class MainGameController: MonoBehaviour
         {
             return; //use default time limit
         }
+        timerOverloaded = true;
         if (newTimeLimit > 120f)
         {
             newTimeLimit = 120f;

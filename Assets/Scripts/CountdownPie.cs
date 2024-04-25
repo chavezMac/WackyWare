@@ -15,7 +15,6 @@ public class PieTimer : MonoBehaviour
     private void Start()
     {
         gameController = FindObjectOfType<MainGameController>();
-        // anim = GetComponent<Animator>();
         anim.speed = 0;
     }
     
