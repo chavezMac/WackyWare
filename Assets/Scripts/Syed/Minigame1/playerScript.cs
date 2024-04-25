@@ -41,7 +41,7 @@ public class playerScript : MonoBehaviour
         if(isFishing == true)
         {
             timeTillCatch += Time.deltaTime;
-            if(timeTillCatch >= 1)
+            if(timeTillCatch >= 3)
             {
                 fishGame.SetActive(true);
             }
@@ -52,9 +52,9 @@ public class playerScript : MonoBehaviour
             poleBack = false;
             isFishing = true;
             throwBobber = true;
-            if (targetTime >= 1)
+            if (targetTime >= 3)
             {
-                extraBobberDistance += 1;
+                extraBobberDistance += 3;
             }else
             {
                 extraBobberDistance += targetTime;

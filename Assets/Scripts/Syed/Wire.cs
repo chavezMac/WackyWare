@@ -9,10 +9,12 @@ public class Wire : MonoBehaviour
     private Vector3 startPoint;
     private Vector3 startPosition;
     public GameObject lightOn;
+    private static int wireNo;
     private void Start()
     {
         startPoint = transform.parent.position;
         startPosition = transform.position;
+        wireNo = 0;
 
     }
 
@@ -31,9 +33,13 @@ public class Wire : MonoBehaviour
                 updateWire(collider.transform.position);
                 if (transform.parent.name.Equals(collider.transform.parent.name))
                 {
-                    MinigameBroadcaster.MinigameCompleted();
                     collider.GetComponent<Wire>()?.Done();
                     Done();
+                    wireNo += 1;
+                    if (wireNo == 4)
+                    {
+                        MinigameBroadcaster.MinigameCompleted();
+                    }
                 }
                
                 return;
@@ -64,5 +70,13 @@ public class Wire : MonoBehaviour
 
         float dist = Vector2.Distance(startPoint, newPosition);
         wireEnd.size = new Vector2(dist, wireEnd.size.y);
+    }
+
+    private void Update()
+    {
+        if (MainGameController.timeRemaining <= 0)
+        {
+            MinigameBroadcaster.MinigameFailed();
+        }
     }
 }
