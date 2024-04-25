@@ -25,18 +25,20 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 position = transform.position;
         // Update the position of the player based on the input
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            position.x -= speed * Time.deltaTime;
-        }
-         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            position.x += speed * Time.deltaTime;
-        }
-         if (Input.GetKeyDown(KeyCode.Space))
+        // if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        // {
+        //     position.x -= speed * Time.deltaTime;
+        // }
+        //  if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        //  {
+        //    position.x += speed * Time.deltaTime;
+        // }
+        position.x += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+
+        if ( Input.GetKeyDown(KeyCode.Space))
             {
-            rb.velocity = new Vector3 (rb.velocity.x,jumpForce,rb.velocity.z);
-            }
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+        }
 
             if (Physics.Raycast(transform.position, Vector3.down, out hit, distanceToGround, 1 >> 8))
         {
