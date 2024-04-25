@@ -9,6 +9,8 @@ public class MinigameBroadcaster : MonoBehaviour
     [HideInInspector] public Scene currentScene;
     [HideInInspector] public bool demoMode = true;
     // Edit this if you want your minigame to start with more or less time in seconds.
+    [Header("Specify time limit below, or leave at -1 for default time limit")]
+    [Tooltip("Set to how long the minigame should last, or -1 to leave it at default time limit")]
     public float overrideTimeLimit = -1f;
     void Start()
     {
@@ -27,7 +29,7 @@ public class MinigameBroadcaster : MonoBehaviour
         {
             Debug.Log("MainGameController not present, starting demo mode");
             currentScene = SceneManager.GetActiveScene();
-            disableAll();
+            // disableAll();
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("GameLogicScene",LoadSceneMode.Additive);
             asyncLoad.completed += (AsyncOperation async) =>
             {
@@ -37,7 +39,7 @@ public class MinigameBroadcaster : MonoBehaviour
                 gameController.OverrideTimeLimit(overrideTimeLimit);
                 // gameController.tempMinigameTimeLimit = overrideTimeLimit;
                 hookedIn = true;
-                SceneManager.UnloadSceneAsync(currentScene);
+                // SceneManager.UnloadSceneAsync(currentScene);
             };
         }
     }

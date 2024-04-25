@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossMinigameLogic : MonoBehaviour
 {
     public int buildingsRemaining = 0;
+    public bool debug = true;
     
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,11 @@ public class BossMinigameLogic : MonoBehaviour
         if (MainGameController.timeRemaining <= 0)
         {
             MinigameBroadcaster.MinigameFailed();
+        }
+
+        if (debug && Input.GetKeyDown(KeyCode.E))//DEBUG WIN CONDITION
+        {
+            MinigameBroadcaster.MinigameCompleted();
         }
     }
 

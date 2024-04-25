@@ -12,10 +12,11 @@ public class MainGameController: MonoBehaviour
     public static float timeRemaining; //time left for the current minigame 
     public static float minigameTimeLimit = 10f;
     public bool timerPaused = true;
+    public Camera mainSceneCamera;
     public PieTimer timer;
     public TransitionAnimationController transition;
     private MinigameBroadcaster _minigameBroadcaster;
-    // private bool demomode = false;
+    private bool demomode = false;
     public int minigamesCompletedSuccessfully = 0;
     public int minigamesFailed = 0;
 
@@ -34,7 +35,7 @@ public class MainGameController: MonoBehaviour
         if (_minigameBroadcaster!=null && _minigameBroadcaster.demoMode)
         {
             onlyMinigame = _minigameBroadcaster.currentScene.name;
-            // demomode = true;
+            demomode = true;
         }
         transition.init();
         currentMinigame = miniGameList[0];
@@ -76,10 +77,21 @@ public class MainGameController: MonoBehaviour
         }
     }
 
+    public void LoadMinigame()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(currentMinigame,LoadSceneMode.Additive);
+        asyncLoad.completed += (AsyncOperation async) =>
+        {
+            ToggleMainSceneCamera(false);
+            // Debug.Log("Loading minigame scene: " + currentMinigame);
+        };
+    }
+
     public void UnloadMinigame()
     {
         // Debug.Log("Unloading minigame");
         SceneManager.UnloadSceneAsync(currentMinigame);
+        ToggleMainSceneCamera(true);
     }
 
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)
@@ -127,8 +139,13 @@ public class MainGameController: MonoBehaviour
         // We can load level scenes additively so we have multiple scenes loaded at once.
         // One scene (GameLogicScene) for the UI and outer game logic,
         // and another for the minigame and its logic.
-        SceneManager.LoadScene(currentMinigame, LoadSceneMode.Additive);
-        // Debug.Log("Loading scene: " + currentMinigame);
+        if (!demomode)
+        {
+            LoadMinigame();
+            // SceneManager.LoadScene(currentMinigame, LoadSceneMode.Additive);
+        }
+        
+        
 
         timeRemaining = minigameTimeLimit;
         timerPaused = false;
@@ -181,5 +198,10 @@ public class MainGameController: MonoBehaviour
         timeRemaining = newTimeLimit;
         timerPaused = false;
         timer.StartTimer(newTimeLimit);
+    }
+
+    public void ToggleMainSceneCamera(bool setting)
+    {
+        mainSceneCamera.enabled = setting;
     }
 }
