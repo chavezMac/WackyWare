@@ -57,6 +57,11 @@ public class MainGameController: MonoBehaviour
     {
         sfx.volume = 1f;
         float vol = 1f;
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(DebugLoadWodzilla());
+        }
+        
         if (!timerPaused)
         {
             timeRemaining -= Time.deltaTime;
@@ -73,6 +78,15 @@ public class MainGameController: MonoBehaviour
                 sfx.volume = vol;
             }
         }
+    }
+    
+    private IEnumerator DebugLoadWodzilla()
+    {
+        SceneManager.UnloadSceneAsync(currentMinigame);
+        yield return new WaitForSeconds(1f);
+        currentMinigame = "Test1";
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadSceneAsync(currentMinigame,LoadSceneMode.Additive);
     }
 
     public void DemoSingleMinigame(string sceneName)
