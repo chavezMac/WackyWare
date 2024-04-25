@@ -980,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 688e2acf3a09c1543ab31678d174a2ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1898
+      value: 1904
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 688e2acf3a09c1543ab31678d174a2ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1020,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 688e2acf3a09c1543ab31678d174a2ed, type: 3}
       propertyPath: m_Name
-      value: Nose
+      value: Wario Nose
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2650,7 +2650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5dd5b0a053a3ec641a3d9a0c88ebbe2f, type: 3}
       propertyPath: m_Name
-      value: hat_wario_model
+      value: Wario Hat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
