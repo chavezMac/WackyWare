@@ -5,22 +5,30 @@ using UnityEngine.SceneManagement;
 public class MinigameBroadcaster : MonoBehaviour
 {
     private static MainGameController gameController;
+    private static bool gameFinished = false;
     private void Start()
     {
         gameController = FindObjectOfType<MainGameController>();
+        gameFinished = false;
     }
 
     public static void MinigameCompleted()
     {
-        Debug.Log("The minigame reports: Level completed!");
-        //Tell the gameController that the level was completed.
-        gameController.MinigameDone(true);
+        if (!gameFinished)
+        {
+            Debug.Log("The minigame reports: Level completed!");
+            gameController.MinigameDone(true);
+            gameFinished = true;
+        }
     }
 
     public static void MinigameFailed()
     {
-        Debug.Log("The minigame reports: Level failed");
-        // Handle level failure logic here
-        gameController.MinigameDone(false);
+        if (!gameFinished)
+        {
+            Debug.Log("The minigame reports: Level failed");
+            gameController.MinigameDone(false);
+            gameFinished = true;
+        }
     }
 }
