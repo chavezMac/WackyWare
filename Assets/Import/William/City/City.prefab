@@ -468,6 +468,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4040769891055023900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1396,6 +1397,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3695649033058439064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3457,6 +3459,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4252491368905659038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3596,6 +3599,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &6002965571884207595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4757,6 +4761,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8257179424862590339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5074,6 +5079,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!1 &596587914900329764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,6 +5137,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4916434631185784813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5417,6 +5424,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &138735167228396053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6407,6 +6415,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &246427342384110701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6509,6 +6518,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5959438716535924355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7104,6 +7114,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3722826258955363253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10949,6 +10960,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2444227707302935644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11056,6 +11068,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1519326835068515030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12257,6 +12270,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8745533815382102449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12427,6 +12441,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4611546392139493788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17364,6 +17379,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &219260050348760005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19067,6 +19083,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7144135689093577443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21363,6 +21380,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2984277009262384992
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21883,6 +21901,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!54 &8621160473563380163
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23620,6 +23639,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3280923291770842846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25311,6 +25331,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &223153262497262230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25496,6 +25517,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4800914997008517891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27395,6 +27417,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8386765872088593876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28589,6 +28612,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7520228874322540519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31031,6 +31055,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2655675785393815882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32682,6 +32707,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5153088806658610365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32887,6 +32913,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4484942807878060209
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33828,6 +33855,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3621356217709873109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34983,6 +35011,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2714164662629535208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35788,6 +35817,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4953571518509123542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38299,6 +38329,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1722973841852430938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38830,6 +38861,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1659497131753085475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39047,6 +39079,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7277175669563429097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39347,6 +39380,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &6815749354261651044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41520,6 +41554,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7264760663296946734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43133,6 +43168,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!1 &5310938475438155299
 GameObject:
   m_ObjectHideFlags: 0
@@ -43616,6 +43652,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1336960481110246165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44309,6 +44346,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2198099250862007812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47664,6 +47702,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2935347734380849494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48274,6 +48313,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &754277371783478596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49360,6 +49400,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1868121368711406783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50770,6 +50811,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3932340447307098162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51383,6 +51425,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4832525531405296958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53686,6 +53729,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4796832347778829715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55600,6 +55644,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1800984230097229564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55967,6 +56012,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1863255690868435829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56270,6 +56316,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &468161611017736218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56461,6 +56508,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &86833441887873113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57092,6 +57140,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1844853111645302650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57285,6 +57334,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &6524816996338661354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57823,6 +57873,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8489974583997810772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57925,6 +57976,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7664804083167594743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58116,6 +58168,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!54 &8532985154913485460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58313,6 +58366,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5439931117440316702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58451,6 +58505,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3169412961775315787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59057,6 +59112,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4016512531981179763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59360,6 +59416,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7327503313398581358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60122,6 +60179,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1066836689832066480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60229,6 +60287,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8925495374604937798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60918,6 +60977,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!54 &2036541546384660161
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -61140,6 +61200,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &402199974897671612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61509,6 +61570,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1810129527897808331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61675,6 +61737,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5902113487859858638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61896,6 +61959,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &871582397692440058
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62318,6 +62382,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &6999716994948212267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62420,6 +62485,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4358856565796128881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62982,6 +63048,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7153390167211853329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63089,6 +63156,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &14500431512286419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63739,6 +63807,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4168295801795472720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63842,6 +63911,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7425216002089693850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66055,6 +66125,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &3168560762566656831
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66277,6 +66348,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8731882622209135777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66296,8 +66368,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4468924, y: 8.095343, z: 0.8595505}
-  m_Center: {x: -0.065581486, y: 0.31205475, z: -0.07022479}
+  m_Size: {x: 1.4468924, y: 2.0559688, z: 0.8595505}
+  m_Center: {x: -0.065581456, y: 0.03701173, z: -0.07022479}
 --- !u!54 &8335604694785277875
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -66694,6 +66766,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4689026377795470443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67309,6 +67382,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2958120042675028048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67615,6 +67689,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2407529142789164815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68318,6 +68393,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!54 &4262048915110648942
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -70269,6 +70345,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4637520893003215513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70831,6 +70908,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!54 &6020776558252281128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -71323,6 +71401,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8555450692640298044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74032,6 +74111,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5446371586093804146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75552,6 +75632,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &7616016197061726791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75740,6 +75821,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5231909217900690159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76302,6 +76384,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5049281140563231427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76969,6 +77052,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!54 &3916820893104344373
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -77210,6 +77294,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4668144146160003139
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77611,6 +77696,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &2065458299865391791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78289,6 +78375,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &8245172995037848155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78834,6 +78921,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &4770473696659451977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79191,6 +79279,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &151399277898728205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79293,6 +79382,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &5171331040111909473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79545,6 +79635,7 @@ MonoBehaviour:
   crumbleDuration: 3
   sinkSpeed: 35
   dustSystem: {fileID: 100000, guid: 6ec0e82148d7d81488db50b756c7ecc1, type: 3}
+  logic: {fileID: 0}
 --- !u!65 &1089839801256528040
 BoxCollider:
   m_ObjectHideFlags: 0

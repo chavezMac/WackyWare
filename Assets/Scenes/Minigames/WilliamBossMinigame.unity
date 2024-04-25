@@ -897,18 +897,6 @@ PrefabInstance:
       propertyPath: logic
       value: 
       objectReference: {fileID: 432780557}
-    - target: {fileID: 8731882622209135777, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
-      propertyPath: m_Size.y
-      value: 4.800587
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731882622209135777, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
-      propertyPath: m_Center.x
-      value: -0.065581456
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731882622209135777, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
-      propertyPath: m_Center.y
-      value: -1.335296
-      objectReference: {fileID: 0}
     - target: {fileID: 9194209175468934965, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       propertyPath: logic
       value: 

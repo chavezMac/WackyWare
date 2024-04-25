@@ -19,6 +19,8 @@ public class WodzillaController : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        leftEye = transform;
+        rightEye = transform;
     }
 
     void Update()
