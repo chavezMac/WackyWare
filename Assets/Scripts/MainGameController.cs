@@ -12,6 +12,7 @@ public class MainGameController: MonoBehaviour
     public static float timeRemaining; //time left for the current minigame 
     public static float minigameTimeLimit = 10f;
     public static bool timerPaused = true;
+    public bool debug = true;
     private bool timerOverloaded = false;
     public Camera mainSceneCamera;
     public PieTimer timer;
@@ -32,6 +33,8 @@ public class MainGameController: MonoBehaviour
     public string[] teamNames;
     void Start()
     {
+        Debug.Log("mgc start");
+        DontDestroyOnLoad(this);
         if(!timerOverloaded)
         {
             timeRemaining = minigameTimeLimit;
@@ -46,11 +49,11 @@ public class MainGameController: MonoBehaviour
         transition.init(); //Starts clapperboard mid-animation
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
-        StartNextMinigame(true);
         WinIcon.speed = 0;
         FailIcon.speed = 0;
         WinIcon.Play(0);
         WinIcon.Play(0);
+        StartNextMinigame(true);
     }
 
     private void Update()
@@ -83,10 +86,10 @@ public class MainGameController: MonoBehaviour
     private IEnumerator DebugLoadWodzilla()
     {
         SceneManager.UnloadSceneAsync(currentMinigame);
-        yield return new WaitForSeconds(1f);
-        currentMinigame = "Test1";
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadSceneAsync(currentMinigame,LoadSceneMode.Additive);
+        yield return new WaitForSeconds(.2f);
+        currentMinigame = "ExampleMinigame1";
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadSceneAsync(currentMinigame);
     }
 
     public void DemoSingleMinigame(string sceneName)
@@ -102,33 +105,16 @@ public class MainGameController: MonoBehaviour
 
     public AsyncOperation LoadMinigame()
     {
-        if (SceneManager.GetSceneByName(currentMinigame).isLoaded)
+        // if (SceneManager.GetSceneByName(currentMinigame).isLoaded)
+        // {
+        //     return null;
+        // }
+        if (debug)
         {
-            return null;
+            Debug.Log("Loading minigame scene: " + currentMinigame);
         }
-        // Debug.Log("Loading minigame scene: " + currentMinigame);
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(currentMinigame,LoadSceneMode.Additive);
-        asyncLoad.completed += (AsyncOperation async) =>
-        {
-            ToggleMainSceneCamera(true);
-            // Debug.Log("Loaded minigame scene: " + currentMinigame);
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("GameLogicScene"));
-        };
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(currentMinigame);
         return asyncLoad;
-    }
-
-    public void BeginMinigame()
-    {
-        // Debug.Log("Activating minigame scene: " + currentMinigame);
-        ToggleMainSceneCamera(false);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentMinigame));
-    }
-
-    public void UnloadMinigame()
-    {
-        // Debug.Log("Unloading minigame");
-        SceneManager.UnloadSceneAsync(currentMinigame);
-        ToggleMainSceneCamera(true);
     }
 
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)
@@ -162,7 +148,6 @@ public class MainGameController: MonoBehaviour
         if (!isFirstMinigame)
         {
             yield return new WaitForSeconds(.45f);
-            UnloadMinigame();
         }
 
         if (!timerOverloaded)
@@ -199,13 +184,11 @@ public class MainGameController: MonoBehaviour
             asyncOperation.completed += (AsyncOperation async) =>
             {
                 transition.ResumeAnimation();
-                BeginMinigame();
             };
         }
         else
         {
             transition.ResumeAnimation();
-            BeginMinigame();
         }
         timerPaused = false;
     }
@@ -265,10 +248,5 @@ public class MainGameController: MonoBehaviour
         timeRemaining = newTimeLimit;
         timerPaused = false;
         timer.StartTimer(newTimeLimit);
-    }
-
-    public void ToggleMainSceneCamera(bool setting)
-    {
-        mainSceneCamera.enabled = setting;
     }
 }

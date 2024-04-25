@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MinigameBroadcaster : MonoBehaviour
 {
+    public GameObject mainGameControllerPrefab;
     private static MainGameController gameController;
     private static bool gameFinished = false;
     private static bool hookedIn = false;
@@ -25,19 +26,14 @@ public class MinigameBroadcaster : MonoBehaviour
             demoMode = false;
         }
         //If the minigame is being loaded up on it's own, we just demo the game repeatedly
-        else if (!SceneManager.GetSceneByName("GameLogicScene").isLoaded)
+        else
         {
             Debug.Log("MainGameController not present, starting demo mode");
+            gameController = Instantiate(mainGameControllerPrefab).GetComponent<MainGameController>();
             currentScene = SceneManager.GetActiveScene();
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("GameLogicScene",LoadSceneMode.Additive);
-            asyncLoad.completed += (AsyncOperation async) =>
-            {
-                // This code block will be executed when the scene is fully loaded
-                gameController = FindObjectOfType<MainGameController>();
-                gameController.DemoSingleMinigame(currentScene.name);
-                gameController.OverrideTimeLimit(overrideTimeLimit);
-                hookedIn = true;
-            };
+            gameController.DemoSingleMinigame(currentScene.name);
+            gameController.OverrideTimeLimit(overrideTimeLimit);
+            hookedIn = true;
         }
     }
     

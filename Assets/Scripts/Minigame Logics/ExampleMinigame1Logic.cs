@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
 
@@ -6,7 +7,7 @@ public class ExampleMinigame1Logic : MonoBehaviour
 {
     private bool debug = true;
 
-    public Button button;
+    public GameObject button;
     //This minigame simply has the win trigger in the onClick event of the button
     void Update()
     {
@@ -31,7 +32,8 @@ public class ExampleMinigame1Logic : MonoBehaviour
 
     public void Win()
     {
-        MinigameBroadcaster.MinigameCompleted();
         Destroy(button);
+        Debug.Log("win!");
+        MinigameBroadcaster.MinigameCompleted();
     }
 }

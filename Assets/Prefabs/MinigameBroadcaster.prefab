@@ -45,6 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf80141999c82b4dbafa57a49ea08a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainGameControllerPrefab: {fileID: 687760359531645946, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+  mainGameUIPrefab: {fileID: 2794910440995426160, guid: 05db6a3851413224690135654fd07813, type: 3}
+  currentScene:
+    m_Handle: 0
+  demoMode: 1
+  overrideTimeLimit: -1
 --- !u!1 &1834548898840551586
 GameObject:
   m_ObjectHideFlags: 0
