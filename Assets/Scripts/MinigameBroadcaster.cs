@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,7 +15,6 @@ public class MinigameBroadcaster : MonoBehaviour
     public float overrideTimeLimit = -1f;
     void Start()
     {
-        // Debug.Log("The scene name is " + sceneName);
         gameController = FindObjectOfType<MainGameController>();
         gameFinished = false;
         //Minigame is being played in sequence by the MainGameController
@@ -29,7 +29,6 @@ public class MinigameBroadcaster : MonoBehaviour
         {
             Debug.Log("MainGameController not present, starting demo mode");
             currentScene = SceneManager.GetActiveScene();
-            // disableAll();
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("GameLogicScene",LoadSceneMode.Additive);
             asyncLoad.completed += (AsyncOperation async) =>
             {
@@ -37,30 +36,11 @@ public class MinigameBroadcaster : MonoBehaviour
                 gameController = FindObjectOfType<MainGameController>();
                 gameController.DemoSingleMinigame(currentScene.name);
                 gameController.OverrideTimeLimit(overrideTimeLimit);
-                // gameController.tempMinigameTimeLimit = overrideTimeLimit;
                 hookedIn = true;
-                // SceneManager.UnloadSceneAsync(currentScene);
             };
         }
     }
-
-    private void disableAll()
-    {
-        // Get all GameObjects in the scene
-        GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
-
-        // Deactivate all other objects except the current one
-        foreach (GameObject obj in allObjects)
-        {
-            // Check if the object is not the current object
-            if (obj != gameObject && !obj.GetComponent<Camera>() && !obj.GetComponent<Light>())
-            {
-                // Deactivate the object
-                obj.SetActive(false);
-            }
-        }
-    }
-
+    
     public static void MinigameCompleted()
     {
         if (!gameFinished)

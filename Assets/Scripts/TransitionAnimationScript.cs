@@ -16,7 +16,7 @@ public class TransitionAnimationController : MonoBehaviour
 
     public void init()
     {
-        transitionAnimator.Play("ClapperAnimation2", 0, .35f);
+        transitionAnimator.Play("ClapperAnimation2", 0, .43f);
         transitionAnimator.speed = 1;
     }
 

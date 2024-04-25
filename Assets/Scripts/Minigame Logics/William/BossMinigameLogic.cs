@@ -16,7 +16,7 @@ public class BossMinigameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MainGameController.timeRemaining <= 0)
+        if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)
         {
             MinigameBroadcaster.MinigameFailed();
         }

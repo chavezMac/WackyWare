@@ -11,7 +11,7 @@ public class MainGameController: MonoBehaviour
     public string[] miniGameList; //list of minigames by their scene name
     public static float timeRemaining; //time left for the current minigame 
     public static float minigameTimeLimit = 10f;
-    public bool timerPaused = true;
+    public static bool timerPaused = true;
     public Camera mainSceneCamera;
     public PieTimer timer;
     public TransitionAnimationController transition;
@@ -31,18 +31,22 @@ public class MainGameController: MonoBehaviour
     public string[] teamNames;
     void Start()
     {
+        timeRemaining = minigameTimeLimit;
         _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
         if (_minigameBroadcaster!=null && _minigameBroadcaster.demoMode)
         {
             onlyMinigame = _minigameBroadcaster.currentScene.name;
             demomode = true;
+            currentMinigame = onlyMinigame;
         }
-        transition.init();
+        transition.init(); //Starts clapperboard mid-animation
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
         StartNextMinigame(true);
         WinIcon.speed = 0;
         FailIcon.speed = 0;
+        WinIcon.Play(0);
+        WinIcon.Play(0);
     }
 
     private void Update()
@@ -74,17 +78,32 @@ public class MainGameController: MonoBehaviour
         {
             miniGameList[i] = sceneName;
             onlyMinigame = sceneName;
+            currentMinigame = sceneName;
         }
     }
 
-    public void LoadMinigame()
+    public AsyncOperation LoadMinigame()
     {
+        if (SceneManager.GetSceneByName(currentMinigame).isLoaded)
+        {
+            return null;
+        }
+        Debug.Log("Loading minigame scene: " + currentMinigame);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(currentMinigame,LoadSceneMode.Additive);
         asyncLoad.completed += (AsyncOperation async) =>
         {
-            ToggleMainSceneCamera(false);
-            // Debug.Log("Loading minigame scene: " + currentMinigame);
+            ToggleMainSceneCamera(true);
+            Debug.Log("Loaded minigame scene: " + currentMinigame);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("GameLogicScene"));
         };
+        return asyncLoad;
+    }
+
+    public void BeginMinigame()
+    {
+        Debug.Log("Activating minigame scene: " + currentMinigame);
+        ToggleMainSceneCamera(false);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentMinigame));
     }
 
     public void UnloadMinigame()
@@ -97,59 +116,81 @@ public class MainGameController: MonoBehaviour
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)
     {
         timerPaused = true;
+        yield return null; //pause for 1 frame
+        
         currentMinigameIndex++; // Increment the minigame counter
         if (currentMinigameIndex >= miniGameList.Length)
         {
-            Debug.Log("You beat all the games in the collection! Congrats!");
-            yield break;
+            if (demomode)
+            {
+                currentMinigameIndex = 0;
+            }
+            else
+            {
+                Debug.Log("You beat all the games in the collection! Congrats!");
+                yield break;
+            }
         }
         
-        //Play transition animation
+        //Play transition animation if there was a previous minigame
         if (!isFirstMinigame)
         {
             transition.Play();
         }
-        else
-        {
-            // transition.ResumeAnimation();
-        }
         //Apply random names to the clapper board
-        clapper.UpdateClapperText(currentMinigameIndex,
-            teamNames[Random.Range(0, 6)].ToUpper(),
-            teamNames[Random.Range(0, 6)].ToUpper(),
-            teamNames[Random.Range(0, 6)].ToUpper());
+        SetClapperNames();
         //Wait for a moment and unload the scene after the animation completes
         yield return new WaitForSeconds(.45f);
         if (!isFirstMinigame)
         {
             UnloadMinigame();
         }
-        currentMinigame = miniGameList[currentMinigameIndex];
+        timeRemaining = minigameTimeLimit;
+        timer.StartTimer(minigameTimeLimit);
+        yield return new WaitForSeconds(.1f);
+        
         if (onlyMinigame != "")
         {
             currentMinigame = onlyMinigame;
         }
+        else
+        {
+            currentMinigame = miniGameList[currentMinigameIndex];
+        }
         
         // Pause to show animations.
-        if (!isFirstMinigame)
+        if (!isFirstMinigame) // if there was a minigame before this one, pause for a moment.
         {
-            yield return new WaitForSeconds(1.55f);
+            yield return new WaitForSeconds(1.35f);
         }
-        transition.ResumeAnimation();
-        // We can load level scenes additively so we have multiple scenes loaded at once.
-        // One scene (GameLogicScene) for the UI and outer game logic,
-        // and another for the minigame and its logic.
-        if (!demomode)
+        else //otherwise, much shorter pause
         {
-            LoadMinigame();
-            // SceneManager.LoadScene(currentMinigame, LoadSceneMode.Additive);
+            yield return new WaitForSeconds(.05f);
         }
-        
-        
-
-        timeRemaining = minigameTimeLimit;
+        //After the pause, load the scene, and continue the animation after loading is done.
+        AsyncOperation asyncOperation = LoadMinigame();
+        if (asyncOperation != null)
+        {
+            asyncOperation.completed += (AsyncOperation async) =>
+            {
+                transition.ResumeAnimation();
+                BeginMinigame();
+            };
+        }
+        else
+        {
+            transition.ResumeAnimation();
+            BeginMinigame();
+        }
         timerPaused = false;
-        timer.StartTimer(minigameTimeLimit);
+    }
+
+    private void SetClapperNames()
+    {
+        clapper.UpdateClapperText(currentMinigameIndex,
+            teamNames[Random.Range(0, 6)].ToUpper(),
+            teamNames[Random.Range(0, 6)].ToUpper(),
+            teamNames[Random.Range(0, 6)].ToUpper());
     }
 
     public void StartNextMinigame(bool isFirstMinigame)
