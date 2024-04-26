@@ -7,10 +7,18 @@ public class MinigameBroadcaster : MonoBehaviour
     [HideInInspector] 
     public GameObject mainGameControllerPrefab;
     private static MainGameController gameController;
+    [HideInInspector] public Animator inputAmin;
     private static bool gameFinished = false;
     private static bool hookedIn = false;
     [HideInInspector] public Scene currentScene;
     [HideInInspector] public bool demoMode = true;
+    [HideInInspector] public GameObject mouseIcon;
+    [HideInInspector] public GameObject WASDIcon;
+    [HideInInspector] public GameObject SpaceIcon;
+    public bool isMouseUsed = false;
+    public bool isWASDUsed = false;
+    public bool isSpacebarUsed = false;
+    
 
     // Edit this if you want your minigame to start with more or less time in seconds.
     [Header("Specify time limit below, or leave at -1 for default time limit")]
@@ -37,6 +45,12 @@ public class MinigameBroadcaster : MonoBehaviour
             gameController.SetTimeLimit(overrideTimeLimit);
             hookedIn = true;
         }
+
+        
+        mouseIcon.SetActive(isMouseUsed);
+        WASDIcon.SetActive(isWASDUsed);
+        SpaceIcon.SetActive(isSpacebarUsed);
+        inputAmin.Play(0);
     }
     
     public static void MinigameCompleted()
