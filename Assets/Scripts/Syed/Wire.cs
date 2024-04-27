@@ -10,11 +10,14 @@ public class Wire : MonoBehaviour
     private Vector3 startPosition;
     public GameObject lightOn;
     private static int wireNo;
+    public AudioClip light;
+    private AudioSource _source;
     private void Start()
     {
         startPoint = transform.parent.position;
         startPosition = transform.position;
         wireNo = 0;
+        _source = GetComponent<AudioSource>();
 
     }
 
@@ -54,6 +57,7 @@ public class Wire : MonoBehaviour
     {
         lightOn.SetActive(true);
         Destroy(this);
+        _source.PlayOneShot(light);
     }
 
     private void OnMouseUp()
