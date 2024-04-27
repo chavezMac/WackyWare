@@ -57,7 +57,7 @@ public class Wire : MonoBehaviour
     {
         lightOn.SetActive(true);
         Destroy(this);
-        _source.PlayOneShot(light);
+    
     }
 
     private void OnMouseUp()

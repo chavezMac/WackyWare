@@ -14,7 +14,7 @@ public class FishingMinigame : MonoBehaviour
     private float fishDestination;
 
     private float fishTimer;
-
+    
     [SerializeField] private float timerMultiplicator = 3f;
 
     private float fishSpeed;
@@ -32,6 +32,7 @@ public class FishingMinigame : MonoBehaviour
     [SerializeField] private SpriteRenderer hookSpriteRenderer;
 
     [SerializeField] private Transform progressBarContainer;
+    
     // Start is called before the first frame update
     void Start()
     {
