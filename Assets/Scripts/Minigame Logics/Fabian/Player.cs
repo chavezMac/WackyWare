@@ -12,11 +12,15 @@ public class Player : MonoBehaviour
   public Trail2D trail;
   private GameObject[] shipTails;
   private float ogSpeed;
-  private float ogTailLength; 
-  
+  private float ogTailLength;
+  private bool killedPlanet;
+  public GameObject explosion;
+  private Vector3 explosionLocation = new Vector3(); 
+  public GameManger GameManger;
   
   private void Start()
   {
+    killedPlanet = false;
     shipTails = GameObject.FindGameObjectsWithTag("ShipTail");
     //subscribes to the method in enemy whihc allows us to know when enemy died
     Enemy.onEnemyDied += EnemyOnEnemyDied;
@@ -29,14 +33,26 @@ public class Player : MonoBehaviour
     Enemy.onEnemyDied -= EnemyOnEnemyDied;
   }
 
-  void EnemyOnEnemyDied()
+  void EnemyOnEnemyDied(bool died , Vector3 pos)
   {
-    Debug.Log("Player Recieved EnemyDied Event");
+    killedPlanet = died;
+    explosionLocation = pos; 
+    //Debug.Log("Player Recieved EnemyDied Event");
   }
     // Update is called once per frame
 
     void Update()
     {
+      if (killedPlanet)
+      {
+        GameManger.ballonsToShootDown--;
+        killedPlanet = false;
+        Instantiate(explosion,explosionLocation, Quaternion.identity);
+        gameObject.GetComponent<AudioSource>().Play();
+
+       
+
+      }
       float direction = Input.GetAxis(inputAxis);
       Vector3 newPosition = new Vector3();
 

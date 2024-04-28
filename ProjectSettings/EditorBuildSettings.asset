@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/FabianMinigame1.unity
     guid: d4dc1915cf69c43228923769dc8ac5a5
+  - enabled: 1
+    path: Assets/Scenes/Minigames/FabianMinigame2.unity
+    guid: b10c833d892f8724fac69a0625a5f543
   m_configObjects: {}

@@ -40,7 +40,7 @@ public class BalloonSpawner : MonoBehaviour
             spawnRectTransform = spawnRectTransforms[randPositionIndex];
             lastPointUsed = randPositionIndex;
         }
-        if (!isBalloonSpawned && GameManagerScript.balloonsPopped > 0)
+        if (!isBalloonSpawned )
         {
             Vector3 spawnPosition = spawnRectTransform.position;
             //Vector3 spawnPosition = new Vector3(spawnRectTransform.position.x, spawnRectTransform.position.y, spawnRectTransform.position.z);
@@ -53,7 +53,7 @@ public class BalloonSpawner : MonoBehaviour
     IEnumerator InstantiateWithDelay(Vector3 spawnPosition)
     {
         // Wait for the specified delay
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.5f);
         isBalloonSpawned = false;
         Instantiate(balloonPrefabs[color], spawnPosition, Quaternion.identity, spawnRectTransform);
 

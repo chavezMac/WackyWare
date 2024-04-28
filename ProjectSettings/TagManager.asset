@@ -8,6 +8,8 @@ TagManager:
   - Balloon
   - Border
   - ShipTail
+  - ExplosionParticle
+  - MiniGameLogic
   layers:
   - Default
   - TransparentFX
