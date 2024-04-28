@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class MicchavezMinigame2Logic : MonoBehaviour
 {
-    //Get reference to Player
-    public GameObject player;
-    public GameObject finishLine;
-    // Start is called before the first frame update
+    private int itemsLeft;
+
     void Start()
     {
-        player = GameObject.Find("Player");
-        finishLine = GameObject.Find("Finish");
+        //Set the number of items left to collect
+        GameObject[] items = GameObject.FindGameObjectsWithTag("PickUp");
+        itemsLeft = items.Length;
     }
-
-    // Update is called once per frame
+    //This minigame simply has the win trigger in the onClick event of the button
     void Update()
     {
         //Check if time has run out, and if so, we fail the minigame
@@ -23,9 +21,19 @@ public class MicchavezMinigame2Logic : MonoBehaviour
             MinigameBroadcaster.MinigameFailed();
         }
 
-        // if (player.transform.position.z >= finishLine.transform.position.z)
-        // {
-        //     MinigameBroadcaster.MinigameCompleted();
-        // }
+        int itemsLeft = GetItemsLeft();
+        if (itemsLeft <= 0)
+        {
+            MinigameBroadcaster.MinigameCompleted();
+        }
+        //Check if player has collected all the items
+
+    }
+
+    public int GetItemsLeft()
+    {
+        GameObject[] items = GameObject.FindGameObjectsWithTag("PickUp");
+        int itemsLeft = items.Length;
+        return itemsLeft;
     }
 }

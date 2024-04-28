@@ -3798,6 +3798,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: light
+      value: 
+      objectReference: {fileID: 705507993}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: timer
       value: 
       objectReference: {fileID: 381383825}
@@ -3834,12 +3838,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 8d5413fc37c274549922aff9cc125ff2, type: 3}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: minigameTimeLimit
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: teamNames.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.size
-      value: 11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: teamNames.Array.data[0]

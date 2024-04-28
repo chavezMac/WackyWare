@@ -25,6 +25,7 @@ public class MainGameController: MonoBehaviour
     public Animator FailIcon;
     public ClapperBoard clapper;
     public string[] teamNames;
+
     void Start()
     {
         transition.init();

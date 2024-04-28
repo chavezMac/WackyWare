@@ -19,6 +19,10 @@ public class SlopeMovement : MonoBehaviour
     private float? jumpPressedTime;
 
     public AudioSource audioSource;
+
+    [Header("Animator")]
+    [SerializeField]
+    private Animator animator;
     
     void Start()
     {
@@ -38,6 +42,8 @@ public class SlopeMovement : MonoBehaviour
         // Project movement direction onto the camera plane
         Vector3 movementDirection = (cameraForward * verticalInput + cameraRight * horizontalInput).normalized;
 
+        float forward = Vector3.Dot(movementDirection, cameraForward);
+        animator.SetFloat("Forward", forward);
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
 
         ySpeed += Physics.gravity.y * Time.deltaTime;

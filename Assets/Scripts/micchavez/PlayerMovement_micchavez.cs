@@ -19,6 +19,11 @@ public class PlayerMovement_micchavez : MonoBehaviour
     private float? jumpPressedTime;
 
     public AudioSource audioSource;
+
+    [Header("Animation")]
+    [SerializeField]
+    private Animator animator;
+
     
     void Start()
     {
@@ -37,6 +42,10 @@ public class PlayerMovement_micchavez : MonoBehaviour
 
         // Project movement direction onto the camera plane
         Vector3 movementDirection = (cameraForward * verticalInput + cameraRight * horizontalInput).normalized;
+
+        //Calculate forward direction value
+        float forward = Vector3.Dot(movementDirection, cameraForward);
+        animator.SetFloat("Forward", forward);
 
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
 

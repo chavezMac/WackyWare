@@ -71,11 +71,8 @@ public class JumpMovement : MonoBehaviour
         if(other.gameObject.CompareTag("PickUp")) {
             // other.gameObject.SetActive(false);
             count = count + 1;
-        }
-
-        if(other.gameObject.CompareTag("Bullet")) {
-            //Reset the players position
-            transform.position = new Vector3(-2f, 0f, -2.7f);
-        }
+             //change the tag of the object
+            other.gameObject.tag = "PickedUp";
+        }       
     }
 }

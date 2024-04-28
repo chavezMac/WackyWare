@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Emit : MonoBehaviour
 {
+    bool playerIsOnFinishLine = false;
     private ParticleSystem particleSystem;
     private AudioSource audioSource;
 
@@ -20,6 +21,8 @@ public class Emit : MonoBehaviour
         {
             particleSystem.Play();
             audioSource.Play();
+            other.tag = "PickedUp";
         }
+
     }
 }
