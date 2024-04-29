@@ -9,14 +9,14 @@ public class TransitionAnimationController : MonoBehaviour
 
     void Start()
     {
-        // Play();
+        transitionAnimator = GetComponent<Animator>();
         sfx = GetComponent<AudioSource>();
         sfx.clip = clap;
     }
 
     public void init()
     {
-        transitionAnimator.Play("ClapperAnimation2", 0, .35f);
+        transitionAnimator.Play("ClapperAnimation2", 0, .43f);
         transitionAnimator.speed = 1;
     }
 
@@ -31,7 +31,6 @@ public class TransitionAnimationController : MonoBehaviour
     {
         transitionAnimator.speed = 0;
         sfx.Play();
-        // MainGameController.UnloadMinigame();
     }
 
     // Function to resume the door animation
