@@ -1415,7 +1415,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -3833,10 +3833,6 @@ PrefabInstance:
       propertyPath: ticktockSound
       value: 
       objectReference: {fileID: 8300000, guid: 8d5413fc37c274549922aff9cc125ff2, type: 3}
-    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
-      propertyPath: currentMinigameIndex
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: teamNames.Array.size
       value: 6
