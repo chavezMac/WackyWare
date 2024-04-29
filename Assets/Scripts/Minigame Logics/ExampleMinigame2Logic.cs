@@ -26,7 +26,7 @@ public class ExampleMinigame2Logic : MonoBehaviour
             MinigameBroadcaster.MinigameFailed();
         }
         //Check if time has run out, and if so, we fail the minigame
-        if (MainGameController.timeRemaining <= 0)
+        if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)
         {
             MinigameBroadcaster.MinigameFailed();
         }

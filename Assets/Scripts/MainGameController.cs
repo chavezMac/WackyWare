@@ -5,14 +5,19 @@ using UnityEngine.UI;
 
 public class MainGameController: MonoBehaviour
 {
-    private string currentMinigame;
+    public string currentMinigame;
+    public string onlyMinigame;// Used if we are just demoing one minigame over and over
     public int currentMinigameIndex = -1;
     public string[] miniGameList; //list of minigames by their scene name
     public static float timeRemaining; //time left for the current minigame 
-    public float minigameTimeLimit = 10f;
-    public bool timerPaused = true;
+    public static float minigameTimeLimit = 10f;
+    public static bool timerPaused = true;
+    public bool debug = true;
+    private bool timerOverloaded = false;
     public PieTimer timer;
     public TransitionAnimationController transition;
+    private MinigameBroadcaster _minigameBroadcaster;
+    private bool demomode = false;
     public int minigamesCompletedSuccessfully = 0;
     public int minigamesFailed = 0;
 
@@ -27,78 +32,156 @@ public class MainGameController: MonoBehaviour
     public string[] teamNames;
     void Start()
     {
-        transition.init();
+        DontDestroyOnLoad(this);
+        if(!timerOverloaded)
+        {
+            timeRemaining = minigameTimeLimit;
+        }
+        _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
+        if (_minigameBroadcaster!=null && _minigameBroadcaster.demoMode)
+        {
+            onlyMinigame = _minigameBroadcaster.currentScene.name;
+            demomode = true;
+            currentMinigame = onlyMinigame;
+        }
+        transition.init(); //Starts clapperboard mid-animation
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
-        StartNextMinigame(true);
         WinIcon.speed = 0;
         FailIcon.speed = 0;
+        WinIcon.Play(0);
+        WinIcon.Play(0);
+        StartNextMinigame(true);
     }
 
     private void Update()
     {
+        sfx.volume = 1f;
+        float vol = 1f;
+
         if (!timerPaused)
         {
             timeRemaining -= Time.deltaTime;
+            // Play clock ticking sound if we're running out of time
             if (timeRemaining < ticktockSound.length && !sfx.isPlaying)
             {
                 sfx.clip = ticktockSound;
                 sfx.Play();
             }
+            //Control volume of clock ticking
+            if (sfx.clip == ticktockSound && sfx.isPlaying)
+            {
+                vol = Mathf.Clamp(.1f + (ticktockSound.length - timeRemaining) / ticktockSound.length,0f,1f);
+                sfx.volume = vol;
+            }
+        }
+    }
+    
+    public void DemoSingleMinigame(string sceneName)
+    {
+        //Play the current minigame repeatedly
+        for(int i = 0; i < miniGameList.Length;i++)
+        {
+            miniGameList[i] = sceneName;
+            onlyMinigame = sceneName;
+            currentMinigame = sceneName;
         }
     }
 
-    public void UnloadMinigame()
+    public AsyncOperation LoadMinigame()
     {
-        SceneManager.UnloadSceneAsync(currentMinigame);
+        // if (SceneManager.GetSceneByName(currentMinigame).isLoaded)
+        // {
+        //     return null;
+        // }
+        if (debug)
+        {
+            Debug.Log("Loading minigame scene: " + currentMinigame);
+        }
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(currentMinigame);
+        return asyncLoad;
     }
 
     private IEnumerator StartNextMinigameCoroutine(bool isFirstMinigame)
     {
         timerPaused = true;
+        yield return null; //pause for 1 frame
+        
         currentMinigameIndex++; // Increment the minigame counter
         if (currentMinigameIndex >= miniGameList.Length)
         {
-            Debug.Log("You beat all the games in the collection! Congrats!");
-            yield break;
+            if (demomode)
+            {
+                currentMinigameIndex = 0;
+            }
+            else
+            {
+                Debug.Log("You beat all the games in the collection! Congrats!");
+                yield break;
+            }
         }
         
-        //Play transition animation
+        //Play transition animation if there was a previous minigame
         if (!isFirstMinigame)
         {
             transition.Play();
         }
+        //Apply random names to the clapper board
+        SetClapperNames();
+        
+        //Pause for a moment to let the Clapper Board slide in
+        if (!isFirstMinigame)
+        {
+            yield return new WaitForSeconds(.45f);
+        }
+
+        yield return new WaitForSeconds(.1f);
+        
+        
+        
+        if (onlyMinigame != "")
+        {
+            currentMinigame = onlyMinigame;
+        }
         else
         {
-            // transition.ResumeAnimation();
+            currentMinigame = miniGameList[currentMinigameIndex];
         }
-        //Apply random names to the clapper board
+        
+        // Pause to show the clapper board.
+        if (!isFirstMinigame) // if there was a minigame before this one, pause for a moment.
+        {
+            yield return new WaitForSeconds(1.35f);
+        }
+        else //otherwise, much shorter pause
+        {
+            yield return new WaitForSeconds(.05f);
+        }
+        SetTimeLimit(-1);
+        //After the pause, load the scene, and continue the animation after loading is done.
+        AsyncOperation asyncOperation = LoadMinigame();
+        if (asyncOperation != null)
+        {
+            asyncOperation.completed += (AsyncOperation async) =>
+            {
+                transition.ResumeAnimation();
+                _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
+                SetTimeLimit(_minigameBroadcaster.overrideTimeLimit);
+            };
+        }
+        else
+        {
+            transition.ResumeAnimation();
+        }
+        timerPaused = false;
+    }
+
+    private void SetClapperNames()
+    {
         clapper.UpdateClapperText(currentMinigameIndex,
             teamNames[Random.Range(0, 6)].ToUpper(),
             teamNames[Random.Range(0, 6)].ToUpper(),
             teamNames[Random.Range(0, 6)].ToUpper());
-        //Wait for a moment and unload the scene after the animation completes
-        yield return new WaitForSeconds(.45f);
-        if (!isFirstMinigame)
-        {
-            UnloadMinigame();
-        }
-        currentMinigame = miniGameList[currentMinigameIndex];
-        
-        // Pause to show animations.
-        if (!isFirstMinigame)
-        {
-            yield return new WaitForSeconds(1.55f);
-        }
-        transition.ResumeAnimation();
-        // We can load level scenes additively so we have multiple scenes loaded at once.
-        // One scene (GameLogicScene) for the UI and outer game logic,
-        // and another for the minigame and its logic.
-        SceneManager.LoadScene(currentMinigame, LoadSceneMode.Additive);
-
-        timeRemaining = minigameTimeLimit;
-        timerPaused = false;
-        timer.StartTimer();
     }
 
     public void StartNextMinigame(bool isFirstMinigame)
@@ -127,5 +210,27 @@ public class MainGameController: MonoBehaviour
             FailIcon.speed = 1;
         }
         StartNextMinigame(false);
+    }
+
+    public void SetTimeLimit(float newTimeLimit)
+    {
+        if (newTimeLimit <= -1)//use default time limit
+        {
+            timeRemaining = minigameTimeLimit;
+            timer.StartTimer(minigameTimeLimit);
+            return; 
+        }
+        timerOverloaded = true;
+        if (newTimeLimit > 120f)
+        {
+            newTimeLimit = 120f;
+        }
+
+        if (newTimeLimit < 2f)
+        {
+            newTimeLimit = 2f;
+        }
+        timeRemaining = newTimeLimit;
+        timer.StartTimer(newTimeLimit);
     }
 }

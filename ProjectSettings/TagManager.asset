@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
-  - fish
+  - WodzillaDestructible
+  - WodzillaTail
   layers:
   - Default
   - TransparentFX
