@@ -3760,97 +3760,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: miscsfx
-      value: 
-      objectReference: {fileID: 1940031023}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growDuration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_PostInfinity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[1].time
-      value: 0.13599217
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[2].time
-      value: 0.32394773
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[3].time
-      value: 0.5006109
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[1].value
-      value: 0.7146498
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[2].value
-      value: 1.1328168
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[3].value
-      value: 1.0253572
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[1].inSlope
-      value: -28.363195
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[2].inSlope
-      value: -33.35136
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[3].inSlope
-      value: -62.31161
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[1].inWeight
-      value: 0.0133227585
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[1].outSlope
-      value: -28.363195
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[2].inWeight
-      value: 0.057904616
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[2].outSlope
-      value: -33.35136
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[3].inWeight
-      value: 0.020285659
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[3].outSlope
-      value: -62.31161
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[1].outWeight
-      value: 0.05754001
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[2].outWeight
-      value: 0.030371983
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: growthCurve.m_Curve.Array.data[3].outWeight
-      value: 0.33333334
+    - target: {fileID: 214554767310944635, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_Name
       value: Godzilla_Minus_One_2023
+      objectReference: {fileID: 0}
+    - target: {fileID: 899871680084006791, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: m_Volume
+      value: 0.841
       objectReference: {fileID: 0}
     - target: {fileID: 6098314867707010481, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3895,10 +3815,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1940031023}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
 --- !u!1001 &1772147369
 PrefabInstance:
@@ -4167,107 +4084,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &1940031012 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-  m_PrefabInstance: {fileID: 1709854851}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1940031023
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940031012}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 61005da35ffb0654dbc9e159b0d6cfe1, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1942808529 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6947903165933315282, guid: 7301c9aa09149694b851c72564cf4558, type: 3}

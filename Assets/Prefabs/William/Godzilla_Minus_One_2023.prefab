@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 702048602597526756}
   - component: {fileID: 899871680084006791}
   - component: {fileID: 214554767310944635}
+  - component: {fileID: 4646090402617823815}
   m_Layer: 0
   m_Name: Godzilla_Minus_One_2023
   m_TagString: Player
@@ -439,8 +440,53 @@ MonoBehaviour:
   tail: {fileID: 7149402120852739027}
   moveSpeed: 15
   turnSpeed: 90
+  inControl: 1
   anim: {fileID: 0}
   cam: {fileID: 4163665545730452489}
+  scaleModifier: 1.5
+  growDuration: 1
+  growthCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.13599217
+      value: 0.7146498
+      inSlope: -28.363195
+      outSlope: -28.363195
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0133227585
+      outWeight: 0.05754001
+    - serializedVersion: 3
+      time: 0.32394773
+      value: 1.1328168
+      inSlope: -33.35136
+      outSlope: -33.35136
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.057904616
+      outWeight: 0.030371983
+    - serializedVersion: 3
+      time: 0.5006109
+      value: 1.0253572
+      inSlope: -62.31161
+      outSlope: -62.31161
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.020285659
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 1
+    m_RotationOrder: 4
   laserPrefab: {fileID: 0}
   leftEye: {fileID: 2856832904623315407}
   rightEye: {fileID: 8570675154592165524}
@@ -455,6 +501,7 @@ MonoBehaviour:
   lasersfx: {fileID: 702048602597526756}
   stomp: {fileID: 899871680084006791}
   impact: {fileID: 214554767310944635}
+  miscsfx: {fileID: 4646090402617823815}
   impactSounds:
   - {fileID: 8300000, guid: 51fbd86cd37d60d42a931d076a330058, type: 3}
   - {fileID: 8300000, guid: 241d87ae0875a09488ff77b3e2086ac7, type: 3}
@@ -849,6 +896,102 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 51fbd86cd37d60d42a931d076a330058, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &4646090402617823815
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458255857492903233}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 61005da35ffb0654dbc9e159b0d6cfe1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
