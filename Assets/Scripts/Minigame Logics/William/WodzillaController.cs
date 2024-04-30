@@ -27,6 +27,7 @@ public class WodzillaController : MonoBehaviour
     public LineRenderer lineRendererR;
     public GameObject LaserHitL;
     public GameObject LaserHitR;
+    public GameObject debugSphere;
 
     public AudioSource roar;
     public AudioSource lasersfx;
@@ -105,12 +106,14 @@ public class WodzillaController : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
+        var mouse = Input.mousePosition;
+
         if (!lasersfx.isPlaying)
         {
             lasersfx.Play();
         }
 
-        if (Physics.Raycast(eye.position, ray.direction, out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(Camera.main.transform.position, ray.direction, out hit, Mathf.Infinity, layerMask))
         {
             laser.SetPosition(0, eye.position);
             laser.SetPosition(1, hit.point);
@@ -138,8 +141,11 @@ public class WodzillaController : MonoBehaviour
             }
             
         }
-        // Debug.Log(hit + " at " + hit.point.ToString());
+
+        debugSphere.transform.position = hit.transform.position;
     }
+
+
 
     private void OnTriggerEnter(Collider other)
     {
