@@ -11,7 +11,6 @@ public class WodzillaHelicopter : MonoBehaviour
     
     public Transform godzilla;
     public float minDistance = 10f;
-    public float movementSpeed = 5f;
     public Transform[] waypoints;
 
     private NavMeshAgent agent;
@@ -28,9 +27,20 @@ public class WodzillaHelicopter : MonoBehaviour
         // Rotate the main blades
         mainBlades.transform.Rotate(Vector3.up, mainBladesSpeed * Time.deltaTime);
         
-        if (agent.remainingDistance < minDistance)
+        if (godzilla != null)
         {
-            // MoveToNextWaypoint();
+            // Set Godzilla's position as the destination
+            agent.SetDestination(godzilla.position);
+
+            // Check if the helicopter is close enough to stop moving
+            if (Vector3.Distance(transform.position, godzilla.position) <= minDistance)
+            {
+                agent.isStopped = true;
+            }
+            else
+            {
+                agent.isStopped = false;
+            }
         }
 
         RotateTowardsGodzilla();
