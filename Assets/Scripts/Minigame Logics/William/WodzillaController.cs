@@ -10,7 +10,7 @@ public class WodzillaController : MonoBehaviour
     public WodzillaTail tail;
     public float moveSpeed = 10f; // Movement speed
     public float turnSpeed = 2f; // Turning speed
-    public bool inControl = true;
+    public bool inControl = false;
     public Animator anim;
     public CameraShaker cam;
 
@@ -77,6 +77,11 @@ public class WodzillaController : MonoBehaviour
             lineRendererR.gameObject.SetActive(false);
             lasersfx.Stop();
         }
+    }
+
+    public void SetInControl(bool cancontrol)
+    {
+        inControl = cancontrol;
     }
 
     private void PlayerMovement()

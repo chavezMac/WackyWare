@@ -440,7 +440,7 @@ MonoBehaviour:
   tail: {fileID: 7149402120852739027}
   moveSpeed: 15
   turnSpeed: 90
-  inControl: 1
+  inControl: 0
   anim: {fileID: 0}
   cam: {fileID: 4163665545730452489}
   scaleModifier: 1.5
@@ -6331,7 +6331,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -7709,6 +7709,7 @@ GameObject:
   - component: {fileID: 8731517068946595454}
   - component: {fileID: 2872315722309384308}
   - component: {fileID: 8831612315110453273}
+  - component: {fileID: 7286273884077625750}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7790,6 +7791,27 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6966900697710137047}
   m_Enabled: 1
+--- !u!95 &7286273884077625750
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6966900697710137047}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50ed1899c5268f947af2ffb855758b0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6979124081033002661
 GameObject:
   m_ObjectHideFlags: 0
