@@ -161,10 +161,13 @@ public class WodzillaController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Wodzilla took damage! Wodzilla has " + hp + " hit points left!");
         hp -= damage;
         if (hp <= 0)
         {
             MinigameBroadcaster.MinigameFailed();
+            MinigameMusic music = FindObjectOfType<MinigameMusic>();
+            music.FadeOutMusicFailure();
         }
     }
 }

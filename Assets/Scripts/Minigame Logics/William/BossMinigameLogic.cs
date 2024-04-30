@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossMinigameLogic : MonoBehaviour
@@ -7,20 +5,14 @@ public class BossMinigameLogic : MonoBehaviour
     public int buildingsRemaining = 0;
     public bool debug = true;
     public MinigameMusic music;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)
+        if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)//Lose condition
         {
             MinigameBroadcaster.MinigameFailed();
-            music.FadeOutMusic();
+            music.FadeOutMusicFailure();
         }
 
         if (debug && Input.GetKeyDown(KeyCode.E))//DEBUG WIN CONDITION
@@ -28,12 +20,18 @@ public class BossMinigameLogic : MonoBehaviour
             MinigameBroadcaster.MinigameCompleted();
             music.FadeOutMusic();
         }
+        
+        if (debug && Input.GetKeyDown(KeyCode.F))//DEBUG FAIL CONDITION
+        {
+            MinigameBroadcaster.MinigameFailed();
+            music.FadeOutMusicFailure();
+        }
     }
 
     public void UpdateBuildingCount(int numToAdd)
     {
         buildingsRemaining += numToAdd;
-        if (buildingsRemaining <= 0)
+        if (buildingsRemaining <= 0) //Win condition
         {
             MinigameBroadcaster.MinigameCompleted();
             music.FadeOutMusic();

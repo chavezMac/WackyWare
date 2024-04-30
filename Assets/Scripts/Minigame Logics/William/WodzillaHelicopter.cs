@@ -26,6 +26,7 @@ public class WodzillaHelicopter : MonoBehaviour
     public Light lightRight;
 
     public GameObject explosion;
+    public GameObject missiles;
 
     void Start()
     {
@@ -117,7 +118,8 @@ public class WodzillaHelicopter : MonoBehaviour
         chargingWeapons = false;
         timeUntilFiring = firingCooldown/2;
         Debug.Log("Firing missiles!");
-        //shoot missiles
+        GameObject missile = Instantiate(this.missiles, transform.position, quaternion.identity);
+        Destroy(missile,7f);
     }
 
     public void TakeDamage(float damage)
