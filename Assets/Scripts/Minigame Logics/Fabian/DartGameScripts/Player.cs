@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
   public GameObject explosion;
   private Vector3 explosionLocation = new Vector3(); 
   public GameManger GameManger;
+  public string PlanetKilled;
   
   private void Start()
   {
@@ -33,20 +34,32 @@ public class Player : MonoBehaviour
     Enemy.onEnemyDied -= EnemyOnEnemyDied;
   }
 
-  void EnemyOnEnemyDied(bool died , Vector3 pos)
+  void EnemyOnEnemyDied(bool died , Vector3 pos , string name)
   {
     killedPlanet = died;
-    explosionLocation = pos; 
+    explosionLocation = pos;
+    PlanetKilled = name;
     //Debug.Log("Player Recieved EnemyDied Event");
   }
     // Update is called once per frame
 
     void Update()
     {
+      if (Input.GetKeyDown(KeyCode.Space))
+      {
+        //playerShooting.PlayOneShot(ShotClip);
+        
+        //GetComponent<Animator>().SetTrigger("Shoot Trigger");
+        GameObject shot = Instantiate(bullet, shottingOffset.position, Quaternion.identity);
+        Destroy(shot, 3f);
+        
+      }
       if (killedPlanet)
       {
-        GameManger.ballonsToShootDown--;
+        GameManger.planeysToShootDown--;
         killedPlanet = false;
+        GameManger.planetKilled = true;
+        GameManger.nameOfPlanet = PlanetKilled;
         Instantiate(explosion,explosionLocation, Quaternion.identity);
         gameObject.GetComponent<AudioSource>().Play();
 
@@ -96,14 +109,6 @@ public class Player : MonoBehaviour
       }
       transform.position = newPosition;
       
-      if (Input.GetKeyDown(KeyCode.Space))
-      {
-        //playerShooting.PlayOneShot(ShotClip);
-        
-        //GetComponent<Animator>().SetTrigger("Shoot Trigger");
-        GameObject shot = Instantiate(bullet, shottingOffset.position, Quaternion.identity);
-        Destroy(shot, 3f);
-        
-      }
+
     }
 }

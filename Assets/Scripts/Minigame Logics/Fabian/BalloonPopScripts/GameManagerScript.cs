@@ -31,11 +31,11 @@ public class GameManagerScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(MainGameController.timeRemaining);    
-        if (MainGameController.timeRemaining <= 0)
-        {
-            MinigameBroadcaster.MinigameCompleted();
-        }
+       // Debug.Log(MainGameController.timeRemaining);    
+        // if (MainGameController.timeRemaining <= 0)
+        // {
+        //     MinigameBroadcaster.MinigameCompleted();
+        // }
         
         
         if (Input.GetMouseButtonDown(0))

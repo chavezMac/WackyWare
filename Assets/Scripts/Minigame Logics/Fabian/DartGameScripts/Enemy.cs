@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public ParticleSystem[] explosion; 
-    public delegate void EnemyDied(bool died , Vector3 pos);
+    public delegate void EnemyDied(bool died , Vector3 pos , string name);
     public static event EnemyDied onEnemyDied;
     
 
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
         //gameObject.GetComponent<AudioSource>().Play();
         Destroy(collision.gameObject);
         //this event lets everyone know that the enemy died 
-        onEnemyDied.Invoke(true , gameObject.transform.position);
+        onEnemyDied.Invoke(true , gameObject.transform.position , gameObject.name);
         Destroy(gameObject );
       Debug.Log("Ouch!");
     }

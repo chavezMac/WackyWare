@@ -10,6 +10,7 @@ TagManager:
   - ShipTail
   - ExplosionParticle
   - MiniGameLogic
+  - PlanetNameObject
   layers:
   - Default
   - TransparentFX
