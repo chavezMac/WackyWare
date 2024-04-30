@@ -27,6 +27,7 @@ public class WodzillaHelicopter : MonoBehaviour
     public ParticleSystem glowRight;
     public Light lightLeft;
     public Light lightRight;
+    public AudioSource beeping;
 
     public GameObject explosion;
     public GameObject missiles;
@@ -125,19 +126,21 @@ public class WodzillaHelicopter : MonoBehaviour
             glowLeft.gameObject.SetActive(true);
             glowRight.gameObject.SetActive(true);
             chargingWeapons = true;
+            beeping.Play();
         }
         if (chargingWeapons)
         {
             float simSpeed = Mathf.Lerp(0,1f,Mathf.Abs(timeUntilFiring)/firingCooldown);
-            var sizeCurve = new ParticleSystem.MinMaxCurve(10 * simSpeed, 20 * simSpeed);
+            var sizeCurve = new ParticleSystem.MinMaxCurve(5 * simSpeed, 10 * simSpeed);
             var glowRightMain = glowRight.main;
             glowRightMain.simulationSpeed = simSpeed;
             glowRightMain.startSize = sizeCurve;
             var glowLeftMain = glowLeft.main;
             glowLeftMain.simulationSpeed = simSpeed;
             glowLeftMain.startSize = sizeCurve;
-            lightRight.intensity = simSpeed;
-            lightLeft.intensity = simSpeed;
+            lightRight.intensity = simSpeed/2;
+            lightLeft.intensity = simSpeed/2;
+            beeping.pitch = Mathf.Lerp(.5f, 2f,simSpeed);
         }
     }
 
@@ -150,6 +153,7 @@ public class WodzillaHelicopter : MonoBehaviour
 
     private void FireWeapons()
     {
+        beeping.Stop();
         chargingWeapons = false;
         timeUntilFiring = firingCooldown/2;
         GameObject missile = Instantiate(this.missiles, transform.position, quaternion.identity);

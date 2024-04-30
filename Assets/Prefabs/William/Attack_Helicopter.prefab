@@ -1100,6 +1100,7 @@ GameObject:
   - component: {fileID: 3507145392192891487}
   - component: {fileID: 1737948713496345298}
   - component: {fileID: -8747920882772976815}
+  - component: {fileID: 5134290297914988163}
   - component: {fileID: 2241015983602807433}
   - component: {fileID: 941830909173790754}
   - component: {fileID: 6863618120916777324}
@@ -1142,8 +1143,8 @@ MonoBehaviour:
   mainBladesSpeed: 1500
   hp: 50
   godzilla: {fileID: 0}
-  moveSpeed: 20
-  minDistance: 70
+  moveSpeed: 25
+  minDistance: 80
   backingDistance: 50
   withinFiringDistance: 0
   destination: {x: 0, y: 0, z: 0}
@@ -1153,6 +1154,7 @@ MonoBehaviour:
   glowRight: {fileID: 7921862287401241095}
   lightLeft: {fileID: 4233630438467628704}
   lightRight: {fileID: 4517349129079376755}
+  beeping: {fileID: 5134290297914988163}
   explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   missiles: {fileID: 5126864955679625382, guid: 0d05d7962bed3b9458d42da9c2859b8f, type: 3}
 --- !u!82 &-8747920882772976815
@@ -1176,7 +1178,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 25
-  MaxDistance: 150
+  MaxDistance: 250
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1186,19 +1188,28 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.01
+      time: 0.29166666
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -3.4299424
+      outSlope: -3.4299424
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.3595581
-      value: 0
-      inSlope: -1.010101
-      outSlope: -1.010101
+      time: 0.5463155
+      value: 0.4073639
+      inSlope: -0.8574856
+      outSlope: -0.8574856
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9981384
+      value: 0.14454141
+      inSlope: -0.29178336
+      outSlope: -0.29178336
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -1242,6 +1253,102 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 0.498
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &5134290297914988163
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832102150143072544}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 792ddd2b5268bd2418b353711af9cdfd, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.899
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 25
+  MaxDistance: 120
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.494
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
