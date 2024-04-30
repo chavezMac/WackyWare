@@ -14,13 +14,12 @@ public class BossMinigameLogic : MonoBehaviour
     public GameObject godzilla;
     public float helicopterWaveDelay = 10f;
     public Vector3[] spawnPoints;
-    private HelicopterTargetIndicator heliWarning;
+    public HelicopterTargetIndicator heliWarning;
     private int helicoptersSpawned = 0;
 
     private void Start()
     {
         godzilla = GameObject.FindWithTag("Player");
-        heliWarning = FindObjectOfType<HelicopterTargetIndicator>();
         StartCoroutine(SpawnHelicopterRoutine());
         StartCoroutine(SpawnHelicopterRoutine2());
     }
@@ -170,6 +169,7 @@ public class BossMinigameLogic : MonoBehaviour
 
     private void StartHelicopterWarning(GameObject heli)
     {
+        Debug.Log("Enabling helicopter warning");
         if (helicoptersSpawned == 1)
         {
             heliWarning.helicopterTransform = heli.transform;

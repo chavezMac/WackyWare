@@ -4,17 +4,23 @@ using UnityEngine.UI;
 public class HelicopterTargetIndicator : MonoBehaviour
 {
     public Transform helicopterTransform; // Reference to the helicopter's transform
-    public Text shootText; // Reference to the "shoot it!" text
+    public HorizontalLayoutGroup shootText; // Reference to the "shoot it!" text
     public Image arrowImage; // Reference to the arrow image
     public Camera mainCamera; // Reference to the main camera
 
     void Update()
     {
+        if (helicopterTransform == null)
+        {
+            shootText.gameObject.SetActive(false);
+            Destroy(this);
+            return;
+        }
         // Calculate the position of the helicopter in screen space
         Vector3 screenPoint = mainCamera.WorldToScreenPoint(helicopterTransform.position);
 
         // Set the position of the "shoot it!" text
-        shootText.rectTransform.position = screenPoint;
+        shootText.transform.position = screenPoint;
 
         // Set the position of the arrow image
         // arrowImage.rectTransform.position = screenPoint;

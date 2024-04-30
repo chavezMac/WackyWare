@@ -1284,7 +1284,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1518715922}
   helicopter: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
   godzilla: {fileID: 0}
-  helicopterWaveDelay: 4
+  helicopterWaveDelay: 5
   spawnPoints:
   - {x: 0, y: 42.54, z: 0}
   - {x: -190, y: 42.54, z: 0}
@@ -1294,6 +1294,7 @@ MonoBehaviour:
   - {x: -380, y: 42.54, z: 190}
   - {x: -380, y: 42.54, z: 380}
   - {x: -190, y: 42.54, z: 380}
+  heliWarning: {fileID: 1209132749}
 --- !u!4 &432780558
 Transform:
   m_ObjectHideFlags: 0
@@ -2210,6 +2211,81 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &526706412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526706413}
+  - component: {fileID: 526706415}
+  - component: {fileID: 526706414}
+  m_Layer: 5
+  m_Name: Mouse Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526706413
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526706412}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1209132748}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 298.82104, y: -64.2035}
+  m_SizeDelta: {x: 97.6217, y: 128.407}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &526706414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526706412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9753b262315911341a2a7cc6c4620f2a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &526706415
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526706412}
+  m_CullTransparentMesh: 1
 --- !u!1 &531279629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7262300598466376274, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
@@ -3660,11 +3736,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1209132748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.821, y: -81.3812}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 126.189156, y: 19.276245}
   m_SizeDelta: {x: 247.6421, y: 192.7624}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1.1}
 --- !u!114 &1132997731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3677,7 +3753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.8113208, g: 0.022961771, b: 0.2417473, a: 0.5}
+  m_EffectColor: {r: 1, g: 0, b: 0.053436756, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!114 &1132997732
@@ -3693,7 +3769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15471691, g: 0.1374937, b: 0.13773862, a: 1}
+  m_Color: {r: 1, g: 0.5424341, b: 0.2471698, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3712,7 +3788,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 0.8
   m_Text: Shoot it down!
 --- !u!222 &1132997733
 CanvasRenderer:
@@ -4217,6 +4293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209132748}
   - component: {fileID: 1209132749}
+  - component: {fileID: 1209132750}
   m_Layer: 5
   m_Name: Helicopter Warning
   m_TagString: Untagged
@@ -4237,12 +4314,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1132997730}
+  - {fileID: 526706413}
   m_Father: {fileID: 1149775011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 350, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209132749
 MonoBehaviour:
@@ -4257,9 +4335,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helicopterTransform: {fileID: 0}
-  shootText: {fileID: 1132997732}
+  shootText: {fileID: 1209132747}
   arrowImage: {fileID: 0}
   mainCamera: {fileID: 1518715922}
+--- !u!114 &1209132750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209132747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1224799308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 447733290793179974, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
