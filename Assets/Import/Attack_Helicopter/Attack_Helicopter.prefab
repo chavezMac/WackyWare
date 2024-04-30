@@ -1141,7 +1141,11 @@ MonoBehaviour:
   mainBladesSpeed: 1500
   hp: 50
   godzilla: {fileID: 0}
-  minDistance: 10
+  moveSpeed: 18
+  minDistance: 50
+  backingDistance: 30
+  withinFiringDistance: 0
+  destination: {x: 0, y: 0, z: 0}
   glowLeft: {fileID: 7602114301688278996}
   glowRight: {fileID: 7921862287401241095}
   lightLeft: {fileID: 4233630438467628704}
@@ -1181,11 +1185,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 15
+  m_Speed: 18
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 40
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

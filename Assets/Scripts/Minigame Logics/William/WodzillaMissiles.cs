@@ -21,7 +21,7 @@ public class WodzillaMissiles : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(Vector3.forward, 120f * Time.deltaTime);
+        transform.Rotate(Vector3.forward, 360f * Time.deltaTime);
         // Check if Godzilla exists and is active
         if (godzilla != null && godzilla.activeSelf)
         {
