@@ -103,16 +103,20 @@ public class WodzillaController : MonoBehaviour
 
             // Calculate the rotation to make the hit effect face the laser's origin
             Quaternion rotation = Quaternion.LookRotation((eye.position - hitEffectPosition).normalized);
-
-            // Apply the rotation to the hit effect
             laserHit.transform.rotation = rotation;
 
-            // Check if the hit object has the "WodzillaDestructible" tag
             if (hit.collider.CompareTag("WodzillaDestructible"))
             {
                 // Trigger the TakeDamage function on the hit object
                 hit.collider.GetComponent<WodzillaBuilding>().TakeDamage(0.5f);
             }
+            
+            if (hit.collider.CompareTag("WodzillaHelicopter"))
+            {
+                // Trigger the TakeDamage function on the hit object
+                hit.collider.GetComponent<WodzillaHelicopter>().TakeDamage(0.5f);
+            }
+            
         }
         // Debug.Log(hit + " at " + hit.point.ToString());
     }

@@ -3327,41 +3327,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 941830909173790754, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_Speed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 941830909173790754, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1655804924842890652, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1655804924842890652, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1655804924842890652, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7372774
-      objectReference: {fileID: 0}
-    - target: {fileID: 1655804924842890652, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.67559016
-      objectReference: {fileID: 0}
-    - target: {fileID: 1655804924842890652, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 1655804924842890652, guid: ca96b54b999288548814c271bef89096, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1737948713496345298, guid: ca96b54b999288548814c271bef89096, type: 3}
       propertyPath: godzilla
       value: 
       objectReference: {fileID: 2020977964}
+    - target: {fileID: 2241015983602807433, guid: ca96b54b999288548814c271bef89096, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3507145392192891487, guid: ca96b54b999288548814c271bef89096, type: 3}
       propertyPath: m_LocalPosition.x
       value: -158.16

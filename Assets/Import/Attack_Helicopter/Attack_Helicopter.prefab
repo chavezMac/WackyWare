@@ -1924,14 +1924,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8672460518020085270}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7372774, z: -0.67559016, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.00996531, y: 0.00996531, z: 0.00996531}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 46941910428309078}
   m_Father: {fileID: 3507145392192891487}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 85, y: 180, z: 0}
 --- !u!1 &8832102150143072544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,11 +1981,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainBlades: {fileID: 1142248900782317168}
   mainBladesSpeed: 1500
-  hp: 100
+  hp: 50
   godzilla: {fileID: 0}
   minDistance: 10
-  movementSpeed: 5
-  waypoints: []
+  firingCooldown: 5
+  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!136 &2241015983602807433
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2019,11 +2019,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 15
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 40
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
