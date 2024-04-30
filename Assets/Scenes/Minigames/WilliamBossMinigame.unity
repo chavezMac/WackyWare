@@ -540,8 +540,9 @@ MonoBehaviour:
   debug: 1
   music: {fileID: 451130355}
   mainCamera: {fileID: 1518715922}
-  helicopter: {fileID: 1151970836}
-  helicopterWaveDelay: 10
+  helicopter: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
+  godzilla: {fileID: 0}
+  helicopterWaveDelay: 8
   spawnPoints:
   - {x: 0, y: 42.54, z: 0}
   - {x: -190, y: 42.54, z: 0}
@@ -1387,11 +1388,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 260545808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1151970836 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
-  m_PrefabInstance: {fileID: 4748155054530842896}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184192189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2019,10 @@ PrefabInstance:
     - target: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
       propertyPath: m_Name
       value: Attack_Helicopter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

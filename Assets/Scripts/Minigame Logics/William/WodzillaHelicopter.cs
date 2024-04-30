@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.ComponentModel;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityStandardAssets.Effects;
 
 public class WodzillaHelicopter : MonoBehaviour
 {
@@ -12,15 +9,16 @@ public class WodzillaHelicopter : MonoBehaviour
     public float mainBladesSpeed = 500f;
     public float hp = 50;
     
-    public Transform godzilla;
+    public GameObject godzilla;
     public float moveSpeed = 18;
     public float minDistance = 50f;
     public float backingDistance = 25f;
     private NavMeshAgent agent;
     public bool withinFiringDistance = false;
     public Vector3 destination;
+    public float distanceToGodzilla;
     
-    public const float firingCooldown = 4f;
+    public const float firingCooldown = 3f;
     private float timeUntilFiring;
     private bool chargingWeapons = false;
 
@@ -36,8 +34,9 @@ public class WodzillaHelicopter : MonoBehaviour
 
     void Start()
     {
+        godzilla = GameObject.FindWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
-        timeUntilFiring = firingCooldown/2f;
+        timeUntilFiring = firingCooldown/3f;
         agent.speed = moveSpeed;
     }
 
@@ -57,12 +56,12 @@ public class WodzillaHelicopter : MonoBehaviour
         if (godzilla != null)
         {
             // Calculate the distance between the helicopter and Godzilla
-            float distanceToGodzilla = Vector3.Distance(transform.position, godzilla.position);
+            distanceToGodzilla = Vector3.Distance(transform.position, godzilla.transform.position);
 
             // If the distance is greater than the minimum distance, move towards Godzilla
             if (distanceToGodzilla > minDistance)
             {
-                destination = godzilla.position;
+                destination = godzilla.transform.position;
                 agent.SetDestination(destination);
                 withinFiringDistance = false;
                 agent.speed = moveSpeed;
@@ -72,7 +71,7 @@ public class WodzillaHelicopter : MonoBehaviour
             {
                 withinFiringDistance = true;
                 // Calculate the direction away from Godzilla
-                Vector3 directionAwayFromGodzilla = transform.position - godzilla.position;
+                Vector3 directionAwayFromGodzilla = transform.position - godzilla.transform.position;
 
                 // Normalize the direction vector
                 directionAwayFromGodzilla.Normalize();
@@ -89,7 +88,7 @@ public class WodzillaHelicopter : MonoBehaviour
             {
                 agent.speed = 0;
                 withinFiringDistance = true;
-                destination = godzilla.position;
+                destination = godzilla.transform.position;
                 agent.SetDestination(destination);
             }
             // debugSphere.transform.SetPositionAndRotation(destination,Quaternion.identity);
@@ -140,7 +139,7 @@ public class WodzillaHelicopter : MonoBehaviour
 
     void RotateTowardsGodzilla()
     {
-        Vector3 direction = godzilla.position - transform.position;
+        Vector3 direction = godzilla.transform.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 2f);
     }
