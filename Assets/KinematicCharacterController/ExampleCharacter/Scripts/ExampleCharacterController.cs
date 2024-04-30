@@ -534,7 +534,7 @@ namespace KinematicCharacterController.Examples
         void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("PickUp")) {
             //change the color of the object
-            //other.GetComponent<Renderer>().material.color = Color.red;
+            other.GetComponent<Renderer>().material.color = Color.red;
             audioSource.Play();
             //change the tag of the object
             other.gameObject.tag = "PickedUp";

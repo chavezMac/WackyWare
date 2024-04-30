@@ -26,6 +26,7 @@ public class FinishLine : MonoBehaviour
         {
             //change color of the finish line to green
             MinigameBroadcaster.MinigameCompleted();
+            Debug.Log("All items collected");
         }
         //Check if player has collected all the items
 

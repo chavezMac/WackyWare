@@ -9,6 +9,8 @@ TagManager:
   - CameraZone
   - Bullet
   - PickedUp
+  - FellZone
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

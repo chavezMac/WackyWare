@@ -14,6 +14,10 @@ public class JumpMovement : MonoBehaviour
     private float ySpeed;
     private float? lastGroundedTime;
     private float? jumpPressedTime;
+
+    [Header("Animator")]
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +61,9 @@ public class JumpMovement : MonoBehaviour
 
         Vector3 velocity = movementDirection * magnitude;
         velocity.y = ySpeed;
+
+        float forward = Vector3.Dot(velocity, transform.forward);
+        animator.SetFloat("Forward", forward);
 
         characterController.Move(velocity * Time.deltaTime);
 
