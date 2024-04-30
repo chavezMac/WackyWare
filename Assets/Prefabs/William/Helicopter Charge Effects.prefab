@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0.022536755, a: 1}
+      maxColor: {r: 1, g: 0.5502357, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4777,7 +4777,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: feb4418024407eb45ba5c6f09ab4a391, type: 2}
+  - {fileID: 2100000, guid: 64abac185b0c6334cb7b33f9fd0d6b54, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4873,7 +4873,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0, b: 0.0059981346, a: 1}
+  m_Color: {r: 1, g: 0.45315844, b: 0, a: 1}
   m_Intensity: 3
   m_Range: 100
   m_SpotAngle: 30
@@ -4934,7 +4934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4386752627955008090}
   m_Layer: 0
-  m_Name: Laser Beam Effects
+  m_Name: Helicopter Charge Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

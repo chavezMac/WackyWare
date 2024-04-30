@@ -18,8 +18,8 @@ public class MainGameController: MonoBehaviour
     public TransitionAnimationController transition;
     private MinigameBroadcaster _minigameBroadcaster;
     private bool demomode = false;
-    public int minigamesCompletedSuccessfully = 0;
-    public int minigamesFailed = 0;
+    public static int minigamesCompletedSuccessfully = 0;
+    public static int minigamesFailed = 0;
 
     private AudioSource sfx;
     public AudioClip winSound;

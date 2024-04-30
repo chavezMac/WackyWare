@@ -28,11 +28,13 @@ public class WodzillaController : MonoBehaviour
     public AudioSource impact;
     public AudioClip[] impactSounds; // Array of footstep sound effects
     public AudioClip[] footstepSounds; // Array of footstep sound effects
-    
+
+    public int hp = 3;
     private void Start()
     {
         anim = GetComponent<Animator>();
         StartCoroutine(PeriodicRoar());
+        hp += MainGameController.minigamesCompletedSuccessfully;//dynamic difficulty HP
     }
 
     void Update()
@@ -155,5 +157,14 @@ public class WodzillaController : MonoBehaviour
         // impact.clip = randomImpactSound;
         // impact.Play();
         impact.PlayOneShot(randomImpactSound);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
+        if (hp <= 0)
+        {
+            MinigameBroadcaster.MinigameFailed();
+        }
     }
 }
