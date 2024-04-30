@@ -512,6 +512,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5fa3c3f09f1fa124abb046f3eeefcc42, type: 3}
   - {fileID: 8300000, guid: 36c070bde62b909488469336002444e3, type: 3}
   - {fileID: 8300000, guid: c5176744269c3b54fb0941477be498bc, type: 3}
+  audioEnabled: 1
   hp: 3
 --- !u!114 &4163665545730452489
 MonoBehaviour:
@@ -579,7 +580,7 @@ Rigidbody:
   m_GameObject: {fileID: 458255857492903233}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 3
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}

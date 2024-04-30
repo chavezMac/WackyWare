@@ -5145,29 +5145,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 214554767310944635, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: audioEnabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 458255857492903233, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_Name
       value: Godzilla_Minus_One_2023
-      objectReference: {fileID: 0}
-    - target: {fileID: 702048602597526756, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 899871680084006791, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2099423551347404649, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098314867707010481, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5208,10 +5188,6 @@ PrefabInstance:
     - target: {fileID: 6098314867707010481, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8239054841446072670, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: m_Drag
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5442,7 +5418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -138262789864655838, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: overrideTimeLimit
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 251729343016510873, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_Name
@@ -5458,7 +5434,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: a9e21ebdf24388e49ac35b0fe4ccbdc3, type: 3}
     - target: {fileID: 1838544166268259594, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: Mute
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838544166268259594, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1838544166268259594, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_audioClip
