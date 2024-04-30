@@ -10,8 +10,14 @@ public class WodzillaController : MonoBehaviour
     public WodzillaTail tail;
     public float moveSpeed = 10f; // Movement speed
     public float turnSpeed = 2f; // Turning speed
+    public bool inControl = true;
     public Animator anim;
     public CameraShaker cam;
+
+    public float scaleModifier = 1.5f;
+    public float growDuration = 0.5f;
+    private bool isGrowing = false;
+    public AnimationCurve growthCurve;
     
     public GameObject laserPrefab;
     public Transform leftEye;
@@ -26,6 +32,7 @@ public class WodzillaController : MonoBehaviour
     public AudioSource lasersfx;
     public AudioSource stomp;
     public AudioSource impact;
+    public AudioSource miscsfx;
     public AudioClip[] impactSounds; // Array of footstep sound effects
     public AudioClip[] footstepSounds; // Array of footstep sound effects
 
@@ -35,10 +42,39 @@ public class WodzillaController : MonoBehaviour
         anim = GetComponent<Animator>();
         StartCoroutine(PeriodicRoar());
         hp += MainGameController.minigamesCompletedSuccessfully;//dynamic difficulty HP
+        scaleModifier +=MainGameController.minigamesCompletedSuccessfully/10f;
+        transform.localScale = new Vector3(scaleModifier, scaleModifier, scaleModifier);
     }
 
     void Update()
     {
+        PlayerMovement();
+
+        if (Input.GetKeyDown(KeyCode.Space) && inControl)
+        {
+            anim.Play("WodzillaSpin");
+            tail.isActive = true;
+        }
+        
+        if (Input.GetMouseButton(0) && !tail.isActive && inControl) // Check for left mouse button click
+        {
+            ShootLaser(leftEye,lineRendererL,LaserHitL);
+            ShootLaser(rightEye,lineRendererR,LaserHitR);
+        }
+        else
+        {
+            lineRendererL.gameObject.SetActive(false);
+            lineRendererR.gameObject.SetActive(false);
+            lasersfx.Stop();
+        }
+    }
+
+    private void PlayerMovement()
+    {
+        if (!inControl)
+        {
+            return;
+        }
         // Get input for movement
         float verticalInput = -Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -50,24 +86,6 @@ public class WodzillaController : MonoBehaviour
         // Apply movement and rotation
         transform.Translate(moveDirection, Space.World);
         transform.rotation *= turnRotation;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.Play("WodzillaSpin");
-            tail.isActive = true;
-        }
-        
-        if (Input.GetMouseButton(0) && !tail.isActive) // Check for left mouse button click
-        {
-            ShootLaser(leftEye,lineRendererL,LaserHitL);
-            ShootLaser(rightEye,lineRendererR,LaserHitR);
-        }
-        else
-        {
-            lineRendererL.gameObject.SetActive(false);
-            lineRendererR.gameObject.SetActive(false);
-            lasersfx.Stop();
-        }
     }
 
     public IEnumerator PeriodicRoar()
@@ -123,7 +141,52 @@ public class WodzillaController : MonoBehaviour
         // Debug.Log(hit + " at " + hit.point.ToString());
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("WodzillaPowerup"))
+        {
+            StartCoroutine(Grow());
+            hp++;
+            Destroy(other.gameObject);
+        }
+    }
+
+    private IEnumerator Grow()
+    {
+        miscsfx.Play();
+        if (!isGrowing)
+        {
+            isGrowing = true;
+            inControl = false;
+            anim.speed = 0f;
+
+            // Calculate target scale
+            float targetScale = scaleModifier + 0.5f;
+
+            // Gradually increase scale over time using animation curve
+            float elapsedTime = 0;
+            while (elapsedTime < growDuration)
+            {
+                float curveValue = growthCurve.Evaluate(elapsedTime / growDuration);
+                float newScale = Mathf.Lerp(scaleModifier, targetScale, curveValue);
+                transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            // Ensure final scale matches the target scale exactly
+            transform.localScale = new Vector3(targetScale, targetScale, targetScale);
+
+            // Update scale modifier
+            scaleModifier = targetScale;
+
+            isGrowing = false;
+            anim.speed = 1;
+            inControl = true;
+        }
+    }
+
     public void PlayRandomFootstepSound()
     {
         cam.ShakeCamera(4f,.5f, true);
@@ -149,13 +212,7 @@ public class WodzillaController : MonoBehaviour
             return;
         }
 
-        // Randomly select a footstep sound from the array
         AudioClip randomImpactSound = impactSounds[Random.Range(0, impactSounds.Length)];
-
-        // Play the selected footstep sound
-        
-        // impact.clip = randomImpactSound;
-        // impact.Play();
         impact.PlayOneShot(randomImpactSound);
     }
 
