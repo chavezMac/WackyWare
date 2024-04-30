@@ -77,4 +77,9 @@ public class MinigameBroadcaster : MonoBehaviour
             
         }
     }
+
+    public static void SetGameTimerPauseState(bool setting)
+    {
+        MainGameController.timerPaused = setting;
+    }
 }

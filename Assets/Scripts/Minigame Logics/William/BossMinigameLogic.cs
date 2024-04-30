@@ -14,12 +14,15 @@ public class BossMinigameLogic : MonoBehaviour
     public GameObject godzilla;
     public float helicopterWaveDelay = 10f;
     public Vector3[] spawnPoints;
+    private HelicopterTargetIndicator heliWarning;
+    private int helicoptersSpawned = 0;
 
     private void Start()
     {
         godzilla = GameObject.FindWithTag("Player");
+        heliWarning = FindObjectOfType<HelicopterTargetIndicator>();
         StartCoroutine(SpawnHelicopterRoutine());
-        // StartCoroutine(SpawnHelicopterRoutine2());
+        StartCoroutine(SpawnHelicopterRoutine2());
     }
 
     void Update()
@@ -45,29 +48,35 @@ public class BossMinigameLogic : MonoBehaviour
 
     private IEnumerator SpawnHelicopterRoutine()
     {
+        yield return new WaitForSeconds(helicopterWaveDelay);
         while (true)
         {
-            yield return new WaitForSeconds(helicopterWaveDelay);
+            yield return new WaitForSeconds(helicopterWaveDelay/2f);
 
             // Spawn a helicopter
-            GameObject helicopter = SpawnHelicopterNearby();
+            GameObject heli = SpawnHelicopterNearby();
+            helicoptersSpawned++;
+            StartHelicopterWarning(heli);
 
             // Wait until the helicopter is destroyed
-            yield return new WaitUntil(() => helicopter == null);
+            yield return new WaitUntil(() => heli == null);
         }
     }
     
     private IEnumerator SpawnHelicopterRoutine2()
     {
+        yield return new WaitForSeconds(helicopterWaveDelay*1.3f);
         while (true)
         {
-            yield return new WaitForSeconds(helicopterWaveDelay+3f);
+            yield return new WaitForSeconds(helicopterWaveDelay/1.5f);
 
             // Spawn a helicopter
-            GameObject helicopter = SpawnHelicopterAtRandomSpot();
+            GameObject heli = SpawnHelicopterAtRandomSpot();
+            helicoptersSpawned++;
+            StartHelicopterWarning(heli);
 
             // Wait until the helicopter is destroyed
-            yield return new WaitUntil(() => helicopter == null);
+            yield return new WaitUntil(() => heli == null);
         }
     }
 
@@ -157,5 +166,14 @@ public class BossMinigameLogic : MonoBehaviour
     private bool IsPointInView(Vector3 viewportPoint)
     {
         return viewportPoint.x > 0 && viewportPoint.x < 1 && viewportPoint.y > 0 && viewportPoint.y < 1 && viewportPoint.z > 0;
+    }
+
+    private void StartHelicopterWarning(GameObject heli)
+    {
+        if (helicoptersSpawned == 1)
+        {
+            heliWarning.helicopterTransform = heli.transform;
+            heliWarning.gameObject.SetActive(true);
+        }
     }
 }
