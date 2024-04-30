@@ -16,12 +16,17 @@ public class BossMinigameLogic : MonoBehaviour
     public Vector3[] spawnPoints;
     public HelicopterTargetIndicator heliWarning;
     private int helicoptersSpawned = 0;
+    public Animator instruction;
+    public Animator controls;
 
     private void Start()
     {
+        MinigameBroadcaster.SetGameTimerPauseState(true);
         godzilla = GameObject.FindWithTag("Player");
         StartCoroutine(SpawnHelicopterRoutine());
         StartCoroutine(SpawnHelicopterRoutine2());
+        instruction.speed = .4f;
+        controls.speed = .4f;
     }
 
     void Update()
@@ -47,10 +52,14 @@ public class BossMinigameLogic : MonoBehaviour
 
     private IEnumerator SpawnHelicopterRoutine()
     {
-        yield return new WaitForSeconds(helicopterWaveDelay);
+        while (MainGameController.timerPaused)
+        {
+            yield return null;
+        }
         while (true)
         {
-            yield return new WaitForSeconds(helicopterWaveDelay/2f);
+            Debug.Log("ready to spawn heli");
+            yield return new WaitForSeconds(helicopterWaveDelay);
 
             // Spawn a helicopter
             GameObject heli = SpawnHelicopterNearby();
@@ -64,10 +73,13 @@ public class BossMinigameLogic : MonoBehaviour
     
     private IEnumerator SpawnHelicopterRoutine2()
     {
-        yield return new WaitForSeconds(helicopterWaveDelay*1.3f);
+        while (MainGameController.timerPaused)
+        {
+            yield return null;
+        }
         while (true)
         {
-            yield return new WaitForSeconds(helicopterWaveDelay/1.5f);
+            yield return new WaitForSeconds(helicopterWaveDelay*1.2f);
 
             // Spawn a helicopter
             GameObject heli = SpawnHelicopterAtRandomSpot();
@@ -152,6 +164,16 @@ public class BossMinigameLogic : MonoBehaviour
         }
     }
 
+    public GameObject SpawnHelicopertAtSpot(Vector3 point)
+    {
+        Debug.Log("Spawning scripted helicopter at: " + point);
+        helicoptersSpawned++;
+        
+        var heli = Instantiate(helicopter, point, Quaternion.identity);
+        StartHelicopterWarning(heli);
+        return heli;
+    }
+
     
     private void ShuffleArray(Vector3[] array)
     {
@@ -169,7 +191,6 @@ public class BossMinigameLogic : MonoBehaviour
 
     private void StartHelicopterWarning(GameObject heli)
     {
-        Debug.Log("Enabling helicopter warning");
         if (helicoptersSpawned == 1)
         {
             heliWarning.helicopterTransform = heli.transform;

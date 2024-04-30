@@ -224,6 +224,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db69abf69780143448ed25158e210a0a, type: 3}
+--- !u!95 &26310940 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1688111609936053919, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+  m_PrefabInstance: {fileID: 1772147369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &52568729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 749938412653202040, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
@@ -1157,6 +1162,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!95 &385208553 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4503768463830138862, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+  m_PrefabInstance: {fileID: 1772147369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414404064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1294,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1518715922}
   helicopter: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
   godzilla: {fileID: 0}
-  helicopterWaveDelay: 5
+  helicopterWaveDelay: 7
   spawnPoints:
   - {x: 0, y: 42.54, z: 0}
   - {x: -190, y: 42.54, z: 0}
@@ -1295,6 +1305,8 @@ MonoBehaviour:
   - {x: -380, y: 42.54, z: 380}
   - {x: -190, y: 42.54, z: 380}
   heliWarning: {fileID: 1209132749}
+  instruction: {fileID: 26310940}
+  controls: {fileID: 385208553}
 --- !u!4 &432780558
 Transform:
   m_ObjectHideFlags: 0
@@ -2241,11 +2253,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1209132748}
+  m_Father: {fileID: 1132997730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 298.82104, y: -64.2035}
+  m_AnchoredPosition: {x: 296.45288, y: -64.2035}
   m_SizeDelta: {x: 97.6217, y: 128.407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526706414
@@ -3733,7 +3745,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 526706413}
   m_Father: {fileID: 1209132748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -4314,7 +4327,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1132997730}
-  - {fileID: 526706413}
   m_Father: {fileID: 1149775011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4335,8 +4347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helicopterTransform: {fileID: 0}
-  shootText: {fileID: 1209132747}
-  arrowImage: {fileID: 0}
+  shootText: {fileID: 1132997732}
   mainCamera: {fileID: 1518715922}
 --- !u!114 &1209132750
 MonoBehaviour:
@@ -4345,7 +4356,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209132747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 

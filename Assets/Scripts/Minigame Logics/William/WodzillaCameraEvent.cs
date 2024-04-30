@@ -17,4 +17,10 @@ public class WodzillaCameraEvent : MonoBehaviour
         godzilla.SetInControl(true);
         MinigameBroadcaster.SetGameTimerPauseState(false);
     }
+
+    public void spawnFristHelicopter()
+    {
+        var logic = FindObjectOfType<BossMinigameLogic>();
+        logic.SpawnHelicopertAtSpot(new Vector3(-190, 42.54f, 0));
+    }
 }

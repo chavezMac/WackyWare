@@ -48,7 +48,7 @@ public class WodzillaHelicopter : MonoBehaviour
         mainBlades.transform.Rotate(Vector3.up, mainBladesSpeed * Time.deltaTime);
         
         AIPathing();
-        if (attackingEnabled)
+        if (attackingEnabled && !MainGameController.timerPaused)
         {
             Shoot();
         }
@@ -58,7 +58,7 @@ public class WodzillaHelicopter : MonoBehaviour
     private void AIPathing()
     {
         // AI pathing
-        if (godzilla != null)
+        if (godzilla != null && !MainGameController.timerPaused)
         {
             // Calculate the distance between the helicopter and Godzilla
             distanceToGodzilla = Vector3.Distance(transform.position, godzilla.transform.position);
