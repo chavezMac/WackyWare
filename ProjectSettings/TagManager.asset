@@ -5,12 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
-  - Balloon
-  - Border
-  - ShipTail
-  - ExplosionParticle
-  - MiniGameLogic
-  - PlanetNameObject
+  - WodzillaDestructible
+  - WodzillaTail
   layers:
   - Default
   - TransparentFX
