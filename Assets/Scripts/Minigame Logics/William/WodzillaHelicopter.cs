@@ -17,7 +17,8 @@ public class WodzillaHelicopter : MonoBehaviour
     public bool withinFiringDistance = false;
     public Vector3 destination;
     public float distanceToGodzilla;
-    
+
+    public bool attackingEnabled = true;
     public const float firingCooldown = 3f;
     private float timeUntilFiring;
     private bool chargingWeapons = false;
@@ -46,7 +47,10 @@ public class WodzillaHelicopter : MonoBehaviour
         mainBlades.transform.Rotate(Vector3.up, mainBladesSpeed * Time.deltaTime);
         
         AIPathing();
-        Shoot();
+        if (attackingEnabled)
+        {
+            Shoot();
+        }
         RotateTowardsGodzilla();
     }
 

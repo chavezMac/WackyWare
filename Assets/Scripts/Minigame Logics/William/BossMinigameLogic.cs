@@ -19,7 +19,7 @@ public class BossMinigameLogic : MonoBehaviour
     {
         godzilla = GameObject.FindWithTag("Player");
         StartCoroutine(SpawnHelicopterRoutine());
-        StartCoroutine(SpawnHelicopterRoutine2());
+        // StartCoroutine(SpawnHelicopterRoutine2());
     }
 
     void Update()
@@ -133,11 +133,13 @@ public class BossMinigameLogic : MonoBehaviour
         // If a suitable spawn point is found, spawn a helicopter at that point
         if (foundASpot)
         {
+            Debug.Log("Spawning helicopter at: " + nearestHeli);
             return Instantiate(helicopter, nearestHeli, Quaternion.identity);
         }
         else
         {
             // If no suitable spawn point is found, just pick one
+            Debug.Log("Spawning helicopter at: " + spawnPoints[0]);
             return Instantiate(helicopter, spawnPoints[0], Quaternion.identity);
         }
     }

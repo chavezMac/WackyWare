@@ -579,7 +579,7 @@ Rigidbody:
   m_GameObject: {fileID: 458255857492903233}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -801,7 +801,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1b9f92cd1ef26544b854655608221231, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.841
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -897,7 +897,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 51fbd86cd37d60d42a931d076a330058, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7725,8 +7725,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.00012678125, y: -0.9753218, z: 0.22077738, w: -0.0021520196}
   m_LocalPosition: {x: -1.5342916, y: 30.543234, z: 28.439266}
-  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6098314867707010481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

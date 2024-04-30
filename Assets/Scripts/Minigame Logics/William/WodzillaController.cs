@@ -27,7 +27,7 @@ public class WodzillaController : MonoBehaviour
     public LineRenderer lineRendererR;
     public GameObject LaserHitL;
     public GameObject LaserHitR;
-    public GameObject debugSphere;
+    // public GameObject debugSphere;
 
     public AudioSource roar;
     public AudioSource lasersfx;
@@ -36,15 +36,24 @@ public class WodzillaController : MonoBehaviour
     public AudioSource miscsfx;
     public AudioClip[] impactSounds; // Array of footstep sound effects
     public AudioClip[] footstepSounds; // Array of footstep sound effects
-
+    public bool audioEnabled = true; //Debug feature
+    
     public int hp = 3;
     private void Start()
     {
         anim = GetComponent<Animator>();
         StartCoroutine(PeriodicRoar());
-        hp += MainGameController.minigamesCompletedSuccessfully;//dynamic difficulty HP
-        scaleModifier +=MainGameController.minigamesCompletedSuccessfully/10f;
+        hp += MainGameController.minigamesCompletedSuccessfully / 3;//dynamic difficulty HP
+        scaleModifier += MainGameController.minigamesCompletedSuccessfully / 10f;
         transform.localScale = new Vector3(scaleModifier, scaleModifier, scaleModifier);
+        moveSpeed += MainGameController.minigamesCompletedSuccessfully / 30f;
+
+        //Audio debugging
+        roar.mute = !audioEnabled;
+        lasersfx.mute = !audioEnabled;
+        stomp.mute = !audioEnabled;
+        impact.mute = !audioEnabled;
+        miscsfx.mute = !audioEnabled;
     }
 
     void Update()
@@ -142,7 +151,7 @@ public class WodzillaController : MonoBehaviour
             
         }
 
-        debugSphere.transform.position = hit.transform.position;
+        // debugSphere.transform.position = hit.transform.position;
     }
 
 

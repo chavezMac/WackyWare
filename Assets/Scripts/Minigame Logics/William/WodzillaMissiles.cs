@@ -7,26 +7,25 @@ public class WodzillaMissiles : MonoBehaviour
     public GameObject explosion;
     public float missileSpeed = 10f;
     public float turnSpeed = 2.5f;
-
+    private CapsuleCollider targetCol;
     private Rigidbody rb;
-
-    private Vector3 target;
-    // Start is called before the first frame update
+    
     void Start()
     {
-        // target = godzilla.GetComponent<CapsuleCollider>().transform.position;
         godzilla = GameObject.FindWithTag("Player");
         rb = GetComponent<Rigidbody>();
+        targetCol = godzilla.GetComponent<CapsuleCollider>();
     }
 
     void Update()
     {
         transform.Rotate(Vector3.forward, 360f * Time.deltaTime);
+        Vector3 target = targetCol.transform.position + targetCol.center;
         // Check if Godzilla exists and is active
         if (godzilla != null && godzilla.activeSelf)
         {
             // Calculate the direction vector towards Godzilla
-            Vector3 direction = (godzilla.transform.position - transform.position).normalized;
+            Vector3 direction = (target - transform.position).normalized;
 
             // Rotate the missile towards Godzilla using Slerp for smooth rotation
             Quaternion targetRotation = Quaternion.LookRotation(direction);
