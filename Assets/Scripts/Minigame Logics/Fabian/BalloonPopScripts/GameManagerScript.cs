@@ -11,6 +11,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject balloon;
     public bool balloonEscaped;
     public Camera mainCamera;
+    public bool isVanished = false;
 
     private void Start()
     {
@@ -26,18 +27,20 @@ public class GameManagerScript : MonoBehaviour
 
     void BalloonDied()
     {
-        Debug.Log("GameManager Received 'BalloonDied' event");
+        //Debug.Log("GameManager Received 'BalloonDied' event");
     }
 
     void Update()
     {
-       // Debug.Log(MainGameController.timeRemaining);    
-        // if (MainGameController.timeRemaining <= 0)
-        // {
-        //     MinigameBroadcaster.MinigameCompleted();
-        // }
-        
-        
+        // Check if the timer has run out and no balloons have escaped
+        if (MainGameController.timeRemaining <= 0 && !balloonEscaped)
+        {
+            MinigameBroadcaster.MinigameCompleted();
+        }else if (balloonEscaped)
+        {
+            MinigameBroadcaster.MinigameFailed();
+        }
+    
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 rayPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -48,18 +51,25 @@ public class GameManagerScript : MonoBehaviour
                 GameObject hitObject = hit.collider.gameObject;
                 if (hitObject.CompareTag("Balloon"))
                 {
-                    Debug.Log("Balloon clicked");
+                   // Debug.Log("Balloon clicked");
                     popBalloon(hitObject);
+                    if (isVanished)
+                    {
+                        Destroy(hitObject);
+                        isVanished = false;
+                    }
                 }
+
+
             }
         }
     }
 
     public void popBalloon(GameObject balloon)
     {
-        Debug.Log("Balloon popped");
+        //Debug.Log("Balloon popped");
         StartCoroutine(balloon.GetComponent<BalloonMovement>().Vanish());
         balloon.GetComponent<AudioSource>().Play();
-
     }
+
 }

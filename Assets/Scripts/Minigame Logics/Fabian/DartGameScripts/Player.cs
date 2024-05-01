@@ -66,6 +66,11 @@ public class Player : MonoBehaviour
        
 
       }
+
+      if (GameManger.planeysToShootDown == 0)
+      {
+        GameManger.over = true;
+      }
       float direction = Input.GetAxis(inputAxis);
       Vector3 newPosition = new Vector3();
 

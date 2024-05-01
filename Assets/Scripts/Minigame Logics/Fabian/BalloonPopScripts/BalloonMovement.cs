@@ -14,7 +14,7 @@ public class BalloonMovement : MonoBehaviour
     private float _dissolveTime = .75f;
     private SpriteRenderer _spriteRenderers;
     private Material _materials;
-    public GameManagerScript script;
+    public GameObject script;
     private int _dissolveAmount = Shader.PropertyToID("_DissolveAmount");
     private Rigidbody2D rb;
     public float upMovement = 3.5f;
@@ -25,6 +25,7 @@ public class BalloonMovement : MonoBehaviour
 
     private void Start()
     {
+        
         logigObject = GameObject.FindGameObjectWithTag("MiniGameLogic");
         image = GetComponent<Image>();
         if (image == null)
@@ -66,6 +67,7 @@ public class BalloonMovement : MonoBehaviour
             //script.balloonEscaped = true;
             Debug.Log("Balloon hit border and destroyed");
             Destroy(gameObject);
+            MinigameBroadcaster.MinigameFailed();
 
 
         }
@@ -97,6 +99,8 @@ public class BalloonMovement : MonoBehaviour
         }
 
         material.SetFloat("_DissolveAmount", 1.1f);
+        Destroy(gameObject);
+
     }
 
 
