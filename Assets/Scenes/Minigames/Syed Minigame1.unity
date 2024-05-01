@@ -2296,7 +2296,7 @@ MonoBehaviour:
   timeTillCatch: 0
   winnerAnim: 0
   reel: {fileID: 8300000, guid: 2c039fd0d5c5fcb40a243481839f621b, type: 3}
-  timerMultiplicator: 2
+  timerMultiplicator: 3
 --- !u!95 &340690087
 Animator:
   serializedVersion: 5
@@ -4614,6 +4614,10 @@ PrefabInstance:
     - target: {fileID: -138262789864655838, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: isSpacebarUsed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -138262789864655838, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: overrideTimeLimit
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 251729343016510873, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_Name
