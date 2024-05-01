@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Wire : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Wire : MonoBehaviour
     private Vector3 startPosition;
     public GameObject lightOn;
     private static int wireNo;
-    public AudioClip light;
+    [FormerlySerializedAs("light")] public AudioClip _light;
     private AudioSource _source;
     private void Start()
     {
