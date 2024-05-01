@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class BossMinigameLogic : MonoBehaviour
 {
     public int buildingsRemaining = 0;
-    public bool debug = true;
+    public bool debug = false;
     public MinigameMusic music;
     public Camera mainCamera;
     public GameObject helicopter;
@@ -58,7 +58,7 @@ public class BossMinigameLogic : MonoBehaviour
         }
         while (true)
         {
-            Debug.Log("ready to spawn heli");
+            // Debug.Log("ready to spawn heli");
             yield return new WaitForSeconds(helicopterWaveDelay);
 
             // Spawn a helicopter
@@ -113,13 +113,13 @@ public class BossMinigameLogic : MonoBehaviour
             if (!IsPointInView(viewportPoint))
             {
                 // Spawn a helicopter at the spawn point
-                Debug.Log("Spawning helicopter at: " + spawnPoint.ToString());
+                // Debug.Log("Spawning helicopter at: " + spawnPoint.ToString());
                 GameObject heli = Instantiate(helicopter, spawnPoint, Quaternion.identity);
                 return heli;
             }
         }
         //if no good point is found, just pick one
-        Debug.Log("No good spawn point found...");
+        // Debug.Log("No good spawn point found...");
         GameObject defaultSpawnPoint = Instantiate(helicopter, spawnPoints[0], Quaternion.identity);
         return defaultSpawnPoint;
     }
@@ -153,20 +153,20 @@ public class BossMinigameLogic : MonoBehaviour
         // If a suitable spawn point is found, spawn a helicopter at that point
         if (foundASpot)
         {
-            Debug.Log("Spawning helicopter at: " + nearestHeli);
+            // Debug.Log("Spawning helicopter at: " + nearestHeli);
             return Instantiate(helicopter, nearestHeli, Quaternion.identity);
         }
         else
         {
             // If no suitable spawn point is found, just pick one
-            Debug.Log("Spawning helicopter at: " + spawnPoints[0]);
+            // Debug.Log("Spawning helicopter at: " + spawnPoints[0]);
             return Instantiate(helicopter, spawnPoints[0], Quaternion.identity);
         }
     }
 
     public GameObject SpawnHelicopertAtSpot(Vector3 point)
     {
-        Debug.Log("Spawning scripted helicopter at: " + point);
+        // Debug.Log("Spawning scripted helicopter at: " + point);
         helicoptersSpawned++;
         
         var heli = Instantiate(helicopter, point, Quaternion.identity);
