@@ -11,6 +11,8 @@ TagManager:
   - PickedUp
   - FellZone
   - Checkpoint
+  - WodzillaDestructible
+  - WodzillaTail
   layers:
   - Default
   - TransparentFX
