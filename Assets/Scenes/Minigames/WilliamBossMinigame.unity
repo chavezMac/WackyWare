@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1141,6 +1141,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!4 &380988160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
+  m_PrefabInstance: {fileID: 561680640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &383892887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9021335896535525876, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
@@ -1259,6 +1264,11 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!4 &428859237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
+  m_PrefabInstance: {fileID: 1551478650744702026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432780556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,6 +1815,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2324716102204093614, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       insertIndex: -1
       addedObject: {fileID: 191609527}
+    - targetCorrespondingSourceObject: {fileID: 2324716102204093614, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 428859237}
+    - targetCorrespondingSourceObject: {fileID: 2324716102204093614, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 380988160}
+    - targetCorrespondingSourceObject: {fileID: 2324716102204093614, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981372964}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8923502150272512628, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
       insertIndex: -1
@@ -2346,7 +2365,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 260545808}
     m_Modifications:
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3054,11 +3073,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &797122412 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6966900697710137047, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-  m_PrefabInstance: {fileID: 1709854851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &823033804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1408255768382945708, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
@@ -3424,6 +3438,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!4 &981372964 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
+  m_PrefabInstance: {fileID: 1204029487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &995767406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 587777262840900504, guid: 7301c9aa09149694b851c72564cf4558, type: 3}
@@ -3766,8 +3785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 0, b: 0.053436756, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
+  m_EffectColor: {r: 0.8490566, g: 0, b: 0.175078, a: 1}
+  m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
 --- !u!114 &1132997732
 MonoBehaviour:
@@ -3782,7 +3801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5424341, b: 0.2471698, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4220,7 +4239,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 260545808}
     m_Modifications:
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5014,19 +5033,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 2872315722309384308, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
   m_PrefabInstance: {fileID: 1709854851}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1518715926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797122412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc6096e41c697dc4fb91b54442e93620, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  godzilla: {fileID: 1987381219}
 --- !u!1 &1527084451
 GameObject:
   m_ObjectHideFlags: 0
@@ -5431,14 +5437,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Godzilla_Minus_One_2023
       objectReference: {fileID: 0}
-    - target: {fileID: 899871680084006791, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: MinDistance
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 899871680084006791, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.683
-      objectReference: {fileID: 0}
     - target: {fileID: 6098314867707010481, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: m_LocalPosition.x
       value: -66.7
@@ -5482,10 +5480,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6966900697710137047, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1518715926}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
 --- !u!1001 &1720786228
 PrefabInstance:
@@ -6412,7 +6407,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 260545808}
     m_Modifications:
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6432,15 +6427,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1008118323287545884, guid: 4786f3766ad03f1499dd7be6c59f107a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6569,8 +6564,5 @@ SceneRoots:
   - {fileID: 493511703}
   - {fileID: 376976613}
   - {fileID: 1709854851}
-  - {fileID: 1551478650744702026}
-  - {fileID: 561680640}
-  - {fileID: 1204029487}
   - {fileID: 1527084454}
   - {fileID: 432780558}
