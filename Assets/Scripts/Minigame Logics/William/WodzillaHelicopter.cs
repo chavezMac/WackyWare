@@ -40,6 +40,10 @@ public class WodzillaHelicopter : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         timeUntilFiring = firingCooldown/3f;
         agent.speed = moveSpeed;
+        glowLeft.gameObject.SetActive(false);
+        glowRight.gameObject.SetActive(false);
+        lightLeft.intensity = 0;
+        lightRight.intensity = 0;
     }
 
     void Update()

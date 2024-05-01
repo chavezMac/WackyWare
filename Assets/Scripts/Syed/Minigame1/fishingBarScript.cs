@@ -28,7 +28,7 @@ public class fishingBarScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(onFish == true)
         {
@@ -157,7 +157,7 @@ public class fishingBarScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up, ForceMode.Impulse);
+            rb.AddForce(Vector3.up*5, ForceMode.Impulse);
         }
 
     }

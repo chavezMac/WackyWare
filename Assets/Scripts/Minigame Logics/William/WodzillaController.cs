@@ -46,7 +46,7 @@ public class WodzillaController : MonoBehaviour
         hp += MainGameController.minigamesCompletedSuccessfully / 3;//dynamic difficulty HP
         scaleModifier += MainGameController.minigamesCompletedSuccessfully / 10f;
         transform.localScale = new Vector3(scaleModifier, scaleModifier, scaleModifier);
-        moveSpeed += MainGameController.minigamesCompletedSuccessfully / 30f;
+        moveSpeed += MainGameController.minigamesCompletedSuccessfully / 2f;
 
         //Audio debugging
         roar.mute = !audioEnabled;
@@ -155,7 +155,6 @@ public class WodzillaController : MonoBehaviour
             }
             
         }
-
         // debugSphere.transform.position = hit.transform.position;
     }
 
