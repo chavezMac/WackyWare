@@ -8,13 +8,18 @@ public class PointerMovement : MonoBehaviour
     private Vector3 leftPosition;
     private Vector3 rightPosition;
     private bool movingRight = true;
+    public GameObject bar;
 
     void Start()
     {
+        bar = GetComponent<GameObject>();
         // Define left and right positions relative to the bar's transform
-        float halfBarWidth = transform.localScale.x / 2f;
+        float halfBarWidth = bar.transform.localScale.x / 2f - 1;
+        Debug.Log(halfBarWidth);
         leftPosition = transform.parent.position - new Vector3(halfBarWidth, 0f, 0f);
         rightPosition = transform.parent.position + new Vector3(halfBarWidth, 0f, 0f);
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
     }
 
     void Update()
@@ -26,6 +31,7 @@ public class PointerMovement : MonoBehaviour
             if (transform.position == rightPosition)
             {
                 movingRight = false;
+                Debug.Log("Changed");
             }
         }
         else
