@@ -1,58 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using UnityEngine;
 
 public class GhostController : MonoBehaviour
 {
-    public Transform player; 
-    public float moveSpeed = 5f; 
-    public float detectionRadius = 10f; 
-    public LayerMask playerLayer; 
+    [SerializeField] float moveSpeed = 10f;
+   
+    Transform target;
 
-    private bool isPlayerDetected = false; 
-    private Vector3 initialPosition; 
-    private Vector3 lastKnownPlayerPosition; 
+    Vector3 moveDirection;
+
+    private FieldOfView fieldOfView;
+
+
 
     private void Start()
     {
-        initialPosition = transform.position;
+        target = GameObject.Find("ThirdPersonPlayer").transform;
+        fieldOfView = GetComponent<FieldOfView>();
     }
 
     private void Update()
     {
-        if (!isPlayerDetected)
+        if (fieldOfView && fieldOfView.canSeePlayer)
         {
-            
-            MoveTo(initialPosition);
-        }
-        else
-        {
-            
-            MoveTo(lastKnownPlayerPosition);
-        }
-
-        
-        Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRadius, playerLayer);
-        if (colliders.Length > 0)
-        {
-          
-            isPlayerDetected = true;
-            lastKnownPlayerPosition = player.position;
-        }
-        else
-        {
-           
-            isPlayerDetected = false;
+            if (target)
+            {
+                Vector3 direction = (target.position - transform.position).normalized;
+                Quaternion targetRotation = Quaternion.LookRotation(direction);
+                transform.rotation = Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f);
+                transform.Translate(direction * moveSpeed * Time.deltaTime, Space.World);
+            }
         }
     }
-
-    private void MoveTo(Vector3 targetPosition)
-    {
-      
-        Vector3 moveDirection = (targetPosition - transform.position).normalized;
-        transform.position += moveDirection * moveSpeed * Time.deltaTime;
-
-        Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 360f * Time.deltaTime);
-    }
+  
 }
