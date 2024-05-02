@@ -7,9 +7,8 @@ public class CubeControl : MonoBehaviour
 {
     [SerializeField] KeyCode keyFirst, keySecond;
     private KeyCode keyRestart = KeyCode.R, keyNext = KeyCode.Q;
-
     [SerializeField] Vector3 cubeMove;
-
+    
     private void FixedUpdate()
     {
         if (Input.GetKey(keyFirst))
@@ -22,20 +21,8 @@ public class CubeControl : MonoBehaviour
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 
         if(Input.GetKey(keyNext))
-            NextLVL();
+            Debug.Log("finished");
+            //MinigameBroadcaster.MinigameCompleted();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Finish") && this.CompareTag("Player"))
-            NextLVL();
-    }
-
-    private void NextLVL()
-    {
-        if (SceneManager.GetActiveScene().buildIndex + 1 == 15)
-            SceneManager.LoadSceneAsync(0);
-        else
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-    }
 }
