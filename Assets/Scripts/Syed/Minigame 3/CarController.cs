@@ -5,6 +5,8 @@ public class CarController : MonoBehaviour {
 
 	public float speed = 1500f;
 	public float rotationSpeed = 15f;
+	// public AudioClip accelaration;
+	// private AudioSource _source;
 
 	public WheelJoint2D backWheel;
 	public WheelJoint2D frontWheel;
@@ -35,6 +37,8 @@ public class CarController : MonoBehaviour {
 		{
 			backWheel.useMotor = true;
 			frontWheel.useMotor = true;
+			
+			
 
 			JointMotor2D motor = new JointMotor2D { motorSpeed = movement, maxMotorTorque = 10000 };
 			backWheel.motor = motor;
@@ -42,6 +46,7 @@ public class CarController : MonoBehaviour {
 		}
 
 		rb.AddTorque(-rotation * rotationSpeed * Time.fixedDeltaTime);
+		// _source.PlayOneShot(accelaration);
     }
 
 }
