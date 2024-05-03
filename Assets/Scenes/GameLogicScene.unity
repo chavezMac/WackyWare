@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -385,6 +385,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[2]
+      value: micchavez1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[3]
+      value: micchavez2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[4]
+      value: micchavez3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 687760359531645946, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: m_Name
       value: MainGameController

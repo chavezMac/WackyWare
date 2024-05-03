@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
+  - PickUp
+  - CameraZone
+  - Bullet
+  - PickedUp
+  - FellZone
+  - Checkpoint
   - WodzillaDestructible
   - WodzillaTail
   - fish
@@ -16,6 +22,9 @@ TagManager:
   - 
   - Water
   - UI
+  - WhatIsGround
+  - WhatIsPlayer
+  - WhatIsWall
   - Car_base
   - Car_Wheels
   - 
