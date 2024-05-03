@@ -3,16 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class WodzillaController : MonoBehaviour
 {
     public WodzillaTail tail;
-    public float moveSpeed = 10f; // Movement speed
-    public float turnSpeed = 2f; // Turning speed
+    public float moveSpeed = 15f; // Movement speed
+    public float turnSpeed = 90f; // Turning speed
     public bool inControl = false;
     public Animator anim;
     public CameraShaker cam;
+    public Text bonusNotification;
 
     public float scaleModifier = 1.5f;
     public float growDuration = 0.5f;
@@ -44,9 +46,9 @@ public class WodzillaController : MonoBehaviour
         anim = GetComponent<Animator>();
         StartCoroutine(PeriodicRoar());
         hp += MainGameController.minigamesCompletedSuccessfully / 3;//dynamic difficulty HP
-        scaleModifier += MainGameController.minigamesCompletedSuccessfully / 10f;
-        transform.localScale = new Vector3(scaleModifier, scaleModifier, scaleModifier);
-        moveSpeed += MainGameController.minigamesCompletedSuccessfully / 2f;
+        // scaleModifier += MainGameController.minigamesCompletedSuccessfully / 10f;
+        // transform.localScale = new Vector3(scaleModifier, scaleModifier, scaleModifier);
+        // moveSpeed += MainGameController.minigamesCompletedSuccessfully / 2f;
 
         //Audio debugging
         roar.mute = !audioEnabled;
@@ -164,23 +166,34 @@ public class WodzillaController : MonoBehaviour
     {
         if (other.CompareTag("WodzillaPowerup"))
         {
-            StartCoroutine(Grow());
+            StartCoroutine(Grow(0.5f, false));
             hp++;
             Destroy(other.gameObject);
         }
     }
 
-    private IEnumerator Grow()
+    public IEnumerator Grow(float growValue, bool firstTimeBonus)
     {
         miscsfx.Play();
+        MinigameBroadcaster.SetGameTimerPauseState(true);
+        if (firstTimeBonus)
+        {
+            bonusNotification.enabled = true;
+            bonusNotification.text = "Minigame Win bonus!\n+" + growValue*100 + "% size bonus!";
+        }
+        else
+        {
+            bonusNotification.enabled = false;
+        }
         if (!isGrowing)
         {
             isGrowing = true;
             inControl = false;
             anim.speed = 0f;
+            moveSpeed += growValue*5f;
 
             // Calculate target scale
-            float targetScale = scaleModifier + 0.5f;
+            float targetScale = scaleModifier + growValue;
 
             // Gradually increase scale over time using animation curve
             float elapsedTime = 0;
@@ -189,6 +202,7 @@ public class WodzillaController : MonoBehaviour
                 float curveValue = growthCurve.Evaluate(elapsedTime / growDuration);
                 float newScale = Mathf.Lerp(scaleModifier, targetScale, curveValue);
                 transform.localScale = new Vector3(newScale, newScale, newScale);
+                bonusNotification.transform.localScale = new Vector3(newScale, newScale, newScale);
 
                 elapsedTime += Time.deltaTime;
                 yield return null;
@@ -203,12 +217,26 @@ public class WodzillaController : MonoBehaviour
             isGrowing = false;
             anim.speed = 1;
             inControl = true;
+            // bonusNotification.enabled = false;
+            MinigameBroadcaster.SetGameTimerPauseState(false);
+            
+            elapsedTime = 0;
+            while (elapsedTime < growDuration)
+            {
+                float curveValue = growthCurve.Evaluate(elapsedTime / growDuration);
+                float newScale = Mathf.Lerp(0, targetScale, 1-curveValue);
+                bonusNotification.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            bonusNotification.enabled = false;
         }
     }
 
     public void PlayRandomFootstepSound()
     {
-        cam.ShakeCamera(4f,.5f, true);
+        cam.ShakeCamera(3f*scaleModifier,.5f, true);
         if (footstepSounds.Length == 0)
         {
             Debug.LogWarning("Footstep sounds array is empty.");
@@ -224,7 +252,7 @@ public class WodzillaController : MonoBehaviour
     
     public void PlayRandomImpactSound()
     {
-        cam.ShakeCamera(7f,1f, true);
+        cam.ShakeCamera(5f * scaleModifier,.5f, true);
         if (impactSounds.Length == 0)
         {
             Debug.LogWarning("Impact sounds array is empty.");
