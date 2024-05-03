@@ -20,7 +20,7 @@ public class bobberScript : MonoBehaviour
         bobberTime += Time.deltaTime;
         if(bobberTime >= 3)
         {
-            bobberAnim.Play("bobberFish");
+            // bobberAnim.Play("bobberFish");
         }
         if(Input.GetKeyDown(KeyCode.P) && bobberTime <= 3)
         {
