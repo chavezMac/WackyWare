@@ -157,7 +157,7 @@ public class fishingBarScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up*5, ForceMode.Impulse);
+            rb.AddForce(Vector3.up*3, ForceMode.Impulse);
         }
 
     }

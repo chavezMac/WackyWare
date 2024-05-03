@@ -18,9 +18,25 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigames/WilliamBossMinigame.unity
     guid: 1f3442f945a8b7a42a449624829f27e9
   - enabled: 1
+    path: Assets/Scenes/Minigames/micchavez_minigames/micchavez1.unity
+    guid: 35e33d7e30c0940c981ad1a9f179cc87
+  - enabled: 1
+    path: Assets/Scenes/Minigames/micchavez_minigames/micchavez2.unity
+    guid: 60b395e4919d0435a8d1544e06801159
+  - enabled: 1
+    path: Assets/Scenes/Minigames/micchavez_minigames/micchavez3.unity
+    guid: 331214b8ae5a377479402c3b233152f2
+  - enabled: 1
     path: Assets/Scenes/Minigames/Syed Minigame1.unity
     guid: ee447303744699c459737709d480954a
   - enabled: 1
     path: Assets/Scenes/Minigames/Syed Minigame2.unity
+    path: Assets/Scenes/Syed/Syed Minigame 3.unity
+    guid: 1c964a17f15d4a54b9006a561ce79d12
+  - enabled: 1
+    path: Assets/Scenes/Syed/Syed Minigame1.unity
+    guid: ee447303744699c459737709d480954a
+  - enabled: 1
+    path: Assets/Scenes/Syed/Syed Minigame2.unity
     guid: a10f1bab60dc470419b4c52ee5fc1841
   m_configObjects: {}
