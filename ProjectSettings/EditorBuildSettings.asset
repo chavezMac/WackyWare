@@ -23,4 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/JesusMiniGame3.unity
     guid: 5d134c75d6e4e0f498c95dd8ef6524c6
+    path: Assets/Scenes/Minigames/WilliamBossMinigame.unity
+    guid: 1f3442f945a8b7a42a449624829f27e9
   m_configObjects: {}

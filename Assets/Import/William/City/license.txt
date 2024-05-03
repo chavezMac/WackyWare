@@ -1,0 +1,11 @@
+Model Information:
+* title:	City
+* source:	https://sketchfab.com/3d-models/city-1f50f0d6ec5a493d8e91d7db1106b324
+* author:	Mateusz Woliński (https://sketchfab.com/jeandiz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "City" (https://sketchfab.com/3d-models/city-1f50f0d6ec5a493d8e91d7db1106b324) by Mateusz Woliński (https://sketchfab.com/jeandiz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
