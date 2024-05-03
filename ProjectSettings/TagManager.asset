@@ -7,6 +7,8 @@ TagManager:
   - Example2Button
   - WodzillaDestructible
   - WodzillaTail
+  - fish
+  - Collidable
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Car_base
+  - Car_Wheels
   - 
   - 
   - 
@@ -41,9 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2757355671
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: MainSceneLayer
-    uniqueID: 3595351115
     locked: 0

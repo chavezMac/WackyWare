@@ -98,7 +98,7 @@ public class playerScript : MonoBehaviour
                 savedTargetTime = 0.0f;
                 extraBobberDistance = 0.0f;
             }
-            playerAnim.Play("playerFishing");
+            // playerAnim.Play("playerFishing");
         }
 
         if(Input.GetKeyDown(KeyCode.P) && timeTillCatch <= 1)
@@ -124,7 +124,7 @@ public class playerScript : MonoBehaviour
     }
     public void fishGameLossed()
     {
-        playerAnim.Play("playerStill");
+        // playerAnim.Play("playerStill");
         fishGame.SetActive(false);
         poleBack = false;
         throwBobber = false;
