@@ -7,9 +7,8 @@ public class PlayerMoves : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 8f;
     public Rigidbody rb;
-    public RaycastHit hit;
+    public LayerMask groundMask;
     float distanceToGround = 0.5f;
-    bool isGrounded;
 
     void Start()
     {
@@ -25,11 +24,15 @@ public class PlayerMoves : MonoBehaviour
         transform.Translate(movement);
 
         // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+    }
 
-       
+    bool IsGrounded()
+    {
+        
+        return Physics.Raycast(transform.position, Vector3.down, distanceToGround + 0.1f, groundMask);
     }
 }
