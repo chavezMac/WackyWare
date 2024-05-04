@@ -45,7 +45,8 @@ public class MainGameController: MonoBehaviour
             demomode = true;
             currentMinigame = onlyMinigame;
         }
-        transition.init(); //Starts clapperboard mid-animation
+        // transition.init(); //Starts clapperboard mid-animation
+        transition.Play();
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
         WinIcon.speed = 0;
