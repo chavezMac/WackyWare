@@ -391,15 +391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[2]
-      value: micchavez1
+      value: Example Minigame 1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[3]
-      value: micchavez2
+      value: Example Minigame 1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[4]
-      value: micchavez3
+      value: Example Minigame 1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[5]
@@ -407,7 +407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[7]
-      value: Syed Minigame3
+      value: Syed Minigame 3
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[8]

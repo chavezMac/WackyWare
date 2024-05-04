@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu Scene.unity
+    guid: 4b512ae74e82ca24194bc7288493ef09
+  - enabled: 1
     path: Assets/Scenes/GameLogicScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: d8ebe39bbc8824d09b744e91439ac4e8
   - enabled: 1
     path: Assets/Scenes/Minigames/Example Minigame 1.unity
     guid: 625cd47e91f2c554e976533f94f97838
@@ -27,16 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigames/micchavez_minigames/micchavez3.unity
     guid: 331214b8ae5a377479402c3b233152f2
   - enabled: 1
-    path: Assets/Scenes/Minigames/Syed Minigame1.unity
-    guid: ee447303744699c459737709d480954a
-  - enabled: 1
-    path: Assets/Scenes/Minigames/Syed Minigame2.unity
-    path: Assets/Scenes/Syed/Syed Minigame 3.unity
-    guid: 1c964a17f15d4a54b9006a561ce79d12
-  - enabled: 1
     path: Assets/Scenes/Syed/Syed Minigame1.unity
     guid: ee447303744699c459737709d480954a
   - enabled: 1
     path: Assets/Scenes/Syed/Syed Minigame2.unity
     guid: a10f1bab60dc470419b4c52ee5fc1841
+  - enabled: 1
+    path: Assets/Scenes/Syed/Syed Minigame 3.unity
+    guid: 1c964a17f15d4a54b9006a561ce79d12
   m_configObjects: {}
