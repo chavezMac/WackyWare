@@ -19,6 +19,10 @@ public class BossMinigameLogic : MonoBehaviour
     public Animator instruction;
     public Animator controls;
 
+    public AudioClip victoryMusic;
+    public AudioClip failureMusic;
+    public AudioSource audio;
+
     private void Start()
     {
         MinigameBroadcaster.SetGameTimerPauseState(true);
@@ -27,26 +31,63 @@ public class BossMinigameLogic : MonoBehaviour
         StartCoroutine(SpawnHelicopterRoutine2());
         instruction.speed = .4f;
         controls.speed = .4f;
+        audio = GetComponent<AudioSource>();
+    }
+
+    public void Lose()
+    {
+        music.FadeOutMusicFailure();
+        StartCoroutine(PlaySoundAndWait(failureMusic, false));
+    }
+
+    public void Win()
+    {
+        music.FadeOutMusic();
+        StartCoroutine(PlaySoundAndWait(victoryMusic, true));
+    }
+    
+    IEnumerator PlaySoundAndWait(AudioClip clip, bool win)
+    {
+        MinigameBroadcaster.SetGameTimerPauseState(true);
+        //lower the volume of other sources
+        var wod = godzilla.GetComponent<WodzillaController>();
+        wod.roar.volume /= 3;
+        wod.stomp.volume /= 3;
+        wod.miscsfx.volume /= 2;
+        wod.lasersfx.volume /= 2;
+        wod.impact.volume /= 2;
+        // Play the sound
+        audio.clip = clip;
+        audio.Play();
+
+        // Wait until the sound finishes playing
+        yield return new WaitForSeconds(clip.length);
+
+        if (win)
+        {
+            MinigameBroadcaster.MinigameCompleted();
+        }
+        else
+        {
+            MinigameBroadcaster.MinigameFailed();
+        }
     }
 
     void Update()
     {
         if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)//Lose condition
         {
-            MinigameBroadcaster.MinigameFailed();
-            music.FadeOutMusicFailure();
+            Lose();
         }
 
         if (debug && Input.GetKeyDown(KeyCode.E))//DEBUG WIN CONDITION
         {
-            MinigameBroadcaster.MinigameCompleted();
-            music.FadeOutMusic();
+            Win();
         }
         
         if (debug && Input.GetKeyDown(KeyCode.F))//DEBUG FAIL CONDITION
         {
-            MinigameBroadcaster.MinigameFailed();
-            music.FadeOutMusicFailure();
+            Lose();
         }
     }
 
@@ -96,8 +137,7 @@ public class BossMinigameLogic : MonoBehaviour
         buildingsRemaining += numToAdd;
         if (buildingsRemaining <= 0) //Win condition
         {
-            MinigameBroadcaster.MinigameCompleted();
-            music.FadeOutMusic();
+            Win();
         }
     }
 
