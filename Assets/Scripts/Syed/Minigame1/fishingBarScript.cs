@@ -22,6 +22,13 @@ public class fishingBarScript : MonoBehaviour
     public bool onFish;
     public playerScript playerS;
     public GameObject bobber;
+    // [SerializeField] private Transform progressBarContainer;
+    // private float hookProgress;
+    // [SerializeField] private float hookSize = 0.1f;
+    // [SerializeField] private float hookPower = 5f;
+    // private float hookPosition;
+    // private float fishPosition;
+    // [SerializeField] private float hookProgressDregradationPower = 0.1f;
     void Start()
     {
         
@@ -55,6 +62,25 @@ public class fishingBarScript : MonoBehaviour
             Destroy(GameObject.Find("bobber(Clone)"));
             targetTime = 4.0f;
         }
+        
+        // Vector3 ls = progressBarContainer.localScale;
+        // ls.y = hookProgress;
+        // progressBarContainer.localScale = ls;
+        //
+        // float min = hookPosition - hookSize / 2;
+        // float max = hookSize + hookSize / 2;
+        //
+        // if (min < playerScript.fishPosition && playerScript.fishPosition < max)
+        // {
+        //     hookProgress += hookPower * Time.deltaTime;
+        // }
+        // else
+        // {
+        //
+        //     hookProgress -= hookProgressDregradationPower * Time.deltaTime;
+        // }
+        //
+        // hookProgress = Mathf.Clamp(hookProgress, 0f, 1f);
 
         if(targetTime >= 0.0f)
         {

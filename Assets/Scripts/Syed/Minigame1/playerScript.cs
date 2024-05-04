@@ -14,7 +14,7 @@ public class playerScript : MonoBehaviour
     public GameObject bobber;
     [SerializeField] private Transform fish;
     
-    private float fishPosition;
+    public static float fishPosition;
     private float fishSpeed;
     [SerializeField] private float smoothMotion = 1f;
     
