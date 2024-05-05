@@ -210,7 +210,8 @@ public class BossMinigameLogic : MonoBehaviour
         helicoptersSpawned++;
         
         var heli = Instantiate(helicopter, point, Quaternion.identity);
-        StartHelicopterWarning(heli);
+        StartCoroutine(StartHelicopterWarning(heli));
+        // StartHelicopterWarning(heli);
         return heli;
     }
 
@@ -229,12 +230,19 @@ public class BossMinigameLogic : MonoBehaviour
         return viewportPoint.x > 0 && viewportPoint.x < 1 && viewportPoint.y > 0 && viewportPoint.y < 1 && viewportPoint.z > 0;
     }
 
-    private void StartHelicopterWarning(GameObject heli)
+    private IEnumerator StartHelicopterWarning(GameObject heli)
     {
+        while (MainGameController.timerPaused)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1f);
         if (helicoptersSpawned == 1)
         {
             heliWarning.helicopterTransform = heli.transform;
             heliWarning.gameObject.SetActive(true);
+            heliWarning.SetScreenPosition();
         }
     }
 }

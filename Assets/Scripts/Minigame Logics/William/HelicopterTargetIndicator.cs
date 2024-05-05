@@ -1,3 +1,5 @@
+using System;
+using UnityEditor.Media;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +10,11 @@ public class HelicopterTargetIndicator : MonoBehaviour
     public Camera mainCamera; // Reference to the main camera
 
     void Update()
+    {
+        SetScreenPosition();
+    }
+
+    public void SetScreenPosition()
     {
         if (helicopterTransform == null)
         {
