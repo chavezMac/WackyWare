@@ -387,7 +387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[2]
@@ -412,6 +412,10 @@ PrefabInstance:
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[8]
       value: WilliamBossMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[9]
+      value: Ending Credits
       objectReference: {fileID: 0}
     - target: {fileID: 687760359531645946, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: m_Name
