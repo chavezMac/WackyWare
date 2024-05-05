@@ -11,13 +11,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     int totalPipes = 0;
     [SerializeField]
-    int correctedPipes = 0;
+    public int correctedPipes = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
         totalPipes = PipesHolder.transform.childCount;
+
+        Debug.Log("total pipes:" + totalPipes);
 
         Pipes = new GameObject[totalPipes];
 

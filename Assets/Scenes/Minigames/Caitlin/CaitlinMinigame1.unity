@@ -171,7 +171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 4
 --- !u!65 &79940925
 BoxCollider:
@@ -394,7 +393,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 6
 --- !u!54 &154819373
 Rigidbody:
@@ -582,7 +580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 3
 --- !u!54 &434565482
 Rigidbody:
@@ -659,7 +656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 1
 --- !u!65 &438115634
 BoxCollider:
@@ -680,8 +676,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.94, y: 8.93, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.3119855, y: 5.422921, z: 0.2}
+  m_Center: {x: 0.00000023841858, y: -0.060467243, z: 0}
 --- !u!212 &438115635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1301,7 +1297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 2
 --- !u!54 &704670921
 Rigidbody:
@@ -1429,13 +1424,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973608634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: -4.097851, y: 0.5665207, z: -0.13899212}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 277206989}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!54 &973608638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1839,7 +1834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 5
 --- !u!54 &1231128664
 Rigidbody:
@@ -1968,13 +1962,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334905341}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 6, y: 0.54, z: -0.13899212}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 277206989}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!54 &1334905346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2226,7 +2220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isDisplay: 0
   duckNum: 7
 --- !u!65 &1610298773
 BoxCollider:

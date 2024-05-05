@@ -6,11 +6,7 @@ using UnityEngine.EventSystems;
 public class NewBehaviourScript : MonoBehaviour
 {
     public float rotationSpeed = 90f;
-    public bool isDisplay;
     public int duckNum;
-
-    // Flag to indicate if the object is upright
-    private bool isUpright = false;
 
     void Start()
     {
@@ -35,36 +31,20 @@ public class NewBehaviourScript : MonoBehaviour
                 // Rotate the cube by 90 degrees
                 transform.Rotate(Vector3.forward, rotationSpeed);
 
-                //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0f);
+                // Check if the cube is right after rotation
 
-                // Check if the cube is upright after rotation
-
-                if(duckNum == 1 && transform.localEulerAngles.z == 90f){
-                    UprightManager.instance.uprightCount++;
+            if ((duckNum == 1 && Mathf.Approximately(transform.localEulerAngles.z, 90f)) ||
+                (duckNum == 2 && Mathf.Approximately(transform.localEulerAngles.z, 270)) ||
+                (duckNum == 3 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
+                (duckNum == 4 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
+                (duckNum == 5 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
+                (duckNum == 6 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
+                (duckNum == 7 && Mathf.Approximately(transform.localEulerAngles.z, 270))) {
+                     UprightManager.instance.uprightCount++;
                     GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                    Debug.Log("Frozen!");
-                }else if(duckNum == 2 && transform.localEulerAngles.z == -90f){
-                    UprightManager.instance.uprightCount++;
-                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                }else if(duckNum == 3 && transform.localEulerAngles.z == 180f){
-                    UprightManager.instance.uprightCount++;
-                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                }else if(duckNum == 4 && transform.localEulerAngles.z == 0f){
-                    UprightManager.instance.uprightCount++;
-                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                }
-                else if(duckNum == 5 && transform.localEulerAngles.z == 180f){
-                    UprightManager.instance.uprightCount++;
-                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                }else if(duckNum == 6 && transform.localEulerAngles.z == 0f){
-                    UprightManager.instance.uprightCount++;
-                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                }}else if(duckNum == 7 && transform.localEulerAngles.z == -90){
-                    UprightManager.instance.uprightCount++;
-                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                }
-            
+                     Debug.Log("Frozen!");
             }
+        }
         
 
         //Check if all three objects are upright
@@ -72,9 +52,11 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Debug.Log("All objects are upright!");
             // Return Successful
-            FindObjectOfType<MainGameController>().MinigameDone(true);
+        //    FindObjectOfType<MainGameController>().MinigameDone(true);
+            MinigameBroadcaster.MinigameCompleted(); 
         }
     }
+}
 }
     
 

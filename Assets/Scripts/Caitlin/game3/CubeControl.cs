@@ -11,18 +11,17 @@ public class CubeControl : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (Input.GetKey(keyFirst))
+        if (Input.GetKey(keyFirst)){
             GetComponent<Rigidbody>().velocity += cubeMove;
-
-        if (Input.GetKey(keySecond))
+        }
+        if (Input.GetKey(keySecond)){
             GetComponent<Rigidbody>().velocity -= cubeMove;
-
-        if (Input.GetKey(keyRestart))
+        }
+        if (Input.GetKey(keyRestart)){
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-
-        if(Input.GetKey(keyNext))
-            Debug.Log("finished");
-            //MinigameBroadcaster.MinigameCompleted();
+        }
+        
     }
+
 
 }
