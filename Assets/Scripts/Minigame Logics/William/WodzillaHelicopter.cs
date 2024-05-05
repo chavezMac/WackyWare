@@ -57,6 +57,10 @@ public class WodzillaHelicopter : MonoBehaviour
             Shoot();
         }
         RotateTowardsGodzilla();
+        if (MainGameController.timerPaused)
+        {
+            beeping.Stop();
+        }
     }
 
     private void AIPathing()
