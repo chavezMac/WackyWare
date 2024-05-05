@@ -13,7 +13,11 @@ public class CreditsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(FindObjectOfType<MainGameController>().gameObject);
+        var controller = FindObjectOfType<MainGameController>().gameObject;
+        if (controller != null)
+        {
+            Destroy(controller);
+        }
     }
 
     public void Skip()
