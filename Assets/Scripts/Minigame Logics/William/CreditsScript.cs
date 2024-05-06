@@ -38,7 +38,7 @@ public class CreditsScript : MonoBehaviour
         }
 
         buttonText.fontSize = 32;
-        buttonText.text = "Wait, no, don't skip! I worked so hard on these credits!";
+        buttonText.text = "Wait, no, don't skip! I worked so hard on these credits!\n(Skip anyways)";
         skip = true;
     }
 
