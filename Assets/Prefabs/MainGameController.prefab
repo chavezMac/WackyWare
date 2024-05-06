@@ -52,12 +52,13 @@ MonoBehaviour:
   miniGameList:
   - Example Minigame 1
   - Example Minigame 2
-  - WilliamBossMinigame
-  - Example Minigame 1
-  - Example Minigame 2
+  - micchavez1
+  - micchavez2
+  - micchavez3
+  - Syed Minigame1
+  - Syed Minigame2
   - WilliamBossMinigame
   debug: 1
-  mainSceneCamera: {fileID: 0}
   timer: {fileID: 3799729960615350236}
   transition: {fileID: 50171171608464275}
   minigamesCompletedSuccessfully: 0
