@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class BossMinigameLogic : MonoBehaviour
@@ -21,7 +22,7 @@ public class BossMinigameLogic : MonoBehaviour
 
     public AudioClip victoryMusic;
     public AudioClip failureMusic;
-    public AudioSource audio;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -31,7 +32,7 @@ public class BossMinigameLogic : MonoBehaviour
         StartCoroutine(SpawnHelicopterRoutine2());
         instruction.speed = .4f;
         controls.speed = .4f;
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Lose()
@@ -57,8 +58,8 @@ public class BossMinigameLogic : MonoBehaviour
         wod.lasersfx.volume /= 2;
         wod.impact.volume /= 2;
         // Play the sound
-        audio.clip = clip;
-        audio.Play();
+        audioSource.clip = clip;
+        audioSource.Play();
 
         // Wait until the sound finishes playing
         yield return new WaitForSeconds(clip.length);

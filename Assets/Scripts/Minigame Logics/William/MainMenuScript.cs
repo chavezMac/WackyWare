@@ -40,6 +40,11 @@ public class MainMenuScript : MonoBehaviour
         // Instantiate(GameControler);
         GameControler.SetActive(true);
         mainMenuSelection.SetActive(false);
+        var music = FindObjectOfType<MinigameMusic>();
+        if (music != null)
+        {
+            music.FadeOutMusic();
+        }
     }
     
     private void HowToPlay()
