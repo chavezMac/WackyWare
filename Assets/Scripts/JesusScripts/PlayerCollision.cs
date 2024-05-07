@@ -5,19 +5,55 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    public MinigameBroadcaster Minigame;
+    public float overrideTimeLimit;
+    private float currentTime = 0f;
+    private bool timeUp = false;
+    private bool gameFinished = false;
+
+    void Start()
     {
-        // Log a message whenever a collision occurs
-       UnityEngine.Debug.Log("Collision Detected!");
-
-        // Check if the collision involves an object tagged as "Enemy"
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // Handle collision with enemy
-            UnityEngine.Debug.Log("Player collided with an enemy!");
-
-            // Destroy the enemy GameObject
-            Destroy(gameObject);
-        }
+        Minigame = FindObjectOfType<MinigameBroadcaster>();
     }
+    void Update()
+    {
+       
+        if (!gameFinished && currentTime >= Minigame.overrideTimeLimit)
+        {
+
+            MinigameBroadcaster.MinigameFailed();
+            gameFinished = true; 
+        }
+
+      
+        currentTime += Time.deltaTime;
+    }
+
+
+    void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                Destroy(gameObject);
+                MinigameBroadcaster.MinigameFailed();
+                
+            }
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("WinTrigger"))
+            {
+                MinigameBroadcaster.MinigameCompleted();
+                
+            }
+        }
+
+    void outOfTime()
+    {
+        MinigameBroadcaster.MinigameFailed();
+        timeUp = true;
+
+    }
+    
 }

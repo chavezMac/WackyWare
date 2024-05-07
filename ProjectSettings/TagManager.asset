@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - WodzillaDestructible
   - WodzillaTail
+  - fish
+  - WinTrigger
+  - Ladder
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -18,7 +22,7 @@ TagManager:
   - Target
   - Obstruction
   - Ground
-  - 
+  - Walls
   - 
   - 
   - 

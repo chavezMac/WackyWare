@@ -53,4 +53,6 @@ public class PlayerController : MonoBehaviour
         position.x = Mathf.Clamp(position.x, leftEdge.x, rightEdge.x);
         transform.position = position;
     }
+
+
 }

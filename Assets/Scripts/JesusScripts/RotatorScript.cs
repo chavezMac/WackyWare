@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class RotatorScript : MonoBehaviour
 {
-    public float rotationSpeed = 15f;
-    private float speedIncreaseInterval = 2f;
+    public float rotationSpeed = 20f;
+    private float speedIncreaseInterval = 1f;
     private float timeSinceLastSpeedIncrease = 0f;
-    private float speedIncreaseAmount = 3f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    private float speedIncreaseAmount = 10f;
+    private bool rotateClockwise = true;
+    public bool rotateCounterClockwiese = true;
+    private float rotationTimer = 0f;
 
     // Update is called once per frame
     void Update()
@@ -21,17 +18,24 @@ public class RotatorScript : MonoBehaviour
       
         timeSinceLastSpeedIncrease += Time.deltaTime;
 
-        
         if (timeSinceLastSpeedIncrease >= speedIncreaseInterval)
         {
-           
+         
             rotationSpeed += speedIncreaseAmount;
 
-          
-            timeSinceLastSpeedIncrease = 0f;
+
+            timeSinceLastSpeedIncrease %= speedIncreaseInterval;
         }
 
-      
+        rotationTimer += Time.deltaTime;
+        if ( rotationTimer >= 3f )
+        {
+            rotateClockwise = !rotateClockwise;
+            rotationSpeed = Mathf.Abs(rotationSpeed) * (rotateClockwise ? 1f : -1f);
+            rotationTimer = 0f; 
+        }
+
+ 
         transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
     }
 }
