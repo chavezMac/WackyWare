@@ -12277,6 +12277,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExampleCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5465132385016614056, guid: 400e482f0a3c8054786e819fb5396633, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708733272815318580, guid: 400e482f0a3c8054786e819fb5396633, type: 3}
+      propertyPath: ObstructionLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 8536918932524219422, guid: 400e482f0a3c8054786e819fb5396633, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
