@@ -1,8 +1,9 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using Unity.AI.Navigation;
 using Unity.Mathematics;
+using UnityEditor.AI;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WodzillaBuilding : MonoBehaviour
 {
@@ -18,12 +19,15 @@ public class WodzillaBuilding : MonoBehaviour
     public GameObject dustSystem;
     public BossMinigameLogic logic;
     private AudioSource sfx;
-
+    
     private void Start()
     {
         initialPosition = transform.position;
         logic.UpdateBuildingCount(1);
         sfx = GetComponent<AudioSource>();
+        BoxCollider boxC = GetComponent<BoxCollider>();
+        NavMeshObstacle nav = GetComponent<NavMeshObstacle>();
+        nav.size = boxC.size;
     }
 
     // Update is called once per frame

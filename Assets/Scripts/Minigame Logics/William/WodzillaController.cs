@@ -3,15 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class WodzillaController : MonoBehaviour
 {
     public WodzillaTail tail;
-    public float moveSpeed = 10f; // Movement speed
-    public float turnSpeed = 2f; // Turning speed
+    public float moveSpeed = 15f; // Movement speed
+    public float turnSpeed = 90f; // Turning speed
+    public bool inControl = false;
     public Animator anim;
     public CameraShaker cam;
+    public Text bonusNotification;
+
+    public float scaleModifier = 1.5f;
+    public float growDuration = 0.5f;
+    private bool isGrowing = false;
+    public AnimationCurve growthCurve;
     
     public GameObject laserPrefab;
     public Transform leftEye;
@@ -21,22 +29,69 @@ public class WodzillaController : MonoBehaviour
     public LineRenderer lineRendererR;
     public GameObject LaserHitL;
     public GameObject LaserHitR;
+    // public GameObject debugSphere;
 
     public AudioSource roar;
     public AudioSource lasersfx;
     public AudioSource stomp;
     public AudioSource impact;
+    public AudioSource miscsfx;
     public AudioClip[] impactSounds; // Array of footstep sound effects
     public AudioClip[] footstepSounds; // Array of footstep sound effects
+    public bool audioEnabled = true; //Debug feature
     
+    public int hp = 3;
     private void Start()
     {
         anim = GetComponent<Animator>();
         StartCoroutine(PeriodicRoar());
+        hp += MainGameController.minigamesCompletedSuccessfully / 3;//dynamic difficulty HP
+        // scaleModifier += MainGameController.minigamesCompletedSuccessfully / 10f;
+        // transform.localScale = new Vector3(scaleModifier, scaleModifier, scaleModifier);
+        // moveSpeed += MainGameController.minigamesCompletedSuccessfully / 2f;
+
+        //Audio debugging
+        roar.mute = !audioEnabled;
+        lasersfx.mute = !audioEnabled;
+        stomp.mute = !audioEnabled;
+        impact.mute = !audioEnabled;
+        miscsfx.mute = !audioEnabled;
     }
 
     void Update()
     {
+        PlayerMovement();
+
+        if (Input.GetKeyDown(KeyCode.Space) && inControl)
+        {
+            anim.Play("WodzillaSpin");
+            tail.isActive = true;
+        }
+        
+        if (Input.GetMouseButton(0) && !tail.isActive && inControl) // Check for left mouse button click
+        {
+            ShootLaser(leftEye,lineRendererL,LaserHitL);
+            ShootLaser(rightEye,lineRendererR,LaserHitR);
+        }
+        else
+        {
+            lineRendererL.gameObject.SetActive(false);
+            lineRendererR.gameObject.SetActive(false);
+            lasersfx.Stop();
+        }
+    }
+
+    public void SetInControl(bool cancontrol)
+    {
+        inControl = cancontrol;
+    }
+
+    private void PlayerMovement()
+    {
+        if (!inControl)
+        {
+            return;
+        }
         // Get input for movement
         float verticalInput = -Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -48,24 +103,6 @@ public class WodzillaController : MonoBehaviour
         // Apply movement and rotation
         transform.Translate(moveDirection, Space.World);
         transform.rotation *= turnRotation;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.Play("WodzillaSpin");
-            tail.isActive = true;
-        }
-        
-        if (Input.GetMouseButton(0) && !tail.isActive) // Check for left mouse button click
-        {
-            ShootLaser(leftEye,lineRendererL,LaserHitL);
-            ShootLaser(rightEye,lineRendererR,LaserHitR);
-        }
-        else
-        {
-            lineRendererL.gameObject.SetActive(false);
-            lineRendererR.gameObject.SetActive(false);
-            lasersfx.Stop();
-        }
     }
 
     public IEnumerator PeriodicRoar()
@@ -85,12 +122,14 @@ public class WodzillaController : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
+        var mouse = Input.mousePosition;
+
         if (!lasersfx.isPlaying)
         {
             lasersfx.Play();
         }
 
-        if (Physics.Raycast(eye.position, ray.direction, out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(Camera.main.transform.position, ray.direction, out hit, Mathf.Infinity, layerMask))
         {
             laser.SetPosition(0, eye.position);
             laser.SetPosition(1, hit.point);
@@ -103,24 +142,101 @@ public class WodzillaController : MonoBehaviour
 
             // Calculate the rotation to make the hit effect face the laser's origin
             Quaternion rotation = Quaternion.LookRotation((eye.position - hitEffectPosition).normalized);
-
-            // Apply the rotation to the hit effect
             laserHit.transform.rotation = rotation;
 
-            // Check if the hit object has the "WodzillaDestructible" tag
             if (hit.collider.CompareTag("WodzillaDestructible"))
             {
                 // Trigger the TakeDamage function on the hit object
                 hit.collider.GetComponent<WodzillaBuilding>().TakeDamage(0.5f);
             }
+            
+            if (hit.collider.CompareTag("WodzillaHelicopter"))
+            {
+                // Trigger the TakeDamage function on the hit object
+                hit.collider.GetComponent<WodzillaHelicopter>().TakeDamage(0.5f);
+            }
+            
         }
-        // Debug.Log(hit + " at " + hit.point.ToString());
+        // debugSphere.transform.position = hit.transform.position;
     }
 
-    
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("WodzillaPowerup"))
+        {
+            StartCoroutine(Grow(0.5f, false));
+            hp++;
+            Destroy(other.gameObject);
+        }
+    }
+
+    public IEnumerator Grow(float growValue, bool firstTimeBonus)
+    {
+        miscsfx.Play();
+        MinigameBroadcaster.SetGameTimerPauseState(true);
+        if (firstTimeBonus)
+        {
+            bonusNotification.enabled = true;
+            bonusNotification.text = "Minigame Win bonus!\n+" + growValue*100 + "% size bonus!";
+        }
+        else
+        {
+            bonusNotification.enabled = false;
+        }
+        if (!isGrowing)
+        {
+            isGrowing = true;
+            inControl = false;
+            anim.speed = 0f;
+            moveSpeed += growValue*5f;
+
+            // Calculate target scale
+            float targetScale = scaleModifier + growValue;
+
+            // Gradually increase scale over time using animation curve
+            float elapsedTime = 0;
+            while (elapsedTime < growDuration)
+            {
+                float curveValue = growthCurve.Evaluate(elapsedTime / growDuration);
+                float newScale = Mathf.Lerp(scaleModifier, targetScale, curveValue);
+                transform.localScale = new Vector3(newScale, newScale, newScale);
+                bonusNotification.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            // Ensure final scale matches the target scale exactly
+            transform.localScale = new Vector3(targetScale, targetScale, targetScale);
+
+            // Update scale modifier
+            scaleModifier = targetScale;
+
+            isGrowing = false;
+            anim.speed = 1;
+            inControl = true;
+            // bonusNotification.enabled = false;
+            MinigameBroadcaster.SetGameTimerPauseState(false);
+            
+            elapsedTime = 0;
+            while (elapsedTime < growDuration)
+            {
+                float curveValue = growthCurve.Evaluate(elapsedTime / growDuration);
+                float newScale = Mathf.Lerp(0, targetScale, 1-curveValue);
+                bonusNotification.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            bonusNotification.enabled = false;
+        }
+    }
+
     public void PlayRandomFootstepSound()
     {
-        cam.ShakeCamera(4f,.5f, true);
+        cam.ShakeCamera(3f*scaleModifier,.5f, true);
         if (footstepSounds.Length == 0)
         {
             Debug.LogWarning("Footstep sounds array is empty.");
@@ -136,20 +252,26 @@ public class WodzillaController : MonoBehaviour
     
     public void PlayRandomImpactSound()
     {
-        cam.ShakeCamera(7f,1f, true);
+        cam.ShakeCamera(5f * scaleModifier,.5f, true);
         if (impactSounds.Length == 0)
         {
             Debug.LogWarning("Impact sounds array is empty.");
             return;
         }
 
-        // Randomly select a footstep sound from the array
         AudioClip randomImpactSound = impactSounds[Random.Range(0, impactSounds.Length)];
-
-        // Play the selected footstep sound
-        
-        // impact.clip = randomImpactSound;
-        // impact.Play();
         impact.PlayOneShot(randomImpactSound);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Debug.Log("Wodzilla took damage! Wodzilla has " + hp + " hit points left!");
+        hp -= damage;
+        if (hp <= 0)
+        {
+            MinigameBroadcaster.MinigameFailed();
+            MinigameMusic music = FindObjectOfType<MinigameMusic>();
+            music.FadeOutMusicFailure();
+        }
     }
 }
