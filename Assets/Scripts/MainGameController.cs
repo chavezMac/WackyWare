@@ -85,6 +85,12 @@ public class MainGameController: MonoBehaviour
             }
         }
     }
+
+    public void DisableTimer()
+    {
+        timerPaused = true;
+        timer.gameObject.SetActive(false);
+    }
     
     public void DemoSingleMinigame(string sceneName)
     {

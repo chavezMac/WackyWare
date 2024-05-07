@@ -18,10 +18,11 @@ public class CreditsScript : MonoBehaviour
     {
         fadeBlack.SetActive(true);
         obstacleContainer.SetActive(false);
-        var controller = FindObjectOfType<MainGameController>().gameObject;
+        var controller = FindObjectOfType<MainGameController>();
         if (controller != null)
         {
-            Destroy(controller);
+            // Destroy(controller.gameObject);
+            controller.DisableTimer();
         }
     }
 
@@ -44,6 +45,11 @@ public class CreditsScript : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        var controller = FindObjectOfType<MainGameController>().gameObject;
+        if (controller != null)
+        {
+            Destroy(controller);
+        }
         SceneManager.LoadSceneAsync("Main Menu Scene");
     }
 }
