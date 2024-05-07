@@ -5,9 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
+  - PickUp
+  - CameraZone
+  - Bullet
+  - PickedUp
+  - FellZone
+  - Checkpoint
   - WodzillaDestructible
   - WodzillaTail
+  - Fire
   - fish
+  - WodzillaHelicopter
+  - WodzillaPowerup
   - Collidable
   layers:
   - Default
@@ -16,6 +25,9 @@ TagManager:
   - 
   - Water
   - UI
+  - WhatIsGround
+  - WhatIsPlayer
+  - WhatIsWall
   - Car_base
   - Car_Wheels
   - 

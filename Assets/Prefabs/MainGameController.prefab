@@ -52,16 +52,17 @@ MonoBehaviour:
   miniGameList:
   - Example Minigame 1
   - Example Minigame 2
+  - micchavez1
+  - micchavez2
+  - micchavez3
+  - Syed Minigame1
+  - Syed Minigame2
+  - Syed Minigame 3
   - WilliamBossMinigame
-  - Example Minigame 1
-  - Example Minigame 2
-  - WilliamBossMinigame
+  - Ending Credits
   debug: 1
-  mainSceneCamera: {fileID: 0}
   timer: {fileID: 3799729960615350236}
   transition: {fileID: 50171171608464275}
-  minigamesCompletedSuccessfully: 0
-  minigamesFailed: 0
   winSound: {fileID: 8300000, guid: 2b0b0e3e65582cc42863d330f477c471, type: 3}
   loseSound: {fileID: 8300000, guid: 9b4e155d9ea91fb4cba642ec765b8b18, type: 3}
   ticktockSound: {fileID: 8300000, guid: 8d5413fc37c274549922aff9cc125ff2, type: 3}
