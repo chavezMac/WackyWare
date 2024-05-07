@@ -648,6 +648,7 @@ GameObject:
   - component: {fileID: 113978369}
   - component: {fileID: 113978368}
   - component: {fileID: 113978367}
+  - component: {fileID: 113978371}
   m_Layer: 0
   m_Name: bar
   m_TagString: Untagged
@@ -694,6 +695,7 @@ MonoBehaviour:
   p6: {fileID: 289279786}
   p7: {fileID: 382589324}
   p8: {fileID: 1723919405}
+  reel: {fileID: 8300000, guid: 2c039fd0d5c5fcb40a243481839f621b, type: 3}
   onFish: 0
   playerS: {fileID: 340690086}
   bobber: {fileID: 988041346357190300, guid: 1248ccf1b65d8314a889e0d56c73bf3a, type: 3}
@@ -797,6 +799,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &113978371
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113978365}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 9bbcc9a67eccfa64485c00a5e8d65926, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2c039fd0d5c5fcb40a243481839f621b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &114660492
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,12 +4715,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -138262789864655838, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: overrideTimeLimit
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 251729343016510873, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_Name
       value: MinigameBroadcaster
       objectReference: {fileID: 0}
+    - target: {fileID: 2601864636765757537, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601864636765757537, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 2628035843765312268, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4654,6 +4760,10 @@ PrefabInstance:
     - target: {fileID: 4039358498881645836, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626706198588328384, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8046794387569703914, guid: f9e8d3adde1482c40932d04708c6c2b8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7897,7 +8007,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 392c541104d192442b6e966e57fb0306, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.1
   Loop: 1
   Mute: 0
   Spatialize: 0

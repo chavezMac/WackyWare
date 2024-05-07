@@ -19,12 +19,14 @@ public class fishingBarScript : MonoBehaviour
     public GameObject p7;
     public GameObject p8;
 
+    public AudioClip reel;
+    private AudioSource _source;
     public bool onFish;
     public playerScript playerS;
     public GameObject bobber;
     void Start()
     {
-        
+        _source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -66,6 +68,8 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(false);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.2f;
+
         }
         if (targetTime >= 1.0f)
         {
@@ -77,6 +81,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(false);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.2f;
         }
         if (targetTime >= 2.0f)
         {
@@ -88,6 +93,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(false);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.4f;
         }
         if (targetTime >= 3.0f)
         {
@@ -99,6 +105,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(false);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.4f;
         }
         if (targetTime >= 4.0f)
         {
@@ -110,6 +117,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(false);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.6f;
         }
         if (targetTime >= 5.0f)
         {
@@ -121,6 +129,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(false);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.6f;
         }
         if (targetTime >= 6.0f)
         {
@@ -132,6 +141,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(true);
             p7.SetActive(false);
             p8.SetActive(false);
+            _source.volume = 0.8f;
         }
         if (targetTime >= 7.0f)
         {
@@ -143,6 +153,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(true);
             p7.SetActive(true);
             p8.SetActive(false);
+            _source.volume = 0.8f;
         }
         if (targetTime >= 8.0f)
         {
@@ -154,6 +165,7 @@ public class fishingBarScript : MonoBehaviour
             p6.SetActive(true);
             p7.SetActive(true);
             p8.SetActive(true);
+            _source.volume = 1.0f;
         }
         if (Input.GetKey(KeyCode.Space))
         {
