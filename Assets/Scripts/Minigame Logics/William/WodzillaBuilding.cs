@@ -1,7 +1,5 @@
 using System.Collections;
-using Unity.AI.Navigation;
 using Unity.Mathematics;
-using UnityEditor.AI;
 using UnityEngine;
 using UnityEngine.AI;
 
