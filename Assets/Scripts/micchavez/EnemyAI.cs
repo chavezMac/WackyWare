@@ -38,11 +38,14 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        //Check if enemy tag is still the same
+        if(tag == gameObject.tag)
+        {
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
-        if(playerInSightRange) Runaway();
-        if(!playerInSightRange) Patrolling();
-
+            if(playerInSightRange) Runaway();
+            if(!playerInSightRange) Patrolling();
+        }
     }
     private void Patrolling()
     {

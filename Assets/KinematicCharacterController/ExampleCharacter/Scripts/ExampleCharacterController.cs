@@ -543,6 +543,12 @@ namespace KinematicCharacterController.Examples
             other.gameObject.GetComponentInChildren<Animator>().enabled = false;
         }
 
+        if(other.gameObject.CompareTag("FellZone"))
+        {
+            //Signal the minigame broadcaster that the minigame has failed
+            MinigameBroadcaster.MinigameFailed();
+        }
+
         
     }
     }
