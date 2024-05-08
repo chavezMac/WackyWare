@@ -13,6 +13,7 @@ public class Collectibles : MonoBehaviour
     
     void Start()
     {
+        Invoke("startMusic", .7f);
         player = GameObject.Find("Skeleton_Warrior");
         _playerMovement = player.GetComponent<PlayerMovement>();
     }
@@ -22,17 +23,24 @@ public class Collectibles : MonoBehaviour
     {
         if (itemsCollected == 2 && MainGameController.timeRemaining > 0 && hitPortal== true )
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameCompleted();
 
         }
         else if ( itemsCollected < 2 && MainGameController.timeRemaining <= 0 && hitPortal== false )
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameFailed();
         }else if (  MainGameController.timeRemaining <= 0   )
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameFailed();
         }
         
+    }
+    void startMusic()
+    {
+        GetComponent<AudioSource>().Play();
     }
 
 }
