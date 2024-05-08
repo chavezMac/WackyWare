@@ -52,10 +52,24 @@ public class PlayerMoves : MonoBehaviour
         }
     }
 
-    bool IsGrounded()
+   bool IsGrounded()
     {
-        
-        return Physics.Raycast(transform.position, Vector3.down, distanceToGround + 0.1f, groundMask);
-    }
+        // Define a raycast hit variable to store information about the hit, if any
+        RaycastHit hit;
 
+        // Perform the raycast
+        bool grounded = Physics.Raycast(transform.position, Vector3.down, out hit, distanceToGround + 0.6f, groundMask);
+
+        // Check if the raycast hit something and if that something is not the current gameObject
+        // This is to prevent detecting the object itself as the ground
+        if (grounded && hit.collider.gameObject != gameObject)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
 }
