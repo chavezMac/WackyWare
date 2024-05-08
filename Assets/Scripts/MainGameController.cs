@@ -187,7 +187,10 @@ public class MainGameController: MonoBehaviour
             {
                 transition.ResumeAnimation();
                 _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
-                SetTimeLimit(_minigameBroadcaster.overrideTimeLimit);
+                if (_minigameBroadcaster != null)
+                {
+                    SetTimeLimit(_minigameBroadcaster.overrideTimeLimit);
+                }
             };
         }
         else

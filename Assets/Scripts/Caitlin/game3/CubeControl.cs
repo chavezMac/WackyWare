@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class CubeControl : MonoBehaviour
 {
     [SerializeField] KeyCode keyFirst, keySecond;
-    private KeyCode keyRestart = KeyCode.R, keyNext = KeyCode.Q;
+    // private KeyCode keyRestart = KeyCode.R, keyNext = KeyCode.Q;
     [SerializeField] Vector3 cubeMove;
     
     private void FixedUpdate()
@@ -17,9 +17,9 @@ public class CubeControl : MonoBehaviour
         if (Input.GetKey(keySecond)){
             GetComponent<Rigidbody>().velocity -= cubeMove;
         }
-        if (Input.GetKey(keyRestart)){
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        }
+        // if (Input.GetKey(keyRestart)){
+        //     SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        // }
         
     }
 

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Emit : MonoBehaviour
 {
-    bool playerIsOnFinishLine = false;
-    private ParticleSystem particleSystem;
+    // bool playerIsOnFinishLine = false;
+    private ParticleSystem _particleSystem;
     private AudioSource audioSource;
 
     void Start()
     {
-        particleSystem = GetComponent<ParticleSystem>();
+        _particleSystem = GetComponent<ParticleSystem>();
         audioSource = GetComponent<AudioSource>();
     }
    
@@ -19,7 +19,7 @@ public class Emit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            particleSystem.Play();
+            _particleSystem.Play();
             audioSource.Play();
             other.tag = "PickedUp";
         }

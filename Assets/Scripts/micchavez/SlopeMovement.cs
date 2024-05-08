@@ -11,7 +11,7 @@ public class SlopeMovement : MonoBehaviour
     public float jumpSpeed;
     public float jumpGrace;
 
-    private int count = 0;
+    // private int count = 0;
 
     private CharacterController characterController;
     private float ySpeed;
