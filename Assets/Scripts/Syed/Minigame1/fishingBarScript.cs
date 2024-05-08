@@ -41,7 +41,7 @@ public class fishingBarScript : MonoBehaviour
             onFish = false;
             playerS.fishGameLossed();
             Destroy(GameObject.Find("bobber(Clone)"));
-            targetTime = 4.0f;
+            targetTime = 2.0f;
         }
         if (targetTime >= 8.0f)
         {
