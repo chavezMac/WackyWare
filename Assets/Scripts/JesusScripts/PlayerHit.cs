@@ -4,51 +4,30 @@ using UnityEngine;
 
 public class PlayerHit : MonoBehaviour
 {
-
-    public MinigameBroadcaster Minigame;
-    public float overrideTimeLimit;
-    private float currentTime = 0f;
     private bool timeUp = false;
     private bool gameFinished = false;
     public bool gamePaused = false;
-   
-    
-    void Start()
-    {
-        Minigame = FindObjectOfType<MinigameBroadcaster>();
-    }
     void Update()
     {
-
-        if (!gameFinished && currentTime >= Minigame.overrideTimeLimit)
+        //Check if time has run out, and if so, we win the minigame
+        if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused && !gameFinished)
         {
-
             MinigameBroadcaster.MinigameCompleted();
             gameFinished = true;
+            timeUp = true;
         }
-
-
-        currentTime += Time.deltaTime;
     }
 
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && !gameFinished)
         {
             Destroy(gameObject);
 
             MinigameBroadcaster.MinigameFailed();
-            currentTime = 0f; 
+            gameFinished = true;
         }
     }
-
-    void outOfTime()
-    {
-        MinigameBroadcaster.MinigameCompleted();
-        timeUp = true;
-
-    }
-
 }
 

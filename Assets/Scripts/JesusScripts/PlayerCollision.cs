@@ -6,8 +6,6 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public MinigameBroadcaster Minigame;
-    public float overrideTimeLimit;
-    private float currentTime = 0f;
     private bool timeUp = false;
     private bool gameFinished = false;
 
@@ -17,16 +15,13 @@ public class PlayerCollision : MonoBehaviour
     }
     void Update()
     {
-       
-        if (!gameFinished && currentTime >= Minigame.overrideTimeLimit)
+        //Check if time has run out, and if so, we fail the minigame
+        if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused && !gameFinished)
         {
-
             MinigameBroadcaster.MinigameFailed();
-            gameFinished = true; 
+            gameFinished = true;
+            timeUp = true;
         }
-
-      
-        currentTime += Time.deltaTime;
     }
 
 

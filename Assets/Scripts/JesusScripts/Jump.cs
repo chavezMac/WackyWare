@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class JumpMovement : MonoBehaviour
+public class JumpMovement2 : MonoBehaviour
 {
    
     public float speed;

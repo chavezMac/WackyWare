@@ -1,4 +1,0 @@
-repository "WackyWare@caitlinsusbilla@cloud"
-  path "/"
-    br "/main"
-    co "/main"
