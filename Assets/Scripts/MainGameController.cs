@@ -18,8 +18,8 @@ public class MainGameController: MonoBehaviour
     public TransitionAnimationController transition;
     private MinigameBroadcaster _minigameBroadcaster;
     private bool demomode = false;
-    public int minigamesCompletedSuccessfully = 0;
-    public int minigamesFailed = 0;
+    public static int minigamesCompletedSuccessfully = 0;
+    public static int minigamesFailed = 0;
 
     private AudioSource sfx;
     public AudioClip winSound;
@@ -30,6 +30,7 @@ public class MainGameController: MonoBehaviour
     public Animator FailIcon;
     public ClapperBoard clapper;
     public string[] teamNames;
+
     void Start()
     {
         DontDestroyOnLoad(this);
@@ -44,7 +45,15 @@ public class MainGameController: MonoBehaviour
             demomode = true;
             currentMinigame = onlyMinigame;
         }
-        transition.init(); //Starts clapperboard mid-animation
+
+        if (demomode)
+        {
+            transition.init(); //Starts clapperboard mid-animation
+        }
+        else
+        {
+            transition.Play();
+        }
         currentMinigame = miniGameList[0];
         sfx = GetComponent<AudioSource>();
         WinIcon.speed = 0;
@@ -153,12 +162,18 @@ public class MainGameController: MonoBehaviour
         {
             yield return new WaitForSeconds(1.35f);
         }
+        else if (isFirstMinigame && !demomode)//first minigame when played from main menu
+        {
+            yield return new WaitForSeconds(1.35f);
+        }
         else //otherwise, much shorter pause
         {
             yield return new WaitForSeconds(.05f);
         }
         SetTimeLimit(-1);
         //After the pause, load the scene, and continue the animation after loading is done.
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         AsyncOperation asyncOperation = LoadMinigame();
         if (asyncOperation != null)
         {
