@@ -8,6 +8,8 @@ public class PlayerMoves : MonoBehaviour
 {
     public Transform cam;
     public float speed = 5f;
+    public float runThreshold = 0.5f; // Magnitude threshold for triggering run animation
+    public float runSpeedMultiplier = 2f; // Multiplier for run speed
     public float jumpForce = 8f;
     public float jumpSpeed;
     public Rigidbody rb;
@@ -18,10 +20,14 @@ public class PlayerMoves : MonoBehaviour
 
 
     private float ySpeed;
-    
+
+    [Header("Animator")]
+    public Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -33,6 +39,13 @@ public class PlayerMoves : MonoBehaviour
         ySpeed += Physics.gravity.y * Time.deltaTime;
         UnityEngine.Debug.DrawRay(transform.position, Vector3.down * (distanceToGround + 0.1f), Color.green);
 
+
+        // Check if the movement magnitude is above the threshold
+        bool isRunning = direction.magnitude > runThreshold;
+
+        // Calculate movement speed
+        float currentSpeed = isRunning ? speed * runSpeedMultiplier : speed;
+
         if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -41,7 +54,21 @@ public class PlayerMoves : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             transform.Translate(moveDir.normalized * speed * Time.deltaTime, Space.World);
+
+            // Set motion for animator
+            animator.SetFloat("Speed", 0.5f); // Use float literal instead of double
+
         }
+        else
+        {
+            // If not moving, set idle motion
+            animator.SetFloat("Speed", 0f); // Ensure float value
+
+        }
+
+
+
+
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
@@ -49,10 +76,13 @@ public class PlayerMoves : MonoBehaviour
             UnityEngine.Debug.Log("spacebar is pressed");
             ySpeed = jumpSpeed;
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+            animator.SetFloat("Speed", 1f); // Ensure float value
+
         }
     }
 
-   bool IsGrounded()
+    bool IsGrounded()
     {
         // Define a raycast hit variable to store information about the hit, if any
         RaycastHit hit;
@@ -72,4 +102,6 @@ public class PlayerMoves : MonoBehaviour
         }
 
     }
+
+
 }

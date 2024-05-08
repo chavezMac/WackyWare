@@ -4,38 +4,33 @@ using UnityEngine;
 
 public class RotatorScript : MonoBehaviour
 {
-    public float rotationSpeed = 20f;
-    private float speedIncreaseInterval = 1f;
+    public float rotationSpeed = 30f;
+    private float speedIncreaseInterval = 2f;
     private float timeSinceLastSpeedIncrease = 0f;
-    private float speedIncreaseAmount = 10f;
+    private float speedIncreaseAmount = 15f;
     private bool rotateClockwise = true;
-    public bool rotateCounterClockwiese = true;
     private float rotationTimer = 0f;
 
-    // Update is called once per frame
     void Update()
     {
-      
+        // Increase rotation speed at regular intervals
         timeSinceLastSpeedIncrease += Time.deltaTime;
-
         if (timeSinceLastSpeedIncrease >= speedIncreaseInterval)
         {
-         
             rotationSpeed += speedIncreaseAmount;
-
-
-            timeSinceLastSpeedIncrease %= speedIncreaseInterval;
+            timeSinceLastSpeedIncrease -= speedIncreaseInterval; // Adjust timer
         }
 
+        // Change rotation direction after a certain time
         rotationTimer += Time.deltaTime;
-        if ( rotationTimer >= 3f )
+        if (rotationTimer >= 2f)
         {
             rotateClockwise = !rotateClockwise;
             rotationSpeed = Mathf.Abs(rotationSpeed) * (rotateClockwise ? 1f : -1f);
-            rotationTimer = 0f; 
+            rotationTimer = 0f;
         }
 
- 
-        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+        // Rotate the object
+        transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
     }
 }
