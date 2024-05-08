@@ -7352,7 +7352,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5646e02a9ca94740a882c0aba6436bb, type: 2}
+  - {fileID: 2100000, guid: b5c91772bb14e4103aac44046f7424eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11908,7 +11908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsCollected: 0
-  teleportSpot: {fileID: 0}
+  teleportSpot: {fileID: 633997919}
   hitPortal: 0
 --- !u!1001 &1158185177
 PrefabInstance:
@@ -13505,11 +13505,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  speed: 0
+  speed: 6
   turnSmoothTime: 0.1
   movementSpeed: 9
-  movementAcc: 100
-  jumpImpulse: 0
+  movementAcc: 90
+  jumpImpulse: 5
   isGrounded: 0
 --- !u!95 &1298291787
 Animator:
@@ -17683,7 +17683,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5646e02a9ca94740a882c0aba6436bb, type: 2}
+  - {fileID: 2100000, guid: b5c91772bb14e4103aac44046f7424eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
