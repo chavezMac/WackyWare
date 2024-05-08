@@ -15,9 +15,10 @@ public class GameManagerScript : MonoBehaviour
 
     private void Start()
     {
+        Invoke("startMusic", .7f);
         balloonEscaped = false;
         BalloonMovement.onBalloonDied += BalloonDied;
-        
+
     }
 
     private void OnDestroy()
@@ -35,23 +36,26 @@ public class GameManagerScript : MonoBehaviour
         // Check if the timer has run out and no balloons have escaped
         if (MainGameController.timeRemaining <= 0 && !balloonEscaped)
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameCompleted();
-        }else if (balloonEscaped)
+        }
+        else if (balloonEscaped)
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameFailed();
         }
-    
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 rayPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero);
 
-            if(hit.collider != null)
+            if (hit.collider != null)
             {
                 GameObject hitObject = hit.collider.gameObject;
                 if (hitObject.CompareTag("Balloon"))
                 {
-                   // Debug.Log("Balloon clicked");
+                    // Debug.Log("Balloon clicked");
                     popBalloon(hitObject);
                     if (isVanished)
                     {
@@ -70,6 +74,11 @@ public class GameManagerScript : MonoBehaviour
         //Debug.Log("Balloon popped");
         StartCoroutine(balloon.GetComponent<BalloonMovement>().Vanish());
         balloon.GetComponent<AudioSource>().Play();
+    }
+
+    void startMusic()
+    {
+        GetComponent<AudioSource>().Play();
     }
 
 }

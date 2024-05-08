@@ -1790,6 +1790,7 @@ GameObject:
   - component: {fileID: 1979866377}
   - component: {fileID: 1979866378}
   - component: {fileID: 1979866379}
+  - component: {fileID: 1979866380}
   m_Layer: 0
   m_Name: Minigame Logic
   m_TagString: Untagged
@@ -1826,15 +1827,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlanetToKill: {fileID: 890958865}
   PlanetsPrefabs:
-  - {fileID: 5833883991092381537, guid: e88d9f7c91b27499284ad38316d50de6, type: 3}
-  - {fileID: 5122546515492338563, guid: a53f5dbe90af34f60bc2c4441822c08d, type: 3}
-  - {fileID: 8291189177466093771, guid: 0145dc36c8a594978b6c5c81bd2d427e, type: 3}
-  - {fileID: 3012111354773891217, guid: b853973e4b0d448acb5aa65e364a32c5, type: 3}
-  - {fileID: 7665152864227078605, guid: 4095127fef0ac4d3fad8bda89e727ffa, type: 3}
-  - {fileID: 5973587672040679971, guid: ac8b319d61b084c5e8917d6f8204f976, type: 3}
-  - {fileID: 4838104670054432420, guid: fbe04d065670e4929ad04cc5f987b8a3, type: 3}
-  - {fileID: 3716257498396818402, guid: 28c6799e2062241899f7be19fceed1ac, type: 3}
-  - {fileID: 7339851595040170977, guid: 8343b21130e394860bc89ebdfe829863, type: 3}
+  - {fileID: 5833883991092381537, guid: eaaf99c39dd154caa80258e5b7d1a6f7, type: 3}
+  - {fileID: 5122546515492338563, guid: 8cc5fc2af8ae94271b0e4eea494c4bfd, type: 3}
+  - {fileID: 8291189177466093771, guid: 26fd2203b73cf4d59861a45333e71f9d, type: 3}
+  - {fileID: 3012111354773891217, guid: 400b8cb00f6a444b8aabd2fb6891239a, type: 3}
+  - {fileID: 7665152864227078605, guid: 1f3c466cc96894252b8427b8e2372c80, type: 3}
+  - {fileID: 5973587672040679971, guid: 350b455c3ab034569997e9e450b3e7f1, type: 3}
+  - {fileID: 4838104670054432420, guid: e1ffc1310eca446dca0b95d77fc9293c, type: 3}
+  - {fileID: 3716257498396818402, guid: 983ce5f96b5b84d8681e8a00da19170c, type: 3}
+  - {fileID: 7339851595040170977, guid: 7a582126ac6d34fdf99774286029607c, type: 3}
   spawns:
   - {fileID: 1636158078}
   - {fileID: 749601695}
@@ -1856,6 +1857,102 @@ MonoBehaviour:
   over: 0
   planeysToShootDown: 4
   fireworks: {fileID: 1849436273}
+--- !u!82 &1979866380
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979866375}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a770f1e2ec5814f9493d897e7aac3038, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2009131308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
