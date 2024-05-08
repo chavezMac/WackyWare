@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         correctedPipes -= 1;
     }
 
-    public Update(){
+    void Update(){
         //Check if time has run out, and if so, we fail the minigame
         if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)
         {
