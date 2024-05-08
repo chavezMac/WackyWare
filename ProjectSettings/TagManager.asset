@@ -25,6 +25,8 @@ TagManager:
   - 
   - Water
   - UI
+  - Background
+  - 
   - WhatIsGround
   - WhatIsPlayer
   - WhatIsWall

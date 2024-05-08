@@ -42,7 +42,7 @@ public class playerScript : MonoBehaviour
         targetTime = 0.0f;
         savedTargetTime = 0.0f;
         extraBobberDistance = 0.0f;
-        _source = GetComponent<AudioSource>();
+        // _source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -52,7 +52,7 @@ public class playerScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isFishing == false && winnerAnim == false)
         {
             poleBack = true;
-            _source.PlayOneShot(reel);
+            // _source.PlayOneShot(reel);
         }
         if(isFishing == true)
         {
