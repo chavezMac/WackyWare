@@ -75,6 +75,12 @@ public class NewBehaviourScript : MonoBehaviour
             MinigameBroadcaster.MinigameCompleted(); 
         }
     }
+
+    //Check if time has run out, and if so, we fail the minigame
+    if (MainGameController.timeRemaining <= 0 && !MainGameController.timerPaused)
+    {
+        MinigameBroadcaster.MinigameFailed();
+    }
 }
 }
     
