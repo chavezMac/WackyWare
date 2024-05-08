@@ -9,8 +9,10 @@ public class PipeScript : MonoBehaviour
     public float[] correctRotation;
     [SerializeField]
     bool isPlaced = false;
+    public AudioSource audioSource;
 
     int PossibleRots = 1;
+    float tolerance = 0.0001f;
 
     GameManager gameManager;
 
@@ -22,34 +24,47 @@ public class PipeScript : MonoBehaviour
     private void Start()
     {
         PossibleRots = correctRotation.Length;
-        int rand = Random.Range(0, rotations.Length);
-        transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
-        
-        if(PossibleRots > 1)
+    int rand = Random.Range(0, rotations.Length);
+    transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
+
+    if (PossibleRots > 1)
+    {
+        if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < tolerance || Mathf.Abs(transform.eulerAngles.z - correctRotation[1]) < tolerance)
         {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1])
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
+            isPlaced = true;
+            gameManager.correctMove();
         }
         else
         {
-            if (transform.eulerAngles.z == correctRotation[0])
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
+            isPlaced = false;
         }
+    }
+    else
+    {
+        if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < tolerance)
+        {
+            isPlaced = true;
+            gameManager.correctMove();
+        }
+        else
+        {
+            isPlaced = false;
+        }
+    }
     }
 
     private void OnMouseDown()
     {
+        if (audioSource != null && audioSource.clip != null)
+            {
+                audioSource.Play();
+            }
+        
         transform.Rotate(new Vector3(0, 0, 90));
 
         if (PossibleRots > 1)
         {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1] && isPlaced == false)
+            if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < tolerance || (Mathf.Abs(transform.eulerAngles.z - correctRotation[1]) < tolerance) && isPlaced == false)
             {
                 isPlaced = true;
                 gameManager.correctMove();
@@ -62,7 +77,9 @@ public class PipeScript : MonoBehaviour
         }
         else
         {
-            if (transform.eulerAngles.z == correctRotation[0] && isPlaced == false)
+            Debug.Log(transform.eulerAngles.z);
+            Debug.Log(Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < tolerance);
+            if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < tolerance && !isPlaced)
             {
                 isPlaced = true;
                 gameManager.correctMove();

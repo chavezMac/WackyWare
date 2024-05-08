@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         if(correctedPipes == totalPipes)
         {
             Debug.Log("You win!");
+            MinigameBroadcaster.MinigameCompleted(); 
         }
     }
 

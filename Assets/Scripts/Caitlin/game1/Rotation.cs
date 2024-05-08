@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public float rotationSpeed = 90f;
     public int duckNum;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -14,6 +15,18 @@ public class NewBehaviourScript : MonoBehaviour
         int randomRotation = Random.Range(1, 4) * 90;
         transform.rotation = Quaternion.Euler(0f, 0f, randomRotation);
 
+        if ((duckNum == 1 && Mathf.Approximately(transform.localEulerAngles.z, 90f)) ||
+                (duckNum == 2 && Mathf.Approximately(transform.localEulerAngles.z, 270)) ||
+                (duckNum == 3 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
+                (duckNum == 4 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
+                (duckNum == 5 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
+                (duckNum == 6 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
+                (duckNum == 7 && Mathf.Approximately(transform.localEulerAngles.z, 270))) {
+                     UprightManager.instance.uprightCount++;
+                    GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+                     Debug.Log("Frozen!");
+            }
+        
     }
 
     // Update is called once per frame
@@ -22,6 +35,11 @@ public class NewBehaviourScript : MonoBehaviour
         // Check if the left mouse button is clicked
         if (Input.GetMouseButtonDown(0))
         {
+            if (audioSource != null && audioSource.clip != null)
+                {
+                audioSource.Play();
+                }
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -51,8 +69,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (UprightManager.instance.uprightCount == 7)
         {
             Debug.Log("All objects are upright!");
-            // Return Successful
-        //    FindObjectOfType<MainGameController>().MinigameDone(true);
+            
             MinigameBroadcaster.MinigameCompleted(); 
         }
     }
