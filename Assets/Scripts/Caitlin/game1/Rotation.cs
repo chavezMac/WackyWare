@@ -9,19 +9,21 @@ public class NewBehaviourScript : MonoBehaviour
     public int duckNum;
     public AudioSource audioSource;
 
+    float tolerance = 0.0001f;
+
     void Start()
     {
-        // Set a random rotation for the cube that is a multiple of 90 degrees
+        // Set a random rotation
         int randomRotation = Random.Range(1, 4) * 90;
         transform.rotation = Quaternion.Euler(0f, 0f, randomRotation);
 
-        if ((duckNum == 1 && Mathf.Approximately(transform.localEulerAngles.z, 90f)) ||
-                (duckNum == 2 && Mathf.Approximately(transform.localEulerAngles.z, 270)) ||
-                (duckNum == 3 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
-                (duckNum == 4 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
-                (duckNum == 5 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
-                (duckNum == 6 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
-                (duckNum == 7 && Mathf.Approximately(transform.localEulerAngles.z, 270))) {
+        if ((duckNum == 1 && Mathf.Abs(transform.eulerAngles.z - 90f) < tolerance) ||
+                (duckNum == 2 && Mathf.Abs(transform.eulerAngles.z - 270f) < tolerance) ||
+                (duckNum == 3 && Mathf.Abs(transform.eulerAngles.z - 180f) < tolerance) ||
+                (duckNum == 4 && Mathf.Abs(transform.eulerAngles.z - 0f) < tolerance) ||
+                (duckNum == 5 && Mathf.Abs(transform.eulerAngles.z - 180f) < tolerance) ||
+                (duckNum == 6 && Mathf.Abs(transform.eulerAngles.z - 0f) < tolerance) ||
+                (duckNum == 7 && Mathf.Abs(transform.eulerAngles.z - 270f) < tolerance)) {
                      UprightManager.instance.uprightCount++;
                     GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
                      Debug.Log("Frozen!");
@@ -43,21 +45,21 @@ public class NewBehaviourScript : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            // Check if the ray hits this cube
+  
             if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
             {
-                // Rotate the cube by 90 degrees
+                // Rotate the cube 
                 transform.Rotate(Vector3.forward, rotationSpeed);
 
-                // Check if the cube is right after rotation
 
-            if ((duckNum == 1 && Mathf.Approximately(transform.localEulerAngles.z, 90f)) ||
-                (duckNum == 2 && Mathf.Approximately(transform.localEulerAngles.z, 270)) ||
-                (duckNum == 3 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
-                (duckNum == 4 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
-                (duckNum == 5 && Mathf.Approximately(transform.localEulerAngles.z, 180f)) ||
-                (duckNum == 6 && Mathf.Approximately(transform.localEulerAngles.z, 0f)) ||
-                (duckNum == 7 && Mathf.Approximately(transform.localEulerAngles.z, 270))) {
+            if ((duckNum == 1 && Mathf.Abs(transform.eulerAngles.z - 90f) < tolerance) ||
+                (duckNum == 2 && Mathf.Abs(transform.eulerAngles.z - 270f) < tolerance) ||
+                (duckNum == 3 && Mathf.Abs(transform.eulerAngles.z - 180f) < tolerance) ||
+                (duckNum == 4 && Mathf.Abs(transform.eulerAngles.z - 0f) < tolerance) ||
+                (duckNum == 5 && Mathf.Abs(transform.eulerAngles.z - 180f) < tolerance) ||
+                (duckNum == 6 && Mathf.Abs(transform.eulerAngles.z - 0f) < tolerance) ||
+                (duckNum == 7 && Mathf.Abs(transform.eulerAngles.z - 270f) < tolerance))
+                {
                      UprightManager.instance.uprightCount++;
                     GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
                      Debug.Log("Frozen!");

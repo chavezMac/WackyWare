@@ -11,7 +11,7 @@ public class RatScript : MonoBehaviour
     {
         for (int i = 0; i < numberOfRats; i++)
         {
-            Vector3 spawnPosition = new Vector3(Random.Range(-10f, 10f), 0f, Random.Range(-10f, 10f));
+            Vector3 spawnPosition = new Vector3(1f, 1f, 1f);
             Instantiate(ratPrefab, spawnPosition, Quaternion.identity);
         }
     }

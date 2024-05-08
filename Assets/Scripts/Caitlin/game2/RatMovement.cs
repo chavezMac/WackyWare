@@ -13,9 +13,9 @@ public class RatMovement : MonoBehaviour
     void Update()
     {
         // Move the rat in a random direction
-        transform.Translate(new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f)) * moveSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(1f, 1f, 1f) * moveSpeed * Time.deltaTime);
 
-        // Clamp rat position within the specified area
+        // Clamp rat
         transform.position = new Vector3(
             Mathf.Clamp(transform.position.x, minX, maxX),
             transform.position.y,
