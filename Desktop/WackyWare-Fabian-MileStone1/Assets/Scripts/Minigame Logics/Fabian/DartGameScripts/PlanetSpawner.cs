@@ -12,7 +12,7 @@ public class PlanetSpawner : MonoBehaviour
     public GameObject PlanetToKill;
     public GameObject[] PlanetsPrefabs;
     public RectTransform[] spawns;
-    private Dictionary<int, GameObject> planets = new Dictionary<int, GameObject>();
+    public Dictionary<int, GameObject> planets = new Dictionary<int, GameObject>();
     public SortedDictionary<int, string> planetNames = new SortedDictionary<int, string>();
     
     [NonSerialized]
@@ -30,6 +30,7 @@ public class PlanetSpawner : MonoBehaviour
         {
             int randomIndex = GetRandomIndex();
             spawnedIndices.Add(randomIndex);
+            PlanetsPrefabs[randomIndex].transform.Find("Sphere").gameObject.SetActive(false);
             Instantiate(PlanetsPrefabs[randomIndex], spawns[i].position, Quaternion.identity);
             planetNames.Add(randomIndex , PlanetsPrefabs[randomIndex].name);
            

@@ -64,7 +64,8 @@ public class BalloonMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Border"))
         {
-            //script.balloonEscaped = true;
+            GameObject.FindGameObjectWithTag("MiniGameLogic").GetComponent<AudioSource>().Stop();
+            //script.balloonEscaped = true; 
             Debug.Log("Balloon hit border and destroyed");
             Destroy(gameObject);
             MinigameBroadcaster.MinigameFailed();
@@ -99,9 +100,13 @@ public class BalloonMovement : MonoBehaviour
         }
 
         material.SetFloat("_DissolveAmount", 1.1f);
-        Destroy(gameObject);
+        Invoke("DestoryObject", .5f);
 
     }
 
+    void DestoryObject()
+    {
+        Destroy(gameObject);
+    }
 
 }

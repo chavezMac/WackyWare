@@ -15,6 +15,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void Start()
     {
+        Invoke("startMusic", .7f);
         balloonEscaped = false;
         BalloonMovement.onBalloonDied += BalloonDied;
         
@@ -35,9 +36,11 @@ public class GameManagerScript : MonoBehaviour
         // Check if the timer has run out and no balloons have escaped
         if (MainGameController.timeRemaining <= 0 && !balloonEscaped)
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameCompleted();
         }else if (balloonEscaped)
         {
+            GetComponent<AudioSource>().Stop();
             MinigameBroadcaster.MinigameFailed();
         }
     
@@ -70,6 +73,10 @@ public class GameManagerScript : MonoBehaviour
         //Debug.Log("Balloon popped");
         StartCoroutine(balloon.GetComponent<BalloonMovement>().Vanish());
         balloon.GetComponent<AudioSource>().Play();
+    }
+    void startMusic()
+    {
+        GetComponent<AudioSource>().Play();
     }
 
 }

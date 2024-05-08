@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     //private float inputThreshold = 0.1f;
     public bool isGrounded;// Adjust this threshold as needed
     private float turnVwlocity;
+    
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -108,4 +109,25 @@ public class PlayerMovement : MonoBehaviour
     //
 
    // }
+   void OnTriggerEnter(Collider other)
+   {
+       if (other.gameObject.CompareTag("FabianGame3Collectibles"))
+       {
+           if (other.gameObject.name == "PurpleSphere")
+           {
+               this.transform.position = GameObject.FindGameObjectWithTag("MiniGameLogic").GetComponent<Collectibles>()
+                   .teleportSpot.position;
+               other.gameObject.SetActive(false);
+               GameObject.FindGameObjectWithTag("MiniGameLogic").GetComponent<Collectibles>().itemsCollected++;
+           } else if (other.gameObject.name == "BlueSphere")
+           {
+               movementSpeed = 13;
+               other.gameObject.SetActive(false);
+               GameObject.FindGameObjectWithTag("MiniGameLogic").GetComponent<Collectibles>().itemsCollected++;
+           }
+
+
+       }
+        
+   }
 }

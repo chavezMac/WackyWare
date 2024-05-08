@@ -7,6 +7,13 @@ TagManager:
   - Example2Button
   - WodzillaDestructible
   - WodzillaTail
+  - ShipTail
+  - ExplosionParticle
+  - PlanetNameObject
+  - MiniGameLogic
+  - Border
+  - Balloon
+  - FabianGame3Collectibles
   layers:
   - Default
   - TransparentFX
