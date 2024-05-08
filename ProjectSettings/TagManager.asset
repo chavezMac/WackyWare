@@ -13,7 +13,10 @@ TagManager:
   - Checkpoint
   - WodzillaDestructible
   - WodzillaTail
+  - Fire
   - fish
+  - WodzillaHelicopter
+  - WodzillaPowerup
   - Collidable
   layers:
   - Default

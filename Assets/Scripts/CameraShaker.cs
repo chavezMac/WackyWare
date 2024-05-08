@@ -6,6 +6,7 @@ public class CameraShaker : MonoBehaviour
     // Adjust these values to control the intensity and duration of the shake
     private Vector3 originalLocalPosition;
     public Camera cam;
+    public bool isShaking = true;
 
     private void Start()
     {
@@ -15,6 +16,7 @@ public class CameraShaker : MonoBehaviour
 
     public void ShakeCamera(float intensity, float duration, bool diminishIntensity = false)
     {
+        // Debug.Log("Triggering shake of intensity " + intensity);
         StartCoroutine(Shake(intensity, duration, diminishIntensity));
     }
 
@@ -56,5 +58,6 @@ public class CameraShaker : MonoBehaviour
 
         // Ensure the camera's local position is set to the original position after the shake is complete
         cam.transform.localPosition = originalLocalPosition;
+        // isShaking = false;
     }
 }
