@@ -45,8 +45,6 @@ public class MinigameBroadcaster : MonoBehaviour
             gameController.SetTimeLimit(overrideTimeLimit);
             hookedIn = true;
         }
-
-        
         mouseIcon.SetActive(isMouseUsed);
         WASDIcon.SetActive(isWASDUsed);
         SpaceIcon.SetActive(isSpacebarUsed);
@@ -78,5 +76,10 @@ public class MinigameBroadcaster : MonoBehaviour
             gameFinished = true;
             
         }
+    }
+
+    public static void SetGameTimerPauseState(bool setting)
+    {
+        MainGameController.timerPaused = setting;
     }
 }

@@ -5,9 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
+  - PickUp
+  - CameraZone
+  - Bullet
+  - PickedUp
+  - FellZone
+  - Checkpoint
   - WodzillaDestructible
   - WodzillaTail
   - Fire
+  - fish
+  - WodzillaHelicopter
+  - WodzillaPowerup
+  - Collidable
   layers:
   - Default
   - TransparentFX
@@ -17,6 +27,11 @@ TagManager:
   - UI
   - Background
   - 
+  - WhatIsGround
+  - WhatIsPlayer
+  - WhatIsWall
+  - Car_base
+  - Car_Wheels
   - 
   - 
   - 
@@ -42,9 +57,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2757355671
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: MainSceneLayer
-    uniqueID: 3595351115
     locked: 0
