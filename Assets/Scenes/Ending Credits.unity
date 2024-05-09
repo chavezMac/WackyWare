@@ -7363,7 +7363,7 @@ RectTransform:
   m_GameObject: {fileID: 342967252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.1637, y: 3.1637, z: 3.1637}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 408490343}
@@ -8980,17 +8980,17 @@ RectTransform:
   m_GameObject: {fileID: 572551244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1370830160}
   m_Father: {fileID: 408490343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 705, y: -421}
-  m_SizeDelta: {x: 460.4404, y: 156.2655}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -35, y: -33}
+  m_SizeDelta: {x: 460.44043, y: 156.2655}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &572551246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9012,7 +9012,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.39607844}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -19739,7 +19739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44.32, y: -125}
+  m_AnchoredPosition: {x: -44.32, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1892080223
@@ -20599,7 +20599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657729287ad8f342888372a1b8df99f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 10
+  fadeDuration: 5
 --- !u!82 &1972699973
 AudioSource:
   m_ObjectHideFlags: 0

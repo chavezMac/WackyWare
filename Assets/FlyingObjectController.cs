@@ -7,11 +7,23 @@ public class FlyingObjectController : MonoBehaviour
     public float hitForce = 40f; // The force applied to the object when hit
     public float spinForce = 30f; // The force applied to make the object spin
 
+    private void Start()
+    {
+        if (QualitySettings.GetQualityLevel() == 0)
+        {
+            Rigidbody rbody = GetComponent<Rigidbody>();
+            BoxCollider box = GetComponent<BoxCollider>();
+            Destroy(rbody);
+            Destroy(box);
+            Destroy(this);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("WodzillaTail"))
         {
-            var rbody = GetComponent<Rigidbody>();
+            Rigidbody rbody = GetComponent<Rigidbody>();
             
             rbody.constraints = RigidbodyConstraints.None;
             // Calculate the direction away from Godzilla at a 45-degree angle upwards
