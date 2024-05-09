@@ -11,23 +11,42 @@ public class CreditsScript : MonoBehaviour
     public Text buttonText;
     public GameObject obstacleContainer;
     public GameObject fadeBlack;
+    public FishermanCredits fisher;
+    public Animator carAnim;
 
     private bool skip = false;
     // Start is called before the first frame update
     void Start()
     {
+        carAnim.speed = 0;
         fadeBlack.SetActive(true);
         obstacleContainer.SetActive(false);
-        var controller = FindObjectOfType<MainGameController>().gameObject;
+        var controller = FindObjectOfType<MainGameController>();
         if (controller != null)
         {
-            Destroy(controller);
+            // Destroy(controller.gameObject);
+            controller.DisableTimer();
         }
     }
 
     public void DropObstacles()
     {
         obstacleContainer.SetActive(true);
+    }
+    
+    public void castLine()
+    {
+        fisher.castLine();
+    }
+
+    public void reelIn()
+    {
+        fisher.reelIn();
+    }
+
+    public void CarZoom()
+    {
+        carAnim.speed = 1;
     }
 
     public void Skip()
@@ -44,6 +63,11 @@ public class CreditsScript : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        var controller = FindObjectOfType<MainGameController>().gameObject;
+        if (controller != null)
+        {
+            Destroy(controller);
+        }
         SceneManager.LoadSceneAsync("Main Menu Scene");
     }
 }

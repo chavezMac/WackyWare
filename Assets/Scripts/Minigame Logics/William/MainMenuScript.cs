@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
@@ -11,6 +12,8 @@ public class MainMenuScript : MonoBehaviour
     public Button howtoplayButton;
     public Button nextButton1;
     public Button nextButton2;
+    public Text qualityButton;
+    public Button fullscreenButton;
     public GameObject titleText;
     public GameObject mainMenuSelection;
     public GameObject tutorialCard1;
@@ -27,12 +30,33 @@ public class MainMenuScript : MonoBehaviour
         howtoplayButton.onClick.AddListener(HowToPlay);
         nextButton1.onClick.AddListener(Next1);
         nextButton2.onClick.AddListener(Next2);
+        int currentQualityLevel = QualitySettings.GetQualityLevel();
+        Debug.Log("Initial Quality Level: " + currentQualityLevel);
+        qualityButton.text = "Toggle Quality\nCurrent quality\nlevel: " + QualitySettings.GetQualityLevel();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleFullScreenMode()
     {
-        
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    
+    public void CycleQualitySettings()
+    {
+        // Get the total number of quality levels
+        int totalQualityLevels = QualitySettings.names.Length;
+
+        // Get the current quality level
+        int currentQualityLevel = QualitySettings.GetQualityLevel();
+
+        // Calculate the next quality level
+        int nextQualityLevel = (currentQualityLevel + 1) % totalQualityLevels;
+
+        // Set the next quality level
+        QualitySettings.SetQualityLevel(nextQualityLevel, true);
+
+        Debug.Log("New Quality Level: " + nextQualityLevel);
+        qualityButton.text = "Toggle Quality\nCurrent quality\nlevel: " + QualitySettings.GetQualityLevel();
     }
 
     private void StartGame()

@@ -1,7 +1,5 @@
 using System.Collections;
-using Unity.AI.Navigation;
 using Unity.Mathematics;
-using UnityEditor.AI;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,6 +15,7 @@ public class WodzillaBuilding : MonoBehaviour
     public float sinkSpeed = 35f;
 
     public GameObject dustSystem;
+    public GameObject dustSystemLow;
     public BossMinigameLogic logic;
     private AudioSource sfx;
     
@@ -49,7 +48,12 @@ public class WodzillaBuilding : MonoBehaviour
         
         if (damage > 10f)
         {
-            GameObject dust = Instantiate(dustSystem, new Vector3(x,0f,z), quaternion.identity);
+            GameObject dustQual = dustSystem;
+            if (QualitySettings.GetQualityLevel() == 0)
+            {
+                dustQual = dustSystemLow;
+            }
+            GameObject dust = Instantiate(dustQual, new Vector3(x,0f,z), quaternion.identity);
             dust.GetComponent<WodzillaBuildingDust>().building = this.gameObject;
             Destroy(dust,6f);
         }

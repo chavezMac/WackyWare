@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Effects : MonoBehaviour
 {
-    private ParticleSystem particleSystem;
+    private ParticleSystem _particleSystem;
     private AudioSource audioSource;
 
     void Start()
     {
-        particleSystem = GetComponent<ParticleSystem>();
+        _particleSystem = GetComponent<ParticleSystem>();
         audioSource = GetComponent<AudioSource>();
     }
    
@@ -19,7 +19,7 @@ public class Effects : MonoBehaviour
         Debug.Log("Player entered the trigger zone");
         if (other.gameObject.CompareTag("Player"))
         {
-            particleSystem.Play();
+            _particleSystem.Play();
             audioSource.Play();
             
             //Turn gameObject green

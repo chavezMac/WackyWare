@@ -85,6 +85,12 @@ public class MainGameController: MonoBehaviour
             }
         }
     }
+
+    public void DisableTimer()
+    {
+        timerPaused = true;
+        timer.gameObject.SetActive(false);
+    }
     
     public void DemoSingleMinigame(string sceneName)
     {
@@ -181,7 +187,10 @@ public class MainGameController: MonoBehaviour
             {
                 transition.ResumeAnimation();
                 _minigameBroadcaster = FindObjectOfType<MinigameBroadcaster>();
-                SetTimeLimit(_minigameBroadcaster.overrideTimeLimit);
+                if (_minigameBroadcaster != null)
+                {
+                    SetTimeLimit(_minigameBroadcaster.overrideTimeLimit);
+                }
             };
         }
         else

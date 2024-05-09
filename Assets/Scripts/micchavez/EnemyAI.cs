@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class EnemyAI : MonoBehaviour
     public bool tagged;
 
     //Get the game object's tag
-    public string tag;
+    [FormerlySerializedAs("tag")] public string _tag;
 
     [Header("Animator")]
     [SerializeField]
@@ -32,14 +33,14 @@ public class EnemyAI : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-        tag = gameObject.tag;
+        _tag = gameObject.tag;
         tagged = false;
     }
 
     private void Update()
     {
         //Check if enemy tag is still the same
-        if(tag == gameObject.tag)
+        if(_tag == gameObject.tag)
         {
             playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
