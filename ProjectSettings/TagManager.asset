@@ -37,7 +37,7 @@ TagManager:
   - Ground
   - Walls
   - Background
-  - 
+  - Terrain
   - WhatIsGround
   - WhatIsPlayer
   - WhatIsWall
