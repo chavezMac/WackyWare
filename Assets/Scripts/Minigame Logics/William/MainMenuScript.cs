@@ -32,7 +32,7 @@ public class MainMenuScript : MonoBehaviour
         nextButton2.onClick.AddListener(Next2);
         int currentQualityLevel = QualitySettings.GetQualityLevel();
         Debug.Log("Initial Quality Level: " + currentQualityLevel);
-        qualityButton.text = "Current quality level: " + QualitySettings.GetQualityLevel();
+        qualityButton.text = "Toggle Quality\nCurrent quality\nlevel: " + QualitySettings.GetQualityLevel();
     }
 
     public void ToggleFullScreenMode()
@@ -55,7 +55,7 @@ public class MainMenuScript : MonoBehaviour
         QualitySettings.SetQualityLevel(nextQualityLevel, true);
 
         Debug.Log("New Quality Level: " + nextQualityLevel);
-        qualityButton.text = "Current quality level: " + QualitySettings.GetQualityLevel();
+        qualityButton.text = "Toggle Quality\nCurrent quality\nlevel: " + QualitySettings.GetQualityLevel();
     }
 
     private void StartGame()
