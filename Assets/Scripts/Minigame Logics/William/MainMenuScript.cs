@@ -11,6 +11,7 @@ public class MainMenuScript : MonoBehaviour
     public Button howtoplayButton;
     public Button nextButton1;
     public Button nextButton2;
+    public Button toggleFullscreen;
     public GameObject titleText;
     public GameObject mainMenuSelection;
     public GameObject tutorialCard1;
@@ -29,10 +30,9 @@ public class MainMenuScript : MonoBehaviour
         nextButton2.onClick.AddListener(Next2);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleFullScreenMode()
     {
-        
+        Screen.fullScreen = !Screen.fullScreen;
     }
 
     private void StartGame()

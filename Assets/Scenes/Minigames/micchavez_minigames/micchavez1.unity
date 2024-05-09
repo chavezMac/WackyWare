@@ -13606,6 +13606,10 @@ PrefabInstance:
       value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 2204500539073675849, guid: fde91421c3b372041bbb24a050db2517, type: 3}
+      propertyPath: m_Radius
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204500539073675849, guid: fde91421c3b372041bbb24a050db2517, type: 3}
       propertyPath: m_Center.y
       value: -0.58
       objectReference: {fileID: 0}
@@ -13803,6 +13807,10 @@ PrefabInstance:
     - target: {fileID: 4610778614921764391, guid: a9dfd0f8dbc8e9a4881e25e961e69c09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960933393972306067, guid: a9dfd0f8dbc8e9a4881e25e961e69c09, type: 3}
+      propertyPath: m_Radius
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6483942917436918574, guid: a9dfd0f8dbc8e9a4881e25e961e69c09, type: 3}
       propertyPath: player

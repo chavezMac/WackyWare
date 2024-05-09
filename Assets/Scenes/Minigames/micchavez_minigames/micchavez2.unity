@@ -12311,6 +12311,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7708733272815318580, guid: 400e482f0a3c8054786e819fb5396633, type: 3}
+      propertyPath: MinVerticalAngle
+      value: 13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708733272815318580, guid: 400e482f0a3c8054786e819fb5396633, type: 3}
       propertyPath: ObstructionLayers.m_Bits
       value: 64
       objectReference: {fileID: 0}
