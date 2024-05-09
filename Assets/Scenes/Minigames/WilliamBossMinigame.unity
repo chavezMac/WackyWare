@@ -4802,6 +4802,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 2307
+      objectReference: {fileID: 0}
+    - target: {fileID: 268669530735361386, guid: d8cc7ff904c9ca74db9057354a7f6e58, type: 3}
       propertyPath: bonusNotification
       value: 
       objectReference: {fileID: 1109018011}
