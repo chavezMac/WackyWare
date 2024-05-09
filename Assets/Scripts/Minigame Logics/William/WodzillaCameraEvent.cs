@@ -20,7 +20,7 @@ public class WodzillaCameraEvent : MonoBehaviour
         MinigameBroadcaster.SetGameTimerPauseState(false);
         if (MainGameController.minigamesCompletedSuccessfully >= 1)
         {
-            godzilla.StartCoroutine(godzilla.Grow(MainGameController.minigamesCompletedSuccessfully / 10f , true) );
+            godzilla.StartCoroutine(godzilla.Grow(MainGameController.minigamesCompletedSuccessfully / 20f , true) );
         }
 
         var anim = GetComponent<Animator>();

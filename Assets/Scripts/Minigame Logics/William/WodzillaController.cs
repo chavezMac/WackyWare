@@ -166,7 +166,7 @@ public class WodzillaController : MonoBehaviour
     {
         if (other.CompareTag("WodzillaPowerup"))
         {
-            StartCoroutine(Grow(0.5f, false));
+            StartCoroutine(Grow(0.4f, false));
             hp++;
             Destroy(other.gameObject);
         }
@@ -179,7 +179,7 @@ public class WodzillaController : MonoBehaviour
         if (firstTimeBonus)
         {
             bonusNotification.enabled = true;
-            bonusNotification.text = "Minigame Win bonus!\n+" + growValue*100 + "% size bonus!";
+            bonusNotification.text = "Minigame Win bonus!\n+" + growValue*50 + "% size bonus!";
         }
         else
         {
