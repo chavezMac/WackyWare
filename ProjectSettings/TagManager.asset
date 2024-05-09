@@ -6,9 +6,6 @@ TagManager:
   tags:
   - Example2Button
   - Enemy
-  - WodzillaDestructible
-  - WodzillaTail
-  - fish
   - WinTrigger
   - Ladder
   - Platform
@@ -25,6 +22,14 @@ TagManager:
   - WodzillaHelicopter
   - WodzillaPowerup
   - Collidable
+  - ExplosionParticle
+  - PlanetNameObject
+  - Balloon
+  - MiniGameLogic
+  - Border
+  - ShipTail
+  - FabianGame3Collectibles
+  - WodzillaDestructible
   layers:
   - Default
   - TransparentFX
