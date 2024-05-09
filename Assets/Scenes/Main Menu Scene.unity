@@ -2628,50 +2628,62 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.size
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[0]
-      value: JesusMiniGame1
+      value: SyedMinigame1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[1]
-      value: JesusMiniGame3
+      value: SyedMinigame2
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[2]
-      value: CaitlinMinigame1
+      value: SyedMinigame3
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[3]
-      value: CaitlinMinigame2
+      value: FabianMinigame1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[4]
-      value: micchavez1
+      value: FabianMinigame2
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[5]
-      value: micchavez2
+      value: FabianMinigame3
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[6]
-      value: Syed Minigame1
+      value: JesusMiniGame1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[7]
-      value: Syed Minigame2
+      value: JesusMiniGame3
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[8]
-      value: Syed Minigame 3
+      value: CaitlinMinigame1
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[9]
-      value: WilliamBossMinigame
+      value: CaitlinMinigame2
       objectReference: {fileID: 0}
     - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
       propertyPath: miniGameList.Array.data[10]
+      value: micchavez1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[11]
+      value: micchavez2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[12]
+      value: WilliamBossMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: -4742701517147710072, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
+      propertyPath: miniGameList.Array.data[13]
       value: Ending Credits
       objectReference: {fileID: 0}
     - target: {fileID: 687760359531645946, guid: 0bef88aaa3074da42817a1d71cc989c6, type: 3}
