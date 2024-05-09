@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Example2Button
+  - Enemy
+  - WodzillaDestructible
+  - WodzillaTail
+  - fish
+  - WinTrigger
+  - Ladder
+  - Platform
   - PickUp
   - CameraZone
   - Bullet
@@ -25,6 +32,10 @@ TagManager:
   - 
   - Water
   - UI
+  - Target
+  - Obstruction
+  - Ground
+  - Walls
   - Background
   - 
   - WhatIsGround
@@ -32,16 +43,7 @@ TagManager:
   - WhatIsWall
   - Car_base
   - Car_Wheels
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Camera
   - 
   - 
   - 
