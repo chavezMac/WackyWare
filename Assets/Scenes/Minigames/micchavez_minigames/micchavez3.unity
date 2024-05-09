@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -705,7 +705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297405633}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.009448726, y: 0.0000000052852163, z: -4.9940826e-11, w: 0.99995536}
+  m_LocalRotation: {x: 0.009448746, y: -0.000000029126012, z: 2.7521657e-10, w: 0.99995536}
   m_LocalPosition: {x: -5.3199997, y: -1.2579999, z: -10.002001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7677,6 +7677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110875597}
   - component: {fileID: 1110875596}
+  - component: {fileID: 1110875598}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -7761,6 +7762,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1110875598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110875595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1146544124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8516,7 +8540,7 @@ Transform:
   m_GameObject: {fileID: 1422978238}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15642221, y: 0.6365592, z: -0.13397384, w: 0.7432198}
-  m_LocalPosition: {x: -5.85709, y: 2.8454356, z: -7.8969927}
+  m_LocalPosition: {x: -5.861744, y: 2.8454356, z: -7.8670673}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8830,7 +8854,7 @@ Transform:
   m_GameObject: {fileID: 1450945073}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21315138, y: -0.16953209, z: 0.037584357, w: 0.96146387}
-  m_LocalPosition: {x: 3.1942384, y: 3.7011251, z: -7.1226006}
+  m_LocalPosition: {x: 3.1657798, y: 3.7011251, z: -7.1329584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10354,7 +10378,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.10666666
+  m_VoxelSize: 1
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: fcc15b120773f8240b5699c934e99d33, type: 2}
   m_BuildHeightMesh: 0
