@@ -2994,7 +2994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingsRemaining: 0
-  debug: 1
+  debug: 0
   music: {fileID: 451130355}
   mainCamera: {fileID: 1518715922}
   helicopter: {fileID: 8832102150143072544, guid: ca96b54b999288548814c271bef89096, type: 3}
