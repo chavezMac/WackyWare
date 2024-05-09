@@ -7,23 +7,30 @@ public class PlayerController : MonoBehaviour
     public GameObject player;
 
     public float speed = 5f;
-    public float jumpForce =8f;
+    public float jumpForce = 8f;
     public Rigidbody rb;
     public RaycastHit hit;
     float distanceToGround = 0.5f;
-    bool isGrounded ;
+    bool isGrounded;
+    [Header("Animator")]
+    public Animator animator;
+
+
     // Start is called before the first frame update
-    
-    void Start () {
-       
-         rb = GetComponent<Rigidbody>(); 
-     }
-   
+
+    void Start()
+    {
+
+        rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         Vector3 position = transform.position;
+        animator.SetFloat("Speed", 0f);
         // Update the position of the player based on the input
         // if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         // {
@@ -35,12 +42,12 @@ public class PlayerController : MonoBehaviour
         // }
         position.x += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
-        if ( Input.GetKeyDown(KeyCode.Space))
-            {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
         }
 
-            if (Physics.Raycast(transform.position, Vector3.down, out hit, distanceToGround, 1 >> 8))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, distanceToGround, 1 >> 8))
         {
             isGrounded = true;
         }
@@ -54,5 +61,5 @@ public class PlayerController : MonoBehaviour
         transform.position = position;
     }
 
-
 }
+

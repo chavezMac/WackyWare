@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class RotatorScript : MonoBehaviour
 {
-    public float rotationSpeed = 30f;
-    private float speedIncreaseInterval = 2f;
+    public float rotationSpeed = 15f;
+    private float speedIncreaseInterval = 1f;
     private float timeSinceLastSpeedIncrease = 0f;
-    private float speedIncreaseAmount = 15f;
+    private float speedIncreaseAmount = 10f;
     private bool rotateClockwise = true;
     private float rotationTimer = 0f;
 
