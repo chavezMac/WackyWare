@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.05666667
+  m_VoxelSize: 1
   m_MinRegionArea: 3
   m_NavMeshData: {fileID: 23800000, guid: 99e96bc016ddaa04aa4dc1a1d60db905, type: 2}
   m_BuildHeightMesh: 0
@@ -7537,6 +7537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411123585}
   - component: {fileID: 1411123584}
+  - component: {fileID: 1411123586}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -7621,6 +7622,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1411123586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411123583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1415562888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13857,6 +13881,30 @@ PrefabInstance:
     - target: {fileID: 477193211844124321, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
       propertyPath: m_Size.z
       value: 3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 605084042435838266, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 605084042435838266, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 605084042435838266, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 605084042435838266, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 605084042435838266, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397607694768726255, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1541538248499900633, guid: 4266b1aa6dce27b4db06f1cf6631f161, type: 3}
       propertyPath: m_LocalScale.x

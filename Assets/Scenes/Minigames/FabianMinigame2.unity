@@ -2822,7 +2822,7 @@ MonoBehaviour:
   isMouseUsed: 0
   isWASDUsed: 1
   isSpacebarUsed: 1
-  overrideTimeLimit: 20
+  overrideTimeLimit: -1
 --- !u!1 &5988599083659010341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2893,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: faaf428762f659742b2b4644b6c911f4, type: 3}
-    m_FontSize: 20
+    m_FontSize: 11
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2904,7 +2904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EXPLODE
+  m_Text: FOLLOW THE ORDER
 --- !u!222 &6258585985968467813
 CanvasRenderer:
   m_ObjectHideFlags: 0
