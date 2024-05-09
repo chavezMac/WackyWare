@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &46012145
 BoxCollider:
@@ -290,7 +290,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &50362322
 BoxCollider:
@@ -357,7 +357,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &53333761
 BoxCollider:
@@ -445,7 +445,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &56822226
 BoxCollider:
@@ -512,7 +512,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &66886993
 BoxCollider:
@@ -610,7 +610,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &78350006
 BoxCollider:
@@ -677,7 +677,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &89069410
 BoxCollider:
@@ -744,7 +744,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &91712708
 BoxCollider:
@@ -912,7 +912,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &104993350
 BoxCollider:
@@ -979,7 +979,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &117948481
 BoxCollider:
@@ -1046,7 +1046,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &138877876
 BoxCollider:
@@ -1134,7 +1134,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1226,7 +1226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &173598487
 BoxCollider:
@@ -1243,7 +1243,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &177305021
 BoxCollider:
@@ -1310,7 +1310,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1444,7 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &194757338
 BoxCollider:
@@ -1461,7 +1461,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &195817583
 BoxCollider:
@@ -1559,7 +1559,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &197208418
 BoxCollider:
@@ -1626,7 +1626,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1728,7 +1728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &218151864
 BoxCollider:
@@ -1745,7 +1745,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &221618808
 BoxCollider:
@@ -1812,7 +1812,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1909,7 +1909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &269464902
 BoxCollider:
@@ -1926,7 +1926,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &285166131
 BoxCollider:
@@ -1993,7 +1993,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2064,7 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &289281014
 BoxCollider:
@@ -2081,7 +2081,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &298360520
 BoxCollider:
@@ -2169,7 +2169,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2341,7 +2341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &334152846
 BoxCollider:
@@ -2358,7 +2358,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2408,7 +2408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &340357682
 BoxCollider:
@@ -2425,7 +2425,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &375375432
 BoxCollider:
@@ -2565,7 +2565,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2662,7 +2662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &384959193
 BoxCollider:
@@ -2679,7 +2679,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2734,7 +2734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &386299631
 BoxCollider:
@@ -2751,7 +2751,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2801,7 +2801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &393890165
 BoxCollider:
@@ -2818,7 +2818,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2868,7 +2868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &406697692
 BoxCollider:
@@ -2885,7 +2885,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2935,7 +2935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &408869006
 BoxCollider:
@@ -2952,7 +2952,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3192,7 +3192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &445721494
 BoxCollider:
@@ -3209,7 +3209,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3270,7 +3270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &453375070
 BoxCollider:
@@ -3287,7 +3287,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3358,7 +3358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &475488909
 BoxCollider:
@@ -3375,7 +3375,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5632,7 +5632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &495967279
 BoxCollider:
@@ -5649,7 +5649,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5699,7 +5699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &496258017
 BoxCollider:
@@ -5716,7 +5716,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5909,7 +5909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &516511199
 BoxCollider:
@@ -5926,7 +5926,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6072,7 +6072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &540557452
 BoxCollider:
@@ -6089,7 +6089,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6160,7 +6160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &548240144
 BoxCollider:
@@ -6177,7 +6177,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6227,7 +6227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &550212086
 BoxCollider:
@@ -6244,7 +6244,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6294,7 +6294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &554776859
 BoxCollider:
@@ -6311,7 +6311,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6443,7 +6443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &579178989
 BoxCollider:
@@ -6460,7 +6460,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6510,7 +6510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &580884833
 BoxCollider:
@@ -6527,7 +6527,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6640,7 +6640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &598907305
 BoxCollider:
@@ -6657,7 +6657,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6728,7 +6728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &634235075
 BoxCollider:
@@ -6745,7 +6745,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6816,7 +6816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &647611633
 BoxCollider:
@@ -6833,7 +6833,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6883,7 +6883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &650178130
 BoxCollider:
@@ -6900,7 +6900,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6950,7 +6950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &650652671
 BoxCollider:
@@ -6967,7 +6967,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7118,7 +7118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &656028460
 BoxCollider:
@@ -7135,7 +7135,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7303,7 +7303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &658790523
 BoxCollider:
@@ -7320,7 +7320,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7370,7 +7370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &668526482
 BoxCollider:
@@ -7387,7 +7387,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7521,7 +7521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &700861092
 BoxCollider:
@@ -7538,7 +7538,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7689,7 +7689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &714339037
 BoxCollider:
@@ -7706,7 +7706,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7798,7 +7798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &745814274
 BoxCollider:
@@ -7815,7 +7815,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7907,7 +7907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &768151761
 BoxCollider:
@@ -7924,7 +7924,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7974,7 +7974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &768376929
 BoxCollider:
@@ -7991,7 +7991,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8104,7 +8104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &803814884
 BoxCollider:
@@ -8121,7 +8121,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &812985592
 BoxCollider:
@@ -8188,7 +8188,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8238,7 +8238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &814945753
 BoxCollider:
@@ -8255,7 +8255,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8305,7 +8305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &822115521
 BoxCollider:
@@ -8322,7 +8322,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8414,7 +8414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &829409426
 BoxCollider:
@@ -8431,7 +8431,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8481,7 +8481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &829495774
 BoxCollider:
@@ -8498,7 +8498,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8548,7 +8548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &843427985
 BoxCollider:
@@ -8565,7 +8565,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8636,7 +8636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &866333183
 BoxCollider:
@@ -8653,7 +8653,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8676,7 +8676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!54 &868949183
 Rigidbody:
@@ -8720,7 +8720,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8780,7 +8780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &895006192
 BoxCollider:
@@ -8797,7 +8797,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8942,7 +8942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &917898512
 BoxCollider:
@@ -8959,7 +8959,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9009,7 +9009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &924204740
 BoxCollider:
@@ -9026,7 +9026,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9076,7 +9076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &928657720
 BoxCollider:
@@ -9093,7 +9093,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9206,7 +9206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &940734610
 BoxCollider:
@@ -9223,7 +9223,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9294,7 +9294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &952006804
 BoxCollider:
@@ -9311,7 +9311,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9361,7 +9361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &965418719
 BoxCollider:
@@ -9378,7 +9378,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9428,7 +9428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &965519924
 BoxCollider:
@@ -9445,7 +9445,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9495,7 +9495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &967013460
 BoxCollider:
@@ -9512,7 +9512,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9583,7 +9583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &977481978
 BoxCollider:
@@ -9600,7 +9600,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9655,7 +9655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &986713816
 BoxCollider:
@@ -9672,7 +9672,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9743,7 +9743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1000661426
 BoxCollider:
@@ -9760,7 +9760,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9831,7 +9831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1037190578
 BoxCollider:
@@ -9848,7 +9848,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9940,7 +9940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1075129990
 BoxCollider:
@@ -9957,7 +9957,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10007,7 +10007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1084222494
 BoxCollider:
@@ -10024,7 +10024,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10179,7 +10179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1092647863
 BoxCollider:
@@ -10196,7 +10196,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10256,7 +10256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1100941819
 BoxCollider:
@@ -10273,7 +10273,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10391,7 +10391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!54 &1115842271
 Rigidbody:
@@ -10435,7 +10435,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10485,7 +10485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1130988192
 BoxCollider:
@@ -10502,7 +10502,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10795,7 +10795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1163560103
 BoxCollider:
@@ -10812,7 +10812,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10883,7 +10883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1167255835
 BoxCollider:
@@ -10900,7 +10900,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10950,7 +10950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1171578680
 BoxCollider:
@@ -10967,7 +10967,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11069,7 +11069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1185817277
 BoxCollider:
@@ -11086,7 +11086,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11136,7 +11136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1197728035
 BoxCollider:
@@ -11153,7 +11153,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11285,7 +11285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1208870578
 BoxCollider:
@@ -11302,7 +11302,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11462,7 +11462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1228488481
 BoxCollider:
@@ -11479,7 +11479,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11529,7 +11529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1241002491
 BoxCollider:
@@ -11546,7 +11546,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11596,7 +11596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1271493413
 BoxCollider:
@@ -11613,7 +11613,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11663,7 +11663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1271580415
 BoxCollider:
@@ -11680,7 +11680,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11730,7 +11730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1287759408
 BoxCollider:
@@ -11747,7 +11747,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11797,7 +11797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1308783765
 BoxCollider:
@@ -11814,7 +11814,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11864,7 +11864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1309461209
 BoxCollider:
@@ -11881,7 +11881,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11941,7 +11941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1329932700
 BoxCollider:
@@ -11958,7 +11958,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12029,7 +12029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1334565884
 BoxCollider:
@@ -12046,7 +12046,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12159,7 +12159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1362990946
 BoxCollider:
@@ -12176,7 +12176,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12226,7 +12226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1368104399
 BoxCollider:
@@ -12243,7 +12243,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12293,7 +12293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1370071751
 BoxCollider:
@@ -12310,7 +12310,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12360,7 +12360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1370939963
 BoxCollider:
@@ -12377,7 +12377,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12421,7 +12421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!54 &1375386598
 Rigidbody:
@@ -12465,7 +12465,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12515,7 +12515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1380345642
 BoxCollider:
@@ -12532,7 +12532,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12582,7 +12582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1399299776
 BoxCollider:
@@ -12599,7 +12599,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12649,7 +12649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1403891869
 BoxCollider:
@@ -12666,7 +12666,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12915,7 +12915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1433192980
 BoxCollider:
@@ -12932,7 +12932,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13003,7 +13003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1435231014
 BoxCollider:
@@ -13020,7 +13020,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13112,7 +13112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1472379648
 BoxCollider:
@@ -13129,7 +13129,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13221,7 +13221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1497100828
 BoxCollider:
@@ -13238,7 +13238,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13288,7 +13288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1499506818
 BoxCollider:
@@ -13305,7 +13305,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13360,7 +13360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1519275693
 BoxCollider:
@@ -13377,7 +13377,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13427,7 +13427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1519740405
 BoxCollider:
@@ -13444,7 +13444,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13562,7 +13562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1530193704
 BoxCollider:
@@ -13579,7 +13579,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13629,7 +13629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1559005830
 BoxCollider:
@@ -13646,7 +13646,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13696,7 +13696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1561054826
 BoxCollider:
@@ -13713,7 +13713,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13784,7 +13784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1584106820
 BoxCollider:
@@ -13801,7 +13801,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13851,7 +13851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1592406355
 BoxCollider:
@@ -13868,7 +13868,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14019,7 +14019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1626120363
 BoxCollider:
@@ -14036,7 +14036,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14086,7 +14086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1627907476
 BoxCollider:
@@ -14103,7 +14103,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14153,7 +14153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1628978967
 BoxCollider:
@@ -14170,7 +14170,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14220,7 +14220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1629985621
 BoxCollider:
@@ -14237,7 +14237,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14287,7 +14287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1631404680
 BoxCollider:
@@ -14304,7 +14304,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14354,7 +14354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1647907054
 BoxCollider:
@@ -14371,7 +14371,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14421,7 +14421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1652005499
 BoxCollider:
@@ -14438,7 +14438,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14488,7 +14488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1653774586
 BoxCollider:
@@ -14505,7 +14505,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14555,7 +14555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1655595432
 BoxCollider:
@@ -14572,7 +14572,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14723,7 +14723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1663798662
 BoxCollider:
@@ -14740,7 +14740,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14790,7 +14790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1672114073
 BoxCollider:
@@ -14807,7 +14807,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14958,7 +14958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1688734629
 BoxCollider:
@@ -14975,7 +14975,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16083,7 +16083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1710681997
 BoxCollider:
@@ -16100,7 +16100,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16251,7 +16251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1723148733
 BoxCollider:
@@ -16268,7 +16268,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16318,7 +16318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1728593519
 BoxCollider:
@@ -16335,7 +16335,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16385,7 +16385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1735921307
 BoxCollider:
@@ -16402,7 +16402,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16452,7 +16452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1736735209
 BoxCollider:
@@ -16469,7 +16469,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16519,7 +16519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1743428854
 BoxCollider:
@@ -16536,7 +16536,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16586,7 +16586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1750961512
 BoxCollider:
@@ -16603,7 +16603,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16754,7 +16754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1755926028
 BoxCollider:
@@ -16771,7 +16771,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16821,7 +16821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1764889997
 BoxCollider:
@@ -16838,7 +16838,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17074,7 +17074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1782568859
 BoxCollider:
@@ -17091,7 +17091,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17162,7 +17162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1804965720
 BoxCollider:
@@ -17179,7 +17179,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17399,7 +17399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1865367987
 BoxCollider:
@@ -17416,7 +17416,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17466,7 +17466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1874675657
 BoxCollider:
@@ -17483,7 +17483,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17533,7 +17533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1895692991
 BoxCollider:
@@ -17550,7 +17550,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17642,7 +17642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1914987819
 BoxCollider:
@@ -17659,7 +17659,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17709,7 +17709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1915179468
 BoxCollider:
@@ -17726,7 +17726,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17776,7 +17776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1920899306
 BoxCollider:
@@ -17793,7 +17793,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17816,7 +17816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!54 &1940715749
 Rigidbody:
@@ -17860,7 +17860,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17910,7 +17910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1941300549
 BoxCollider:
@@ -17927,7 +17927,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17998,7 +17998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1949005546
 BoxCollider:
@@ -18015,7 +18015,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18065,7 +18065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1955637994
 BoxCollider:
@@ -18082,7 +18082,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18233,7 +18233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1969130165
 BoxCollider:
@@ -18250,7 +18250,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18331,7 +18331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1977906965
 BoxCollider:
@@ -18348,7 +18348,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18440,7 +18440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1984197160
 BoxCollider:
@@ -18457,7 +18457,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18507,7 +18507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1985302667
 BoxCollider:
@@ -18524,7 +18524,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18585,7 +18585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &1998226851
 BoxCollider:
@@ -18602,7 +18602,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18673,7 +18673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2007075795
 BoxCollider:
@@ -18690,7 +18690,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18841,7 +18841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2027937853
 BoxCollider:
@@ -18858,7 +18858,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18929,7 +18929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2043620453
 BoxCollider:
@@ -18946,7 +18946,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18996,7 +18996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2052989519
 BoxCollider:
@@ -19013,7 +19013,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19063,7 +19063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2063313536
 BoxCollider:
@@ -19080,7 +19080,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19151,7 +19151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2092237826
 BoxCollider:
@@ -19168,7 +19168,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19259,7 +19259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2110321345
 BoxCollider:
@@ -19276,7 +19276,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19326,7 +19326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2110370793
 BoxCollider:
@@ -19343,7 +19343,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19393,7 +19393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2121530415
 BoxCollider:
@@ -19410,7 +19410,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19460,7 +19460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba199e3b4878304d8fab38a34446660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 40
+  hitForce: 50
   spinForce: 40
 --- !u!65 &2138623088
 BoxCollider:
@@ -19477,7 +19477,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
