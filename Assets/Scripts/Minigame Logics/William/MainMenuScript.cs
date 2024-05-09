@@ -38,24 +38,6 @@ public class MainMenuScript : MonoBehaviour
     public void ToggleFullScreenMode()
     {
         Screen.fullScreen = !Screen.fullScreen;
-
-        // Check if fullscreen mode is enabled
-        if (Screen.fullScreen)
-        {
-            // Get the native screen resolution
-            Resolution nativeResolution = Screen.currentResolution;
-
-            // Calculate the height for a 21:9 aspect ratio based on the native width of the screen
-            int height = Mathf.RoundToInt(nativeResolution.width / 21f * 9f);
-
-            // Set the resolution with the calculated height and native width
-            Screen.SetResolution(nativeResolution.width, height, true);
-        }
-        else
-        {
-            // Set back to the default resolution
-            Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, false);
-        }
     }
 
     
